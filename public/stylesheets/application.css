@@ -58,6 +58,9 @@ a {
     height: 200px;
     overflow: auto; }
 
+.summary {
+  width: 600px; }
+
 .module {
   border: solid thin #777;
   background-color: white;
