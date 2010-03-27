@@ -1,4 +1,8 @@
 class SummariesController < ApplicationController
+  
+  
+  before_filter :get_document, :only => [:new]
+  
   # GET /summaries
   # GET /summaries.xml
   def index
@@ -24,7 +28,7 @@ class SummariesController < ApplicationController
   # GET /summaries/new
   # GET /summaries/new.xml
   def new
-    @summary = Summary.new
+    @summary = Summary.new(:document => @document)
 
     respond_to do |format|
       format.html # new.html.erb
@@ -45,7 +49,7 @@ class SummariesController < ApplicationController
     respond_to do |format|
       if @summary.save
         flash[:notice] = 'Summary was successfully created.'
-        format.html { redirect_to(@summary) }
+        format.html { redirect_to(@summary.document) }
         format.xml  { render :xml => @summary, :status => :created, :location => @summary }
       else
         format.html { render :action => "new" }
@@ -82,4 +86,9 @@ class SummariesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  private
+    def get_document
+      @document = Document.find(params[:document_id])
+    end
 end

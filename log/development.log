@@ -1676,3 +1676,289 @@ Rendering template within layouts/summaries
 Rendering summaries/new
 Rendered summaries/_form (15.2ms)
 Completed in 55ms (View: 22, DB: 0) | 200 OK [http://localhost/summaries]
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:36:51) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"", "body"=>"blah blah blah"}}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (14.9ms)
+Completed in 54ms (View: 21, DB: 0) | 200 OK [http://localhost/summaries]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:37:45) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (6.3ms)
+Completed in 69ms (View: 14, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:37:45) [GET]
+  [4;35;1mDocument Load (8.6ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (9.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Completed in 195ms (View: 158, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:37:47) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (6.6ms)
+Completed in 43ms (View: 15, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:37:50) [GET]
+  [4;36;1mDocument Load (8.4ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (9.2ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.2ms)
+Completed in 101ms (View: 64, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:37:53) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (6.4ms)
+Completed in 44ms (View: 15, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:38:28) [GET]
+  Parameters: {"document_id"=>"1"}
+  [4;35;1mDocument Load (0.9ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (9.0ms)
+Completed in 64ms (View: 17, DB: 1) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:38:46) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"1", "body"=>"blah blah blah this is a summary"}}
+
+ActiveRecord::RecordNotFound (Couldn't find Document without an ID):
+  app/controllers/summaries_controller.rb:92:in `get_document'
+  haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (194.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:39:17) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"1", "body"=>"blah blah blah this is a summary"}}
+  [4;36;1mSummary Create (1.2ms)[0m   [0;1mINSERT INTO "summaries" ("document_id", "created_at", "body", "updated_at") VALUES(1, '2010-03-27 19:39:17', 'blah blah blah this is a summary', '2010-03-27 19:39:17')[0m
+Redirected to http://localhost:3000/summaries/1
+Completed in 42ms (DB: 1) | 302 Found [http://localhost/summaries]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-27 13:39:17) [GET]
+  Parameters: {"id"=>"1"}
+
+ActiveRecord::RecordNotFound (Couldn't find Document without an ID):
+  app/controllers/summaries_controller.rb:92:in `get_document'
+  haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (103.7ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:39:32) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"1", "body"=>"blah blah blah this is a summary"}}
+  [4;35;1mSummary Create (0.6ms)[0m   [0mINSERT INTO "summaries" ("document_id", "created_at", "body", "updated_at") VALUES(1, '2010-03-27 19:39:32', 'blah blah blah this is a summary', '2010-03-27 19:39:32')[0m
+Redirected to http://localhost:3000/summaries/2
+Completed in 41ms (DB: 1) | 302 Found [http://localhost/summaries]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-27 13:39:32) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mSummary Load (0.8ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 2) [0m
+Rendering template within layouts/summaries
+Rendering summaries/show
+Completed in 48ms (View: 19, DB: 1) | 200 OK [http://localhost/summaries/2]
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:39:36) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"1", "body"=>"blah blah blah this is a summary"}}
+  [4;35;1mSummary Create (0.6ms)[0m   [0mINSERT INTO "summaries" ("document_id", "created_at", "body", "updated_at") VALUES(1, '2010-03-27 19:39:36', 'blah blah blah this is a summary', '2010-03-27 19:39:36')[0m
+Redirected to http://localhost:3000/summaries/3
+Completed in 42ms (DB: 1) | 302 Found [http://localhost/summaries]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-27 13:39:37) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mSummary Load (0.8ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 3) [0m
+Rendering template within layouts/summaries
+Rendering summaries/show
+Completed in 37ms (View: 9, DB: 1) | 200 OK [http://localhost/summaries/3]
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:40:42) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"1", "body"=>"blah blah blah this is a summary"}}
+  [4;35;1mSummary Create (0.8ms)[0m   [0mINSERT INTO "summaries" ("document_id", "created_at", "body", "updated_at") VALUES(1, '2010-03-27 19:40:42', 'blah blah blah this is a summary', '2010-03-27 19:40:42')[0m
+  [4;36;1mDocument Load (1.0ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Redirected to http://localhost:3000/documents/1
+Completed in 164ms (DB: 2) | 302 Found [http://localhost/summaries]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:40:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDocument Load (0.9ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (2.3ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries".document_id = 1) [0m
+
+ActionView::TemplateError (Missing template summaries/_summary.erb in view path app/views) on line #9 of app/views/documents/show.haml:
+6:     
+7: #summaries
+8:   - @document.summaries.each do |summary|
+9:     = render summary
+
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.21) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/show.haml:9:in `_run_haml_app47views47documents47show46haml'
+    app/views/documents/show.haml:8:in `_run_haml_app47views47documents47show46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:21:in `show'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (162.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:41:12) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"1", "body"=>"blah blah blah this is a summary"}}
+  [4;35;1mSummary Create (0.6ms)[0m   [0mINSERT INTO "summaries" ("document_id", "created_at", "body", "updated_at") VALUES(1, '2010-03-27 19:41:12', 'blah blah blah this is a summary', '2010-03-27 19:41:12')[0m
+  [4;36;1mDocument Load (0.9ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Redirected to http://localhost:3000/documents/1
+Completed in 63ms (DB: 2) | 302 Found [http://localhost/summaries]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:41:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDocument Load (0.9ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (2.1ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries".document_id = 1) [0m
+Rendered summaries/_summary (2.6ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Completed in 77ms (View: 45, DB: 3) | 200 OK [http://localhost/documents/1]
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:43:08) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"1", "body"=>"blah blah blah this is a summary"}}
+  [4;35;1mSummary Create (0.6ms)[0m   [0mINSERT INTO "summaries" ("document_id", "created_at", "body", "updated_at") VALUES(1, '2010-03-27 19:43:08', 'blah blah blah this is a summary', '2010-03-27 19:43:08')[0m
+  [4;36;1mDocument Load (0.9ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Redirected to http://localhost:3000/documents/1
+Completed in 162ms (DB: 2) | 302 Found [http://localhost/summaries]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:43:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDocument Load (0.9ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (2.4ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries".document_id = 1) [0m
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Completed in 84ms (View: 50, DB: 3) | 200 OK [http://localhost/documents/1]
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:43:24) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"1", "body"=>"blah blah blah this is a summary"}}
+  [4;35;1mSummary Create (0.6ms)[0m   [0mINSERT INTO "summaries" ("document_id", "created_at", "body", "updated_at") VALUES(1, '2010-03-27 19:43:24', 'blah blah blah this is a summary', '2010-03-27 19:43:24')[0m
+  [4;36;1mDocument Load (0.9ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Redirected to http://localhost:3000/documents/1
+Completed in 65ms (DB: 1) | 302 Found [http://localhost/summaries]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:43:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDocument Load (0.9ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (2.8ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries".document_id = 1) [0m
+Rendered summaries/_summary (2.6ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Completed in 82ms (View: 49, DB: 4) | 200 OK [http://localhost/documents/1]
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:43:46) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"1", "body"=>"blah blah blah this is a summary"}}
+  [4;35;1mSummary Create (0.6ms)[0m   [0mINSERT INTO "summaries" ("document_id", "created_at", "body", "updated_at") VALUES(1, '2010-03-27 19:43:46', 'blah blah blah this is a summary', '2010-03-27 19:43:46')[0m
+  [4;36;1mDocument Load (0.9ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Redirected to http://localhost:3000/documents/1
+Completed in 63ms (DB: 2) | 302 Found [http://localhost/summaries]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:43:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDocument Load (0.9ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (3.0ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries".document_id = 1) [0m
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Rendered summaries/_summary (0.4ms)
+Completed in 69ms (View: 36, DB: 4) | 200 OK [http://localhost/documents/1]

@@ -1,6 +1,8 @@
 #document.module
   %h1
     = @document.name
+  .tools
+    = link_to "write a summary", new_document_summary_path(@document)
   %p.body
     = @document.body
     
