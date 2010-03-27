@@ -1,0 +1,13 @@
+.document.module
+  %h3
+    = link_to document.name, document_path(document)
+  %p.body
+    = document.body
+  %p.url
+    = link_to document.original_url, document.original_url
+  .tools
+    %ul
+      %li 
+        = link_to 'read summaries', document_summaries_path(document)
+      %li 
+        = link_to 'write a summary', new_document_summary_path(document)

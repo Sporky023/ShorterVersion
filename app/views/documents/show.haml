@@ -1,0 +1,9 @@
+#document.module
+  %h1
+    = @document.name
+  %p.body
+    = @document.body
+    
+#summaries
+  - @document.summaries.each do |summary|
+    = render summary

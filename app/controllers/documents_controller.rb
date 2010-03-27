@@ -1,4 +1,7 @@
 class DocumentsController < ApplicationController
+  
+  layout "application"
+  
   # GET /documents
   # GET /documents.xml
   def index

@@ -27,3 +27,1652 @@ Migrating to CreateSummaries (20100327183457)
 [0m
   [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("documents")[0m
   [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("summaries")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 12:40:33) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 12:41:32) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-27 12:41:36) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 12:42:00) [GET]
+  [4;36;1mDocument Load (2.8ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Completed in 226ms (View: 133, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-27 12:42:05) [GET]
+Rendering template within layouts/documents
+Rendering documents/new
+Completed in 61ms (View: 33, DB: 0) | 200 OK [http://localhost/documents/new]
+  [4;36;1mDocument Last ID (2.5ms)[0m   [0;1mSELECT id FROM "documents" ORDER BY id DESC[0m
+  [4;36;1mDocument Last ID (2.5ms)[0m   [0;1mSELECT id FROM "documents" ORDER BY id DESC[0m
+  [4;35;1mDocument Populate (10.7ms)[0m   [0mINSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (1, 'id quis', 'doloribus qui in vel nobis voluptatem veritatis eius porro labore sed voluptate occaecati ducimus optio totam modi nemo et dolores autem alias consequatur laboriosam pariatur est nulla omnis id sed quia neque aut inventore mollitia necessitatibus quos dolores in impedit quia voluptas quia est repudiandae sunt temporibus sequi sapiente facere nihil error excepturi sed hic et esse nostrum quo sint a non quam veniam assumenda itaque asperiores commodi aperiam accusamus quis perspiciatis quasi iusto distinctio facilis iure aut quia consequuntur accusantium rerum cumque debitis officia omnis ut architecto nisi autem dolor corporis quis sit libero dicta ut explicabo quod eligendi sit aspernatur vel enim suscipit enim non fuga tenetur adipisci deleniti voluptatem repellat animi placeat ex aut dolore fugit earum unde et molestias et quo dolorem odio laborum velit blanditiis voluptatem id nam eum velit ut cupiditate doloremque sit omnis harum reprehenderit praesentium est et perferendis rerum eos recusandae corrupti eos tempora odit iste expedita et aliquam quisquam deserunt ad aliquid minima ipsa quidem culpa incidunt ut soluta magni qui dolor consectetur nesciunt molestiae qui et et ratione vitae laudantium ut aut ea voluptas reiciendis ut voluptas consequatur eveniet illum eum delectus possimus est illo magnam voluptatem est dignissimos fugiat repellendus voluptatibus nihil et ea vero maxime rem aut saepe natus cum ullam quas quae voluptatum voluptates consequatur dolorem aut quibusdam provident maiores non officiis at qui exercitationem qui rerum sunt ab tempore quaerat amet atque ipsam numquam minus beatae et ipsum et qui sint eaque similique dolorum molestiae', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (2, 'sit quod', 'deserunt totam esse sapiente expedita voluptate occaecati ullam qui culpa voluptas et doloremque quia tempore eum ad ea assumenda ipsum est est perspiciatis labore voluptatem impedit est eos distinctio cumque minima natus saepe aut qui et unde eligendi ut quaerat molestias aut iusto quae maiores ducimus et quis suscipit voluptatem qui optio enim quas veniam aut sit nam ipsam amet itaque magni non error tenetur fugiat non vero quidem qui consequatur reiciendis libero dolore aspernatur aut rerum dolores temporibus accusamus quia repellat et et consequatur quo soluta quia vitae sed officia nisi in dolorem numquam rem nihil dolores voluptatem non adipisci magnam sit a aliquam maxime inventore rerum dolor aperiam facere autem repudiandae voluptatum odio cum quis eius sint nostrum vel exercitationem sit enim fugit ut atque quo explicabo dignissimos excepturi voluptatem corrupti qui est et qui quibusdam hic molestiae laudantium minus sed dolor at quasi laborum et ut nobis omnis iste recusandae ut delectus sequi quam provident doloribus sint aliquid quos molestiae velit ratione mollitia odit consequuntur ex ut ea voluptates voluptas pariatur et consectetur quia incidunt eos eaque nulla debitis omnis eveniet nihil praesentium veritatis est id voluptas deleniti modi repellendus necessitatibus omnis et nemo quod corporis commodi tempora aut consequatur illo ipsa sunt perferendis vel blanditiis officiis autem aut eum et ab animi ut dicta velit dolorum reprehenderit architecto sed accusantium alias cupiditate quisquam iure laboriosam earum dolorem facilis similique possimus et placeat nesciunt beatae rerum neque sunt asperiores id illum harum fuga voluptatibus porro in', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (3, 'eum nulla', 'et qui nesciunt nemo qui officia doloribus non molestiae recusandae sed assumenda iste voluptatem deleniti ut a suscipit unde saepe maiores aliquam dicta delectus qui vero facilis adipisci id eos omnis in laudantium voluptate illo est exercitationem impedit sed voluptas repellat aut voluptatem dolorem sunt labore quaerat optio est neque consectetur ab minima quia natus quae sint sint ea quos quasi ut corporis magni modi eos velit expedita quis aperiam placeat voluptas laborum perferendis fugiat quis et non esse est illum dolores tempora inventore atque sunt ratione reiciendis quo nihil veritatis aliquid dolor ut nulla sequi sit consequatur nostrum necessitatibus autem vel est id iure aut et aut sed numquam mollitia ut sit rerum dignissimos omnis dolore facere et accusamus iusto voluptatem cupiditate eveniet quisquam ad ut accusantium provident explicabo voluptatem et eius aspernatur ullam repellendus ut qui eligendi et repudiandae corrupti perspiciatis quam vel voluptates doloremque nihil enim velit libero dolores soluta earum fugit architecto occaecati quo maxime fuga sit reprehenderit ea quia quibusdam veniam excepturi qui dolorem debitis cum et ipsa consequatur odio autem nam distinctio eum temporibus dolorum commodi amet consequatur omnis magnam porro non rerum possimus consequuntur et et tempore nisi ipsum harum quia dolor alias asperiores tenetur nobis culpa praesentium voluptatibus voluptatum aut quas incidunt et vitae quia minus animi eaque odit ex rem aut molestias eum pariatur sapiente rerum voluptas deserunt in at quod qui quidem molestiae aut hic beatae et cumque itaque blanditiis error ducimus similique enim totam est officiis laboriosam ipsam', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (4, 'velit possimus', 'quae ipsa quisquam quod dolorem aspernatur sunt et qui aut quos et totam voluptatem amet illo voluptatem dignissimos voluptatibus sit tempora suscipit nisi quo consectetur occaecati nihil dicta consequatur est alias labore quo ut quidem deleniti doloribus voluptate ut aliquam atque corrupti quia necessitatibus qui quibusdam illum ab numquam vel ipsam eius libero et est possimus autem reiciendis aut est nesciunt quaerat quia unde dolor quia pariatur non cum assumenda et omnis repellat nobis in delectus minus ea dolorem voluptas vitae eos modi aperiam sapiente debitis quis fugiat dolorum et voluptates expedita cumque est dolores et odio ex magnam sed distinctio perferendis non architecto qui molestiae quia provident iure accusamus omnis hic sed consequatur placeat nemo exercitationem tempore voluptatum quam laboriosam nostrum nam minima enim rerum sunt sequi ducimus eum rem reprehenderit est itaque et eaque asperiores excepturi recusandae ut id maxime odit quas molestiae qui ullam optio et animi molestias et facere ut soluta laborum aut quasi at laudantium blanditiis facilis in fuga veniam veritatis perspiciatis voluptatem nulla earum velit a voluptas sint consequuntur dolor eveniet vero et ipsum maiores velit officiis enim ad dolores voluptas rerum aut sint aut ut explicabo repudiandae incidunt commodi officia ratione vel mollitia cupiditate et eligendi ea non esse accusantium neque quis fugit doloremque dolore natus iusto voluptatem sit error nihil eos id praesentium tenetur culpa inventore sed ut porro temporibus eum saepe deserunt adipisci similique impedit repellendus omnis corporis iste rerum autem beatae magni aliquid consequatur aut qui harum qui sit', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (5, 'unde molestiae', 'porro numquam vero illum repellat ipsam sint magni error tempora dicta ea facere optio ut et et quo quis qui aut culpa nihil eligendi expedita voluptatem eaque reiciendis aspernatur cupiditate temporibus aut quis dolore blanditiis neque voluptatem sapiente inventore provident eveniet id ipsa vel a consequatur modi ut deleniti placeat itaque quibusdam officiis ab eius veniam eos dignissimos reprehenderit non molestiae omnis qui exercitationem sint aliquam autem cumque atque sunt ad unde qui ut et est nemo laboriosam nam eos quasi ducimus iusto ut eum impedit nulla accusantium ratione voluptas vel totam omnis voluptates et animi ea veritatis qui et quia molestias ut facilis aut vitae rerum laborum explicabo est maiores et in quidem dolores tenetur et quam nobis nihil odio beatae consectetur delectus quaerat et ex possimus illo dolor perspiciatis rem sit adipisci natus molestiae esse libero est autem voluptas dolorem quia quae nostrum ut incidunt sed consequuntur qui aliquid debitis qui aut aperiam perferendis aut labore sunt id at in sequi et saepe enim distinctio enim soluta quod similique sed corrupti dolorem architecto voluptatibus alias quia minus accusamus deserunt voluptate non fuga ipsum dolor tempore sed iure quo non dolorum et velit nisi officia harum sit earum doloremque fugiat consequatur pariatur corporis est necessitatibus repellendus magnam cum quos eum fugit maxime voluptatem dolores omnis quia quisquam rerum aut voluptas ullam voluptatem doloribus recusandae hic assumenda voluptatum minima et excepturi amet praesentium sit repudiandae iste occaecati laudantium nesciunt quas odit rerum velit mollitia asperiores consequatur est suscipit commodi', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (6, 'quam sint', 'nisi ad incidunt qui sunt labore ut itaque inventore consequatur delectus minima enim est quis eos eos voluptas dolorem dolorem ex perferendis esse culpa qui repellat perspiciatis a praesentium deleniti similique adipisci neque maxime occaecati nulla ipsa tenetur consectetur dicta dolores laboriosam voluptatem et temporibus facilis rerum recusandae ducimus vel sequi mollitia aliquid sint voluptates ut ut nihil non officia et explicabo repellendus tempora quos eaque sint nam error et non sapiente voluptas veritatis et minus quia aut illo omnis quasi alias quas officiis distinctio dolor et quidem deserunt id iure ea et in corporis laudantium accusamus et aspernatur cupiditate eius impedit modi facere est architecto excepturi est dolores sit autem magni libero earum eum nesciunt ut quia qui rerum omnis quae quo expedita molestiae necessitatibus id aut vitae rem tempore suscipit odio at voluptatem consequuntur animi sunt asperiores quam sed velit commodi sit doloribus dolor voluptatem blanditiis rerum autem ipsum ut molestias et eum voluptas ratione voluptatem numquam laborum assumenda quisquam provident ullam porro qui harum dolore beatae voluptate amet fugit consequatur et sed quia vel cumque iste reprehenderit omnis nobis maiores illum corrupti quod quibusdam possimus fugiat ea repudiandae doloremque ipsam soluta pariatur quaerat atque ab enim velit dolorum veniam eligendi voluptatum aut debitis est iusto saepe odit nostrum eveniet quo est placeat ut fuga optio nemo vero molestiae sed dignissimos consequatur sit quia reiciendis aliquam unde nihil qui qui aut quis cum aut accusantium magnam voluptatibus exercitationem aperiam aut natus in totam non et et hic', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (7, 'aut iusto', 'quas neque laborum voluptatem facere illum sequi aliquam sed est et qui maxime modi porro id dolore dolorem odio ea rerum molestiae aut adipisci quia et ut laboriosam sit iusto nesciunt natus nemo qui deserunt placeat eum soluta incidunt et suscipit asperiores cum omnis quo consectetur fugiat et ipsam totam sed facilis sunt et quis libero enim repudiandae enim cupiditate quo voluptatem explicabo tempora at praesentium error maiores minus dolor aut saepe ut iste ad itaque eligendi est architecto consequatur omnis molestias non qui similique id perspiciatis debitis dicta deleniti in est aut omnis consequatur voluptatibus quam mollitia nisi vel est ipsa aliquid voluptas optio quos accusamus eum minima quaerat in nihil dolores qui culpa dolores provident occaecati sit recusandae blanditiis molestiae et harum animi sapiente veritatis repellendus aperiam tenetur dolorum quia alias atque quia consequatur aut est odit sint velit voluptatem eius iure nobis nulla officia non eos non earum quidem ut accusantium vel veniam autem et corporis rem autem distinctio dolorem eaque quis possimus voluptas doloremque officiis sint voluptas vero eveniet eos vitae velit repellat numquam tempore pariatur ratione necessitatibus magnam corrupti rerum aspernatur et sed reprehenderit quasi quia magni a unde sunt excepturi rerum commodi quae temporibus illo voluptates consequuntur labore hic et ab nihil ducimus assumenda quibusdam dignissimos doloribus cumque ipsum exercitationem beatae esse perferendis et et quisquam fugit ut aut ex amet ut dolor nostrum inventore sit voluptate ut quod ullam qui expedita nam voluptatem ea impedit laudantium qui reiciendis delectus fuga voluptatum aut', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (8, 'repudiandae officiis', 'magni ipsam velit et voluptatem minima omnis dolores vel eos nobis porro autem ipsa quia nam et recusandae autem repellat fugiat accusamus architecto illo ut omnis cupiditate exercitationem ut possimus deserunt voluptatem ut pariatur perferendis consequuntur facilis accusantium iusto odit reiciendis est repellendus deleniti tempora perspiciatis sunt et quae in temporibus dolores non at quod quasi unde ut impedit libero assumenda et quibusdam aspernatur beatae est excepturi tempore est optio mollitia eius consectetur quo nisi quos sit distinctio delectus dolor nihil nemo qui non corporis itaque vero voluptate ad eligendi blanditiis quis sit vel eaque eum officiis quia et qui et modi aut dolorum inventore sed labore ipsum consequatur et ea quaerat aut eveniet sit quas repudiandae illum explicabo incidunt necessitatibus error est similique quisquam nesciunt qui rerum dignissimos dolorem enim dolore cumque quo totam officia aliquam voluptas sed qui nihil harum fuga molestiae sed aut ea laboriosam earum quis ducimus id enim alias ab maxime placeat dolorem aut eum cum praesentium et doloremque tenetur voluptatibus velit asperiores qui quam esse laborum voluptatum nostrum numquam aperiam fugit soluta ut veritatis facere et laudantium et nulla voluptas est molestiae rerum quidem voluptatem id eos iure consequatur expedita suscipit magnam rerum sapiente hic natus in qui aut vitae doloribus quia sunt amet dolor omnis ex sint dicta sequi adipisci veniam ut voluptates odio ratione minus occaecati debitis non corrupti culpa ullam molestias a commodi aliquid quia provident reprehenderit aut voluptas sint iste maiores atque consequatur animi saepe rem et voluptatem neque', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (9, 'voluptas quos', 'enim quis sed ipsum rem ratione aut quod nihil occaecati qui aut et recusandae sequi ea accusamus est ducimus omnis dolorum distinctio modi quo beatae similique iste ut voluptatem animi neque incidunt voluptatum id ut sint velit odio tempora officiis eos veniam nostrum aut esse cumque soluta corporis corrupti optio officia sapiente doloremque iure quia aut voluptas mollitia nesciunt rerum enim sed dolorem earum qui perspiciatis aut debitis vero nam et pariatur magnam doloribus omnis dolor quibusdam consequatur aliquam omnis molestias eaque adipisci porro voluptatem et fugiat a voluptatem sunt voluptatibus tenetur quia reiciendis nobis tempore blanditiis vel qui rerum ipsam inventore dolorem non ut eos deleniti consequuntur delectus excepturi voluptas quasi molestiae ipsa perferendis et qui est ut illo iusto et cupiditate suscipit quam est et vitae sed autem dolores dolor in commodi dignissimos provident voluptates amet ut sit et natus in voluptas accusantium ad culpa placeat laboriosam fugit alias ullam repudiandae itaque eum laborum et veritatis non dicta explicabo ut necessitatibus aperiam consequatur qui et sit ea quaerat cum consectetur velit sunt reprehenderit magni dolore nihil et quas consequatur eius atque rerum autem aspernatur quia molestiae est ex temporibus est odit libero harum quisquam laudantium eligendi repellat eum qui labore exercitationem architecto repellendus expedita facilis nemo voluptate voluptatem saepe nisi sint quo aut quae et possimus illum fuga asperiores quia quidem assumenda totam unde non ab id nulla hic maxime vel sit numquam praesentium quos eveniet at aliquid maiores minus deserunt facere minima dolores impedit quis error', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (10, 'quo doloribus', 'occaecati reiciendis cupiditate vitae voluptatem dolorum perferendis magni ullam magnam sequi eaque corrupti illum laborum a in enim aliquid minus cumque quam ut id sit amet quis et nulla est excepturi commodi quae quia numquam facilis quas repellat similique voluptates accusantium beatae sed pariatur asperiores et dolorem qui distinctio voluptas temporibus autem tempore nesciunt eos rerum sit non non saepe dolores sed quia voluptatem ut impedit fugiat molestiae consequuntur quasi quos tempora et iusto earum suscipit minima hic culpa omnis possimus quia expedita veniam rerum dicta ad et dolore sed eveniet maiores reprehenderit non facere labore eum quia dolorem voluptatibus aut velit enim consectetur ut eligendi esse incidunt ut aut illo repudiandae debitis molestiae et architecto quaerat aspernatur dolores nobis doloremque quis maxime sint ipsa explicabo nostrum nihil cum soluta sunt et iste autem ut ab omnis totam porro libero qui id eum natus modi atque quibusdam sit voluptas aut perspiciatis voluptatem sunt praesentium quo iure ex est molestias odit animi sapiente in nemo consequatur aut aliquam qui ea et ipsam voluptate doloribus et ut voluptas blanditiis qui assumenda vero error nisi fugit sint nihil deleniti itaque quo accusamus optio eius corporis eos quod fuga officiis aut placeat laboriosam aut recusandae consequatur est dignissimos quidem vel ratione inventore veritatis laudantium ipsum vel mollitia at et adipisci qui velit odio est rerum ducimus consequatur exercitationem voluptatum quisquam provident tenetur delectus deserunt voluptatem nam unde omnis aperiam et ea qui officia dolor rem neque alias dolor repellendus harum est necessitatibus et', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (11, 'cumque perspiciatis', 'omnis quos omnis veniam ipsam quo sint ullam et assumenda ducimus voluptatum ad eos rerum exercitationem autem eveniet ea itaque sint natus quam iure odit quia labore repellat maiores atque ut consequuntur alias fugiat at quo omnis aut quia reprehenderit odio delectus et corrupti molestiae ipsum recusandae aspernatur voluptatem velit dolorum consequatur animi pariatur voluptas quaerat ratione illo hic deleniti non numquam et quae ut aut in modi eum tempore quia deserunt non suscipit occaecati et rerum explicabo in quis qui repudiandae vero dolorem qui quod magni saepe ea aut ut aut laborum ab optio est minus expedita voluptatem aperiam fugit facilis quia placeat quasi eaque amet minima voluptatem temporibus repellendus velit quis cupiditate consectetur culpa maxime et sed earum architecto esse dolore qui totam accusamus dignissimos nemo excepturi perspiciatis inventore dicta corporis veritatis laudantium quidem possimus et illum aliquid ut tenetur id sit vel aut aliquam asperiores incidunt eius dolor id ipsa sequi error vitae necessitatibus mollitia voluptatem accusantium reiciendis est a ut consequatur est voluptate nisi eum provident doloremque debitis qui voluptas molestias doloribus iste officia nulla consequatur quisquam similique eligendi praesentium quas eos aut nam voluptates sed libero neque sapiente blanditiis commodi magnam non dolor et adipisci est nobis nihil vel cumque ut dolorem et harum enim ex et laboriosam iusto sunt soluta nihil autem est voluptas officiis nostrum voluptatibus enim beatae cum dolores porro perferendis impedit qui rem unde sed distinctio fuga tempora quibusdam molestiae rerum et nesciunt qui sunt sit et sit facere dolores', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (12, 'eum error', 'in sint qui eius provident quis quos fuga voluptatem enim quia quidem consectetur officiis molestiae impedit repellat in delectus sequi tempore maiores eum atque esse ipsum dolor expedita voluptates error qui sit quia cumque minima qui praesentium soluta sapiente velit saepe rerum animi quibusdam dolorem recusandae similique enim corrupti eaque itaque qui odit aliquam est rerum qui et aut veritatis aut ut facilis ut eveniet eum accusamus reprehenderit sed ratione voluptas commodi odio deleniti aperiam dolore iste voluptatem ullam reiciendis distinctio iure ducimus nam et et rerum et non autem est laudantium debitis autem ab dicta veniam consequatur voluptas aliquid est beatae cupiditate accusantium quo vel voluptatibus est quam velit aspernatur at laboriosam eos vero molestias nihil qui ex magni pariatur quod omnis cum nostrum et vitae dolores sunt quis omnis ut id et architecto dolores sit minus ut et repellendus vel dolor numquam natus voluptatem dolorem blanditiis occaecati magnam assumenda illo molestiae ipsam nobis quia exercitationem ea possimus non nulla totam aut consequuntur sed rem et neque consequatur ut corporis quasi quo alias voluptatum culpa tenetur sit consequatur iusto ad et fugit omnis facere a modi inventore perspiciatis ipsa incidunt sed voluptas doloribus nihil non dignissimos suscipit libero earum quisquam maxime sint deserunt optio labore eos nisi adipisci nesciunt aut dolorum et illum quaerat porro aut voluptatem placeat et ut temporibus perferendis excepturi laborum eligendi quia hic mollitia explicabo amet harum necessitatibus est quae tempora id voluptate unde doloremque asperiores sunt officia quas nemo ea fugiat repudiandae aut', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (13, 'non est', 'tempora consequatur quaerat earum numquam commodi quia facere quod ab corporis et placeat saepe facilis laborum quas nemo dignissimos dicta ratione pariatur nam mollitia odio veniam iste totam necessitatibus distinctio reiciendis quia tenetur ut recusandae et eos soluta rem omnis vero corrupti debitis quo non ullam blanditiis molestiae dolorum dolor et sed consequuntur ut adipisci inventore consectetur exercitationem omnis excepturi nihil qui nihil aut labore reprehenderit ea nobis occaecati perspiciatis culpa qui sunt at sequi eos ut aut laboriosam repellat est ipsa repudiandae voluptates similique quidem autem autem et rerum voluptatem consequatur possimus illum ipsum ex est voluptatum sit deserunt et nesciunt in sint assumenda rerum quia ea eaque aut officiis vel nostrum itaque sapiente et aspernatur esse nulla sed animi magnam non dolor doloribus eius velit beatae modi impedit et voluptas in eveniet aperiam ducimus doloremque est porro et quis a architecto praesentium aut dolores amet voluptatem fugiat quo eum quos asperiores maiores voluptas qui aliquid qui omnis explicabo quisquam error molestiae neque optio deleniti alias aliquam enim laudantium ipsam veritatis fugit vitae sunt voluptatem libero cum illo temporibus ut et et est qui ut repellendus natus ut sit minima perferendis officia delectus dolorem quis quibusdam ad atque voluptatem tempore est fuga cumque non provident dolores quae eligendi voluptate expedita quam sed sit nisi eum hic voluptas suscipit unde molestias aut voluptatibus maxime harum velit dolore id id cupiditate iusto rerum magni qui incidunt iure odit quasi aut quia enim vel accusamus sint minus et accusantium consequatur dolorem', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (14, 'distinctio quis', 'sed natus consequatur quia asperiores eos enim reiciendis ut repudiandae totam facere aut minus et consequatur dolores quibusdam rerum ut aut esse ipsam expedita harum non architecto et sit qui magnam ut rem soluta quisquam maxime earum optio laudantium a sed nulla eos autem veritatis dicta similique molestiae sint molestiae quo iste consectetur voluptatem officiis explicabo perferendis mollitia numquam tenetur vitae rerum ratione itaque aut est vel quas et ab quos voluptas ad voluptatem fugit possimus qui doloribus delectus porro excepturi dolorem deserunt ullam nam et ut deleniti illum omnis assumenda nihil laborum in minima tempora quae illo saepe officia dolor voluptates accusantium aut non molestias cum atque ex magni et eum nobis repellendus cumque animi dolore error rerum quia occaecati id et doloremque non corporis autem cupiditate sed iure perspiciatis eaque et ducimus ut suscipit velit iusto labore quasi voluptatem repellat aut ea quo necessitatibus aut est voluptatum quia quidem veniam sequi est ipsum quis qui et qui quia et consequatur libero et exercitationem ipsa debitis pariatur recusandae odio sunt at quis voluptatibus aliquid vel dolorem maiores quod omnis distinctio quam commodi aspernatur in nisi amet unde tempore qui modi adipisci dolores ut placeat accusamus aliquam et alias omnis hic reprehenderit corrupti sit incidunt culpa nostrum est velit sit neque dolor aperiam quaerat facilis dignissimos fugiat eius nemo beatae est sunt eum id voluptas consequuntur dolorum voluptate provident laboriosam voluptas sint qui nesciunt odit inventore eveniet voluptatem sapiente blanditiis impedit praesentium eligendi nihil vero temporibus enim ea fuga', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (15, 'cumque molestiae', 'est sed repellat ipsum aut expedita quasi neque exercitationem fugit sapiente fugiat saepe quia distinctio ab deleniti placeat nisi et cumque iusto nulla sed adipisci dolore nam assumenda consequuntur iure quo consectetur explicabo officiis a rerum reprehenderit et in magni corrupti tempora facilis repellendus id autem ut dolores et eos ut ipsam recusandae dignissimos maxime quidem et perferendis sit voluptas magnam necessitatibus consequatur culpa ea cupiditate eius voluptatem libero repudiandae quisquam voluptatibus accusamus at eaque sint temporibus facere et modi omnis officia et non impedit ratione illo corporis sit itaque aut eum provident autem eligendi dolores eum debitis quos sunt aliquid quod perspiciatis est doloremque incidunt voluptas ut ullam voluptas et qui nesciunt maiores voluptatem vitae aut earum blanditiis pariatur animi commodi molestiae quas voluptatem et aut minima labore atque et quibusdam quam quis qui quia accusantium laboriosam est possimus est ad ex molestiae rerum similique nihil nihil eos odio porro totam beatae aliquam in laborum quo dolor soluta amet dolorem omnis molestias omnis ipsa nemo velit velit cum deserunt est aspernatur laudantium esse enim mollitia quia ducimus consequatur reiciendis ut error praesentium nobis vel excepturi odit sequi voluptates ea sed harum occaecati et doloribus sunt consequatur eveniet asperiores veniam architecto iste unde sint voluptate minus qui quae et non ut voluptatum quis aut voluptatem tempore dolorum rem vel hic veritatis suscipit ut numquam enim dicta rerum aut vero id qui inventore sit natus dolorem quaerat tenetur non aperiam illum delectus qui optio qui fuga dolor nostrum quia alias', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (16, 'dolorem quia', 'autem aut quisquam ut aut est ducimus ut at magni nulla atque sit ipsa et similique natus consequuntur qui officia qui quam voluptatem velit excepturi quis a velit id saepe ad consequatur neque et asperiores molestiae optio voluptas sit eligendi iste et magnam ab consequatur corporis commodi quo officiis quae qui aliquid deserunt sit dolor rerum consequatur illo nihil vel pariatur ex fuga dolorem exercitationem ipsam dolores aut voluptatum tenetur perferendis animi id rerum praesentium sunt est ut perspiciatis culpa ratione corrupti enim libero repellat eos vitae aspernatur distinctio aut porro qui omnis quasi assumenda aut sint occaecati reprehenderit molestiae sequi esse hic facilis blanditiis numquam temporibus illum et repudiandae aperiam laborum rem sint unde aut et voluptas doloremque odit non aliquam mollitia dignissimos voluptate est ut suscipit harum quos non omnis et qui quo quia voluptatem possimus cupiditate et laudantium necessitatibus recusandae eos repellendus fugit dolorem et voluptatem in est est qui nihil quibusdam in modi dolorum autem ullam dolor molestias delectus vero facere eveniet nemo maiores earum minima quia dolore inventore quia placeat ut provident alias cum eum non adipisci minus rerum ipsum sunt architecto vel nostrum deleniti quaerat explicabo eum iure ut totam itaque sed veniam eius nesciunt eaque et debitis consectetur quidem tempora voluptatibus error voluptatem beatae labore dolores tempore nam ea quia et sapiente et impedit soluta maxime cumque reiciendis accusantium nisi veritatis accusamus ea omnis nobis sed quas dicta quis fugiat doloribus odio voluptas sed quod iusto expedita laboriosam voluptates amet enim incidunt', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (17, 'tempora ea', 'voluptatem soluta praesentium voluptatem dolorum commodi in eos earum autem cumque velit libero ut itaque et veniam et expedita dicta a aut aliquid dolorem natus ea ex et in eum fugiat eius qui debitis est blanditiis aut recusandae perferendis quos ducimus quod dolor molestias reprehenderit vel quia fugit consectetur non magnam temporibus amet porro molestiae hic ullam similique odit doloremque voluptates qui vel non culpa nihil aliquam adipisci eveniet necessitatibus ipsa impedit est nemo nam vitae vero ea non beatae error quas repellat eligendi illum iure explicabo rerum rerum at nobis id est aut ut numquam aperiam veritatis tempore et sint et quisquam nihil quibusdam facere qui enim excepturi consequatur facilis suscipit et ut modi nisi velit accusamus saepe pariatur deserunt dolore occaecati dignissimos officia quo reiciendis totam sapiente autem eum placeat quia provident iste voluptatum ad est aspernatur laudantium qui sit laborum ipsum qui quidem esse voluptas sequi possimus odio voluptatibus voluptas repellendus molestiae minus et iusto atque omnis enim architecto corrupti alias aut quaerat quam repudiandae sed harum et voluptate cupiditate fuga asperiores inventore consequatur dolores deleniti labore nostrum dolor sunt rerum dolorem est sed cum unde animi voluptas et quia consequuntur magni nesciunt optio quis minima tenetur nulla tempora dolores sit neque sed quasi sint voluptatem eos perspiciatis distinctio exercitationem consequatur quis rem mollitia maiores ab omnis ut maxime qui et accusantium sunt incidunt id aut laboriosam ut assumenda officiis quae corporis quia ratione ipsam voluptatem et sit eaque doloribus omnis quo delectus ut illo aut', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (18, 'cupiditate adipisci', 'ducimus ullam in tempore ea voluptatem at nostrum aut nemo occaecati consequuntur enim aspernatur numquam culpa doloremque eum enim minima magnam nihil consectetur labore maiores sunt iusto sapiente ut quasi tempora nobis magni atque earum quia dicta mollitia doloribus sint voluptatem eum et architecto modi soluta iste sunt rerum perferendis porro voluptas hic praesentium optio quam consequatur quo qui fugit sequi nam reiciendis debitis quia repudiandae beatae ratione excepturi accusantium repellendus molestias impedit ipsum qui blanditiis non quo dignissimos deleniti repellat qui voluptatem tenetur omnis dolores veniam unde quia delectus illum deserunt officiis in rerum ex omnis sed sit voluptatum et cumque saepe est ut consequatur aperiam quae quisquam recusandae illo non cum expedita iure et placeat inventore itaque aliquid quas exercitationem dolor necessitatibus sint et et amet eos aut fugiat animi similique vero autem adipisci error odio dolorum qui totam odit accusamus reprehenderit est a dolore sed molestiae quia est vel molestiae quidem quod et et id perspiciatis aut vitae distinctio nulla assumenda eius laboriosam natus et harum temporibus aliquam rerum nisi aut alias maxime suscipit vel ut neque dolorem minus rem possimus commodi est eligendi voluptates ut ad nihil voluptatem fuga ipsam dolorem aut id aut ea ipsa sit corporis ut ut consequatur non dolores explicabo quis et dolor voluptas omnis autem qui asperiores eos veritatis sed ab facilis libero quis est incidunt quaerat quos voluptate laudantium velit officia et velit qui provident pariatur corrupti esse sit facere eveniet laborum voluptatibus quibusdam et cupiditate voluptas nesciunt eaque', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (19, 'eligendi dolor', 'et quia corporis iste dicta doloremque aut animi et aut aperiam veritatis sequi eum sed eius commodi possimus maiores et asperiores et est autem nulla illo quo distinctio repellendus unde voluptatum pariatur nihil omnis fugiat sunt accusantium et architecto quam quas ut velit nihil doloribus laboriosam est ut iure sit praesentium debitis molestias non quia culpa repellat vel natus odit optio id saepe alias explicabo rerum officiis ullam reiciendis omnis maxime inventore et ipsa suscipit enim accusamus consequuntur laudantium rerum laborum eum deleniti modi quo in et dolorem dolor aut dolorem ut eos rem nisi itaque voluptatem repudiandae quod amet tempore dignissimos iusto similique sint molestiae ea consequatur esse reprehenderit sed consectetur labore in quia neque recusandae dolorum dolore provident sit voluptas aut quibusdam et aliquam cum ut exercitationem consequatur numquam temporibus eos sit a hic consequatur quis ex ipsam sapiente id ut quidem dolor qui qui nemo veniam quisquam voluptate est perferendis est tempora officia est nesciunt ea necessitatibus quaerat aliquid aut fuga eligendi voluptas earum ducimus error ut non quos harum dolores porro minus totam quis incidunt omnis non voluptatibus blanditiis quasi eaque placeat ab voluptatem et velit occaecati ad molestiae odio voluptates et autem aspernatur enim sed mollitia ipsum beatae excepturi minima qui rerum nobis vero qui vel atque nam magnam illum nostrum voluptatem cumque corrupti perspiciatis expedita at et delectus ratione magni facere dolores adipisci quae vitae qui quia deserunt facilis eveniet impedit voluptas qui aut soluta fugit libero sint assumenda voluptatem cupiditate tenetur sunt', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39');INSERT INTO "documents" ("id", "name", "body", "original_url", "created_at", "updated_at") VALUES (20, 'debitis excepturi', 'rerum illo in sequi eos omnis et culpa assumenda doloremque mollitia corporis vel odio explicabo expedita magnam et est ut rerum est provident commodi eos sed nemo maiores dolorem dolor qui labore reiciendis sit molestiae ea qui vel qui velit vero omnis enim reprehenderit dolores temporibus amet dignissimos et nobis voluptas autem exercitationem quidem ipsa dolorum nulla corrupti ratione recusandae qui in molestias tenetur est porro voluptatem possimus ut aut placeat aliquam incidunt architecto quod impedit cum non quas consequuntur quia vitae aut officiis qui consequatur distinctio laborum eveniet cumque facere molestiae officia veniam voluptates cupiditate velit voluptatem consectetur nisi dicta voluptatem eum sapiente accusamus enim debitis quisquam quasi quia perferendis ut ut deserunt et sunt consequatur quis nihil sunt sit repellendus non suscipit libero adipisci sit voluptatum repellat sint qui dolorem deleniti ducimus aut ex fuga fugiat animi harum fugit eius quae numquam iure nesciunt ea et odit omnis aspernatur voluptate nam est quaerat excepturi ullam nihil atque minima eligendi laboriosam rerum quam et quos consequatur doloribus sint et occaecati est ad facilis soluta natus ipsum quo asperiores voluptas dolore beatae minus quia iusto itaque eum quibusdam aut unde ut et saepe similique alias autem id sed ipsam repudiandae tempora laudantium delectus totam aliquid et esse veritatis praesentium illum a aut voluptatem rem quis accusantium ut voluptatibus dolor neque tempore hic inventore ab quia error iste dolores pariatur necessitatibus nostrum et earum quo voluptas perspiciatis eaque non at optio blanditiis sed et aperiam magni maxime id aut modi', NULL, '2010-03-27 12:44:39', '2010-03-27 12:44:39')[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 12:44:45) [GET]
+  [4;35;1mDocument Load (8.6ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Completed in 289ms (View: 252, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 12:46:50) [GET]
+  [4;36;1mDocument Load (8.3ms)[0m   [0;1mSELECT * FROM "documents" [0m
+
+ActionView::MissingTemplate (Missing template documents/index.erb in view path app/views):
+  app/controllers/documents_controller.rb:7:in `index'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 12:47:23) [GET]
+  [4;36;1mDocument Load (10.8ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #5 of app/views/documents/index.haml:
+2:   - @documents.each do |document|
+3:     .document
+4:       p.name
+5:         = document.name
+6:       p.body
+7:         = document.body
+
+    app/views/documents/index.haml:5
+    haml (2.2.21) lib/haml/precompiler.rb:363:in `push_plain'
+    haml (2.2.21) lib/haml/precompiler.rb:296:in `process_line'
+    haml (2.2.21) lib/haml/precompiler.rb:196:in `precompile'
+    haml (2.2.21) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.21) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.21) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:7:in `index'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (152.4ms)
+Rendered rescues/_request_and_response (3.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 12:47:33) [GET]
+  [4;35;1mDocument Load (8.5ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Completed in 160ms (View: 122, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 12:47:57) [GET]
+  [4;36;1mDocument Load (8.3ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+
+ActionView::TemplateError (Missing template documents/_document.erb in view path app/views) on line #3 of app/views/documents/index.haml:
+1: #documents
+2:   - @documents.each do |document|
+3:     = render document
+4:     
+
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.21) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/index.haml:3:in `_run_haml_app47views47documents47index46haml'
+    app/views/documents/index.haml:2:in `each'
+    app/views/documents/index.haml:2:in `_run_haml_app47views47documents47index46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:7:in `index'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (151.3ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 12:48:30) [GET]
+  [4;35;1mDocument Load (9.0ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (11.1ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Completed in 81ms (View: 44, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 12:48:49) [GET]
+  [4;36;1mDocument Load (8.2ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (11.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 171ms (View: 44, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 12:51:46) [GET]
+  [4;35;1mDocument Load (8.3ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (11.0ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 81ms (View: 43, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 12:51:49) [GET]
+  [4;36;1mDocument Load (8.4ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (7.1ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 65ms (View: 29, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:01:38) [GET]
+  [4;35;1mDocument Load (8.3ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (7.3ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Completed in 78ms (View: 42, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:01:48) [GET]
+  [4;36;1mDocument Load (90.5ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (8.1ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 150ms (View: 31, DB: 91) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:05:44) [GET]
+  [4;35;1mDocument Load (9.1ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (7.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Completed in 68ms (View: 31, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:06:08) [GET]
+  [4;36;1mDocument Load (8.6ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (7.3ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 67ms (View: 30, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:08:12) [GET]
+  [4;35;1mDocument Load (9.2ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (7.2ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.7ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 67ms (View: 30, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:08:59) [GET]
+  [4;36;1mDocument Load (8.8ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (11.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 163ms (View: 126, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:10:23) [GET]
+  [4;35;1mDocument Load (8.6ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (7.2ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 69ms (View: 31, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:10:42) [GET]
+  [4;36;1mDocument Load (9.3ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (7.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 68ms (View: 30, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:10:52) [GET]
+  [4;35;1mDocument Load (8.8ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/documents
+Rendering documents/index
+Rendered documents/_document (7.2ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 67ms (View: 30, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:11:38) [GET]
+  [4;36;1mDocument Load (8.6ms)[0m   [0;1mSELECT * FROM "documents" [0m
+
+NoMethodError (undefined method `application' for #<DocumentsController:0x232484c>):
+  app/controllers/documents_controller.rb:11:in `index'
+  haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (205.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:11:45) [GET]
+  [4;35;1mDocument Load (10.5ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (7.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 87ms (View: 49, DB: 11) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:12:06) [GET]
+  [4;36;1mDocument Load (8.6ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (7.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 85ms (View: 49, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:12:28) [GET]
+  [4;35;1mDocument Load (8.8ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (7.2ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 68ms (View: 31, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:12:34) [GET]
+  [4;36;1mDocument Load (8.6ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (7.9ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 70ms (View: 33, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:12:48) [GET]
+  [4;35;1mDocument Load (9.0ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (7.2ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 69ms (View: 31, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:13:09) [GET]
+  [4;36;1mDocument Load (8.7ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (7.3ms)
+Rendered documents/_document (0.6ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.5ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Rendered documents/_document (0.4ms)
+Completed in 82ms (View: 44, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:13:30) [GET]
+  [4;35;1mDocument Load (8.9ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+
+ActionView::TemplateError (undefined method `url' for #<Document:0x232ad28>) on line #7 of app/views/documents/_document.haml:
+4:   %p.body
+5:     = document.body
+6:   %p.url
+7:     = link_to document.url, document.url
+
+    app/views/documents/_document.haml:7:in `_run_haml_app47views47documents47_document46haml_locals_document_object'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.21) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/index.haml:5:in `_run_haml_app47views47documents47index46haml'
+    app/views/documents/index.haml:4:in `each'
+    app/views/documents/index.haml:4:in `_run_haml_app47views47documents47index46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (172.6ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:13:52) [GET]
+  [4;36;1mDocument Load (8.3ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (13.5ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Completed in 94ms (View: 58, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:14:33) [GET]
+  [4;35;1mDocument Load (8.6ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (8.1ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Completed in 80ms (View: 42, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:14:45) [GET]
+  [4;36;1mDocument Load (8.7ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (8.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Completed in 81ms (View: 43, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:15:41) [GET]
+  [4;35;1mDocument Load (8.5ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+
+ActionView::TemplateError (undefined method `document_summaries_path' for #<ActionView::Base:0x247af70>) on line #9 of app/views/documents/_document.haml:
+6:   %p.url
+7:     = link_to document.original_url, document.original_url
+8:   .tools
+9:     = link_to 'read summaries', document_summaries_path(document)
+
+    app/views/documents/_document.haml:9:in `_run_haml_app47views47documents47_document46haml_locals_document_object'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.21) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/index.haml:5:in `_run_haml_app47views47documents47index46haml'
+    app/views/documents/index.haml:4:in `each'
+    app/views/documents/index.haml:4:in `_run_haml_app47views47documents47index46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (167.9ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:16:59) [GET]
+  [4;36;1mDocument Load (8.8ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (9.6ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.1ms)
+Completed in 87ms (View: 48, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing SummariesController#index (for 127.0.0.1 at 2010-03-27 13:17:03) [GET]
+  Parameters: {"document_id"=>"1"}
+  [4;35;1mSummary Load (0.6ms)[0m   [0mSELECT * FROM "summaries" [0m
+Rendering template within layouts/summaries
+Rendering summaries/index
+Completed in 150ms (View: 103, DB: 1) | 200 OK [http://localhost/documents/1/summaries]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:17:06) [GET]
+  [4;36;1mDocument Load (8.3ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (8.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Rendered documents/_document (1.1ms)
+Completed in 82ms (View: 46, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:17:46) [GET]
+  [4;35;1mDocument Load (8.2ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (15.4ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (1.0ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Rendered documents/_document (0.9ms)
+Completed in 178ms (View: 141, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:18:02) [GET]
+  [4;36;1mDocument Load (8.6ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (16.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Completed in 104ms (View: 67, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:19:48) [GET]
+  [4;35;1mDocument Load (8.6ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (8.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Completed in 87ms (View: 49, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:19:59) [GET]
+  [4;36;1mDocument Load (8.7ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (16.9ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.4ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Completed in 185ms (View: 147, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:20:36) [GET]
+  [4;35;1mDocument Load (8.6ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (8.5ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.4ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Completed in 88ms (View: 50, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:20:40) [GET]
+  [4;36;1mDocument Load (8.7ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (8.4ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Completed in 87ms (View: 49, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:21:01) [GET]
+  [4;35;1mDocument Load (9.2ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (8.3ms)
+Rendered documents/_document (1.4ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.4ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.4ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (80.4ms)
+Completed in 167ms (View: 129, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:21:19) [GET]
+  [4;36;1mDocument Load (8.6ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (8.3ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.2ms)
+Rendered documents/_document (1.3ms)
+Rendered documents/_document (1.2ms)
+Completed in 87ms (View: 50, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:21:59) [GET]
+  [4;35;1mDocument Load (8.3ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (17.3ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.4ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Completed in 120ms (View: 82, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:22:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDocument Load (1.4ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Completed in 51ms (View: 19, DB: 1) | 200 OK [http://localhost/documents/1]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:23:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDocument Load (0.9ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+
+ActionView::TemplateError (undefined local variable or method `document' for #<ActionView::Base:0x2289658>) on line #3 of app/views/documents/show.haml:
+1: #document.module
+2:   %h1
+3:     = document.name
+
+    app/views/documents/show.haml:3:in `_run_haml_app47views47documents47show46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:21:in `show'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (136.5ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:23:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDocument Load (0.9ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Completed in 50ms (View: 19, DB: 1) | 200 OK [http://localhost/documents/1]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:23:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDocument Load (0.9ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Completed in 51ms (View: 20, DB: 1) | 200 OK [http://localhost/documents/1]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:24:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDocument Load (1.0ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Completed in 50ms (View: 20, DB: 1) | 200 OK [http://localhost/documents/1]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:25:03) [GET]
+  [4;35;1mDocument Load (8.7ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (9.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Completed in 195ms (View: 158, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:25:05) [GET]
+  [4;36;1mDocument Load (8.8ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (9.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Completed in 103ms (View: 65, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:25:42) [GET]
+  [4;35;1mDocument Load (8.2ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (9.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Completed in 103ms (View: 65, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:26:01) [GET]
+  [4;36;1mDocument Load (9.2ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (9.3ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.4ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Completed in 103ms (View: 65, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:26:12) [GET]
+  [4;35;1mDocument Load (11.3ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (10.6ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.5ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.5ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.5ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (3.4ms)
+Rendered documents/_document (3.3ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (3.2ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Completed in 120ms (View: 77, DB: 11) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:26:18) [GET]
+  [4;36;1mDocument Load (10.1ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (9.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Completed in 104ms (View: 65, DB: 10) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:26:45) [GET]
+  [4;35;1mDocument Load (9.9ms)[0m   [0mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (9.1ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.4ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Completed in 105ms (View: 66, DB: 10) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:27:12) [GET]
+  [4;36;1mDocument Load (8.6ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (17.8ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Completed in 199ms (View: 162, DB: 9) | 200 OK [http://localhost/documents]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:27:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDocument Load (1.0ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Completed in 38ms (View: 7, DB: 1) | 200 OK [http://localhost/documents/1]
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 13:28:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDocument Load (0.9ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries".document_id = 1) [0m
+Completed in 67ms (View: 35, DB: 1) | 200 OK [http://localhost/documents/1]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-27 13:28:59) [GET]
+  [4;36;1mDocument Load (8.3ms)[0m   [0;1mSELECT * FROM "documents" [0m
+Rendering template within layouts/application
+Rendering documents/index
+Rendered documents/_document (17.3ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (1.9ms)
+Rendered documents/_document (2.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (1.9ms)
+Completed in 119ms (View: 82, DB: 8) | 200 OK [http://localhost/documents]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:29:01) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Completed in 54ms (View: 27, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:30:47) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (1.4ms)
+Completed in 144ms (View: 34, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:30:57) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (0.4ms)
+Completed in 37ms (View: 8, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:31:07) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (0.4ms)
+Completed in 48ms (View: 21, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:31:19) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (1.6ms)
+Completed in 58ms (View: 31, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:31:32) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (0.4ms)
+Completed in 47ms (View: 20, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:32:23) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+
+ActionView::TemplateError (Indenting at the beginning of the document is illegal.) on line #4 of app/views/summaries/_form.haml:
+1: 
+2: 
+3: 
+4:   = f.label :body
+5:   = f.text_field :body
+
+    app/views/summaries/_form.haml:4
+    haml (2.2.21) lib/haml/precompiler.rb:184:in `precompile'
+    haml (2.2.21) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.21) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.21) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.21) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/summaries/new.haml:3:in `_run_haml_app47views47summaries47new46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:203:in `form_for'
+    haml (2.2.21) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.21) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/summaries/new.haml:2:in `_run_haml_app47views47summaries47new46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:29:in `new'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (282.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:32:31) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+
+ActionView::TemplateError (undefined local variable or method `f' for #<ActionView::Base:0x2311620>) on line #1 of app/views/summaries/_form.haml:
+1: = f.label :body
+2: = f.text_field :body
+
+    app/views/summaries/_form.haml:1:in `_run_haml_app47views47summaries47_form46haml_locals_form_object_summary'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.21) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/summaries/new.haml:3:in `_run_haml_app47views47summaries47new46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:203:in `form_for'
+    haml (2.2.21) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.21) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/summaries/new.haml:2:in `_run_haml_app47views47summaries47new46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:29:in `new'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (276.7ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:32:48) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (5.9ms)
+Completed in 54ms (View: 26, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:32:57) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (6.3ms)
+Completed in 52ms (View: 24, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:33:26) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (8.8ms)
+Completed in 54ms (View: 26, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:33:39) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (9.1ms)
+Completed in 54ms (View: 27, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:34:17) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (10.9ms)
+Completed in 56ms (View: 28, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:34:43) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (10.4ms)
+Completed in 56ms (View: 28, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:35:09) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/summaries/_form.haml:
+1: %p
+2:   = f.label :document_id
+3:   = f.hidden_field :document_id
+4:   = f.object.document.name
+5: %p
+6:   = f.label :body
+7:   = f.text_area :body
+
+    app/views/summaries/_form.haml:4:in `_run_haml_app47views47summaries47_form46haml_locals_f_form_object'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.21) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/summaries/new.haml:3:in `_run_haml_app47views47summaries47new46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:203:in `form_for'
+    haml (2.2.21) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.21) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/summaries/new.haml:2:in `_run_haml_app47views47summaries47new46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:29:in `new'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (179.6ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:35:46) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #4 of app/views/summaries/_form.haml:
+1: %p
+2:   = f.label :document_id
+3:   = f.hidden_field :document_id
+4:   = f.object.document.name
+5: %p
+6:   = f.label :body
+7:   = f.text_area :body
+
+    app/views/summaries/_form.haml:4:in `_run_haml_app47views47summaries47_form46haml_locals_f_form_object'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.21) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/summaries/new.haml:3:in `_run_haml_app47views47summaries47new46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:203:in `form_for'
+    haml (2.2.21) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.21) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/summaries/new.haml:2:in `_run_haml_app47views47summaries47new46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:29:in `new'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (279.9ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-27 13:35:52) [GET]
+  Parameters: {"document_id"=>"1"}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (10.6ms)
+Completed in 55ms (View: 28, DB: 0) | 200 OK [http://localhost/documents/1/summaries/new]
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-27 13:36:22) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary"=>{"document_id"=>"", "body"=>"blah blah blah"}}
+Rendering template within layouts/summaries
+Rendering summaries/new
+Rendered summaries/_form (15.2ms)
+Completed in 55ms (View: 22, DB: 0) | 200 OK [http://localhost/summaries]
