@@ -55,10 +55,13 @@ a {
   border-bottom: 1px black dotted;
   font-family: arial; }
   #header h1 {
-    font-size: 4em; }
+    font-size: 4em;
+    margin-bottom: 0; }
   #header h2 {
-    font-size: 2em;
-    color: #444; }
+    margin-top: 10px;
+    padding-left: 50px;
+    font-size: 1.3em;
+    color: #777; }
 
 .document {
   width: 700px;
