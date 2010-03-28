@@ -90,12 +90,16 @@ a {
 .document {
   width: 700px;
   margin: 10px; }
-  .document .body {
-    height: 200px;
-    overflow: auto; }
+
+.body {
+  height: 200px;
+  overflow: auto;
+  white-space: pre; }
 
 .summary {
   width: 600px; }
+  .summary .body {
+    overflow: none; }
 
 #new_summary_page .summary {
   width: 380px; }
