@@ -94,7 +94,7 @@ a {
 .body {
   height: 200px;
   overflow: auto;
-  white-space: pre; }
+  white-space: pre-wrap; }
 
 .summary {
   width: 600px; }
