@@ -2,3 +2,12 @@
   %h4
     (this is a summary)
   = summary.body
+  .vote_links
+    = link_to "vote up", summary_summary_votes_path(summary, {:summary_vote => {:score => 1, :summary_id => summary.id}}), :method => :post
+    = link_to "vote down", summary_summary_votes_path(summary, {:summary_vote => {:score => -1, :summary_id => summary.id}}), :method => :post
+  .vote_counts
+    = summary.up_votes
+    up votes,
+    = summary.down_votes 
+    down votes
+    

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100327183457) do
+ActiveRecord::Schema.define(:version => 20100327235033) do
 
   create_table "documents", :force => true do |t|
     t.string   "name"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(:version => 20100327183457) do
   create_table "summaries", :force => true do |t|
     t.integer  "document_id"
     t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "up_votes"
+    t.integer  "down_votes"
+  end
+
+  create_table "summary_votes", :force => true do |t|
+    t.integer  "summary_id"
+    t.integer  "score"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

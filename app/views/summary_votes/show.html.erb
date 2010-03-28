@@ -1,0 +1,13 @@
+<p>
+  <b>Summary:</b>
+  <%=h @summary_vote.summary_id %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%=h @summary_vote.score %>
+</p>
+
+
+<%= link_to 'Edit', edit_summary_vote_path(@summary_vote) %> |
+<%= link_to 'Back', summary_votes_path %>

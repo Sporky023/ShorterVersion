@@ -1,0 +1,2 @@
+module SummaryVotesHelper
+end

@@ -1,0 +1,20 @@
+<h1>Editing summary_vote</h1>
+
+<% form_for(@summary_vote) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :summary_id %><br />
+    <%= f.text_field :summary_id %>
+  </p>
+  <p>
+    <%= f.label :score %><br />
+    <%= f.text_field :score %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @summary_vote %> |
+<%= link_to 'Back', summary_votes_path %>

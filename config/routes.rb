@@ -1,8 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :summary_votes
+
   
   map.root :controller => "documents"
   
-  map.resources :summaries
+  map.resources :summaries, :has_many => :summary_votes
 
   map.resources :documents, :has_many => :summaries
 
