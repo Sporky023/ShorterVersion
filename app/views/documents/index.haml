@@ -3,6 +3,6 @@
 .help
   Here you can see all the documents in our database and read them.  Click on a document's title to see the summaries people have written.
 #documents
-  - @documents.each do |document|
+  - @documents.sort_by(&:created_at).reverse.each do |document|
     = render document
     
