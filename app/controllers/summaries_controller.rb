@@ -1,5 +1,6 @@
 class SummariesController < ApplicationController
   
+  layout "application"
   
   before_filter :get_document, :only => [:new]
   

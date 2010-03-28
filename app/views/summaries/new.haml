@@ -1,4 +1,13 @@
-#summary
-  - form_for(@summary) do |f|
-    = render :partial => "form", :locals => {:f => f}
-    = submit_tag "submit"
+#new_summary_page
+  .left
+    #summary.summary.module
+      %h3 write your summary here
+      - form_for(@summary) do |f|
+        = render :partial => "form", :locals => {:f => f}
+        = submit_tag "submit"
+  
+  .right
+    - if @summary.document
+      = render :partial => @summary.document
+      
+    

@@ -51,17 +51,31 @@ a {
     font-size: 12px;
     list-style: square; }
 
+.clear {
+  clear: left; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right;
+  clear: none; }
+
 #header {
-  border-bottom: 1px black dotted;
-  font-family: arial; }
-  #header h1 {
-    font-size: 4em;
-    margin-bottom: 0; }
-  #header h2 {
-    margin-top: 10px;
-    padding-left: 50px;
-    font-size: 1.3em;
-    color: #777; }
+  border-bottom: 1px black dotted; }
+  #header .logo {
+    float: left;
+    font-family: arial; }
+    #header .logo h1 {
+      font-size: 4em;
+      margin-bottom: 0; }
+    #header .logo h2 {
+      margin-top: 10px;
+      padding-left: 50px;
+      font-size: 1.3em;
+      color: #777; }
+  #header .tools {
+    float: right; }
 
 .document {
   width: 700px;
@@ -73,8 +87,17 @@ a {
 .summary {
   width: 600px; }
 
+#new_summary_page .summary {
+  width: 380px; }
+#new_summary_page .left {
+  width: 410px; }
+#new_summary_page .right {
+  float: left;
+  width: 610px; }
+
 .module {
-  border: solid thin #777;
+  padding-left: 20px;
+  border: solid thick #777;
   background-color: white;
   -moz-border-radius-bottomleft: 10px;
   -moz-border-radius-topleft: 10px;
