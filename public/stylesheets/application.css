@@ -51,6 +51,15 @@ a {
     font-size: 12px;
     list-style: square; }
 
+#header {
+  border-bottom: 1px black dotted;
+  font-family: arial; }
+  #header h1 {
+    font-size: 4em; }
+  #header h2 {
+    font-size: 2em;
+    color: #444; }
+
 .document {
   width: 700px;
   margin: 10px; }

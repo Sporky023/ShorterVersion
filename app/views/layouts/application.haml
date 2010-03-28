@@ -7,6 +7,11 @@
       = controller.action_name
     = stylesheet_link_tag 'application'
   %body
+    #header
+      %h1
+        ShorterVersion.com
+      %h2
+        documents summarized by the people, for the people
     %p{ :style => "color: green" }
       = flash[:notice]
     = yield
