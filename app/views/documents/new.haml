@@ -1,0 +1,9 @@
+#new_document_page
+  %h1
+    Add a new document that needs a summary:
+  .help
+    For now a "document" means a specific set of text.  For instance, you could paste the entirety of Shakespeare's "Hamlet" in this box and that would be the "original document", from which people could write summaries.
+  #document.document.module
+    - form_for(@document) do |f|
+      = render :partial => "form", :locals => {:f => f}
+      = f.submit "add this document"

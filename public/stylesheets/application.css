@@ -51,6 +51,9 @@ a {
     font-size: 12px;
     list-style: square; }
 
+#whole_page {
+  width: 950px; }
+
 .clear {
   clear: left; }
 
@@ -60,6 +63,13 @@ a {
 .right {
   float: right;
   clear: none; }
+
+.help {
+  background-color: #0f0;
+  color: #00b;
+  font-family: times;
+  font-size: 2em;
+  line-height: 1.5em; }
 
 #header {
   border-bottom: 1px black dotted; }
@@ -93,7 +103,9 @@ a {
   width: 410px; }
 #new_summary_page .right {
   float: left;
-  width: 610px; }
+  width: 510px; }
+  #new_summary_page .right .document {
+    width: 100%; }
 
 .module {
   margin-top: 15px;
