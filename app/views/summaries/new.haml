@@ -8,6 +8,6 @@
   
   .right
     - if @summary.document
-      = render :partial => @summary.document
+      = render :partial => @summary.document, :locals => {:suppress_tools => true}
       
     
