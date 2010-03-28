@@ -71,6 +71,10 @@ a {
   font-size: 2em;
   line-height: 1.5em; }
 
+ul.horizontal li {
+  display: block;
+  float: left; }
+
 #header {
   border-bottom: 1px black dotted; }
   #header .logo {
@@ -163,9 +167,9 @@ a {
 .document {
   width: 70em; }
   .document .tools {
-    width: 12em; }
+    width: 22em; }
   .document .content {
-    width: 55em; }
+    width: 47em; }
 
 #new_summary_page .summary {
   width: 380px; }

@@ -1,17 +1,13 @@
 .document.module
   .content
     .header
-      %h3
-        = link_to "original"
       %h4
         = link_to document.original_url, document.original_url
         = link_to document.name, document_path(document)
-    .body
-      = document.body
       
   - unless defined?(suppress_tools) and suppress_tools
     .tools
-      %ul
+      %ul.horizontal
         %li 
           = link_to 'read summaries', document_path(document)
         %li 

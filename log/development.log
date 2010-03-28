@@ -10073,3 +10073,403 @@ Rendered documents/_document (11.9ms)
 Rendered summaries/_summary (5.7ms)
 Rendered layouts/_header (0.6ms)
 Completed in 94ms (View: 60, DB: 7) | 200 OK [http://localhost/documents/21]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-28 17:44:51) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (11.6ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendered summaries/_summary (5.5ms)
+Rendered layouts/_header (0.6ms)
+Completed in 93ms (View: 58, DB: 10) | 200 OK [http://localhost/documents/21]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:49:29) [GET]
+  [4;35;1mDocument Load (4.3ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (13.3ms)
+Rendered documents/_document (2.9ms)
+Rendered documents/_document (2.8ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (3.7ms)
+Rendered documents/_document (2.9ms)
+Rendered documents/_document (2.8ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.8ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.9ms)
+Rendered documents/_document (4.3ms)
+Rendered documents/_document (2.8ms)
+Rendered documents/_document (2.8ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.6ms)
+Rendered layouts/_header (0.6ms)
+Completed in 229ms (View: 114, DB: 6) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:50:33) [GET]
+  [4;35;1mDocument Load (4.8ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (13.0ms)
+Rendered documents/_document (2.8ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (3.0ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (3.8ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.9ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (3.9ms)
+Rendered documents/_document (2.6ms)
+Rendered layouts/_header (0.6ms)
+Completed in 141ms (View: 106, DB: 7) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:50:56) [GET]
+  [4;35;1mDocument Load (3.7ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (11.1ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (3.0ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.3ms)
+Rendered layouts/_header (0.6ms)
+Completed in 128ms (View: 94, DB: 5) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:51:13) [GET]
+  [4;35;1mDocument Load (3.9ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (11.2ms)
+Rendered documents/_document (3.6ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.3ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered layouts/_header (0.6ms)
+Completed in 223ms (View: 98, DB: 6) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:51:52) [GET]
+  [4;35;1mDocument Load (3.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.3ms)
+Rendered documents/_document (2.3ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.3ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered layouts/_header (0.6ms)
+Completed in 112ms (View: 76, DB: 5) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:51:53) [GET]
+  [4;35;1mDocument Load (3.7ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (3.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.4ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.3ms)
+Rendered documents/_document (2.4ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (3.2ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.3ms)
+Rendered layouts/_header (0.6ms)
+Completed in 114ms (View: 78, DB: 5) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:52:06) [GET]
+  [4;35;1mDocument Load (3.9ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (3.7ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.8ms)
+Rendered documents/_document (3.0ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered layouts/_header (0.8ms)
+Completed in 111ms (View: 76, DB: 6) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-28 17:53:38) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mDocument Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (3.0ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendered summaries/_summary (5.9ms)
+Rendered layouts/_header (0.6ms)
+Completed in 80ms (View: 43, DB: 14) | 200 OK [http://localhost/documents/21]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:53:44) [GET]
+  [4;35;1mDocument Load (4.4ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.4ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (107.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.3ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.7ms)
+Rendered layouts/_header (1.0ms)
+Completed in 213ms (View: 180, DB: 6) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:54:39) [GET]
+  [4;35;1mDocument Load (3.9ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.8ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.3ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered layouts/_header (0.6ms)
+Completed in 110ms (View: 75, DB: 6) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:55:17) [GET]
+  [4;35;1mDocument Load (3.7ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (2.7ms)
+Rendered documents/_document (2.8ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.3ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.4ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.5ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered layouts/_header (0.7ms)
+Completed in 114ms (View: 77, DB: 6) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-28 17:55:19) [GET]
+  [4;35;1mDocument Load (6.9ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (2.9ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.9ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.3ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.8ms)
+Rendered documents/_document (2.2ms)
+Rendered documents/_document (2.6ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered documents/_document (2.1ms)
+Rendered layouts/_header (0.6ms)
+Completed in 111ms (View: 76, DB: 9) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-28 17:56:08) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mDocument Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (3.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.3ms)
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendered summaries/_summary (6.4ms)
+Rendered layouts/_header (0.6ms)
+Completed in 79ms (View: 41, DB: 10) | 200 OK [http://localhost/documents/21]
