@@ -1,11 +1,14 @@
 .document.module
-  %h3
-    = link_to document.name, document_path(document)
-  %p.body
-    = document.body
-  %p.url
-    link to original document:
-    = link_to document.original_url, document.original_url
+  .content
+    .header
+      %h3
+        = link_to "original"
+      %h4
+        = link_to document.original_url, document.original_url
+        = link_to document.name, document_path(document)
+    .body
+      = document.body
+      
   - unless defined?(suppress_tools) and suppress_tools
     .tools
       %ul
@@ -13,3 +16,6 @@
           = link_to 'read summaries', document_path(document)
         %li 
           = link_to 'write a summary', new_document_summary_path(document)
+
+  .clear
+      

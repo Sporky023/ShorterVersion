@@ -1,13 +1,7 @@
 .help
   Here is the original document along with all the summaries people have written.  After you read a summary, you can make it more visible by clicking "vote up" or less visible by clicking "vote down".
-#document.module
-  %h1
-    = @document.name 
-    (this is the original text)
-  .tools
-    = link_to "write a summary", new_document_summary_path(@document)
-  %p.body
-    = @document.body
+#document
+  = render :partial => @document
     
 #summaries
   - @document.summaries.sort_by{|s| s.score}.reverse.each do |summary|

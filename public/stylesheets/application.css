@@ -65,8 +65,8 @@ a {
   clear: none; }
 
 .help {
-  background-color: #0f0;
-  color: #00b;
+  background-color: #aaffaa;
+  color: #0000bb;
   font-family: times;
   font-size: 2em;
   line-height: 1.5em; }
@@ -87,19 +87,85 @@ a {
   #header .tools {
     float: right; }
 
-.document {
-  width: 700px;
-  margin: 10px; }
-
 .body {
   height: 200px;
   overflow: auto;
-  white-space: pre-wrap; }
+  white-space: pre-wrap;
+  border: solid 1px;
+  border-color: #ccc; }
+
+.module {
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid thick #777;
+  background-color: white;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
+  .module .tools {
+    float: left;
+    clear: none;
+    padding: 5px;
+    width: 300px; }
+    .module .tools li {
+      font-face: arial;
+      font-size: 2em;
+      list-style-type: none;
+      height: 2em;
+      text-align: right; }
+      .module .tools li a {
+        font-size: 0.5em;
+        display: block;
+        float: left;
+        width: 100px;
+        margin-left: 10px;
+        border: 1px solid;
+        border-color: #eee #999 #999 #eee;
+        -moz-border-radius: 3px;
+        text-decoration: none;
+        background-color: #00aa00;
+        padding-left: 2px;
+        text-align: center;
+        color: white; }
+      .module .tools li a.red1 {
+        background-color: #aa0000; }
+    .module .tools li.vote_down {
+      color: #aa0000; }
+    .module .tools li.vote_up {
+      color: #00aa00; }
+  .module .header h3 {
+    display: block;
+    height: 20px;
+    font-size: 2em;
+    color: #00aa00; }
+    .module .header h3 a {
+      text-decoration: none;
+      color: #00aa00; }
+  .module .header h4 {
+    color: #00cc33;
+    font-size: 1em; }
+    .module .header h4 a:visited {
+      color: #00cc33; }
+  .module .content {
+    float: left; }
 
 .summary {
-  width: 600px; }
-  .summary .body {
-    overflow: none; }
+  width: 60em; }
+  .summary .tools {
+    width: 15em; }
+  .summary .content {
+    width: 40em; }
+    .summary .content .body {
+      overflow: none; }
+
+.document {
+  width: 70em; }
+  .document .tools {
+    width: 12em; }
+  .document .content {
+    width: 55em; }
 
 #new_summary_page .summary {
   width: 380px; }
@@ -110,12 +176,3 @@ a {
   width: 510px; }
   #new_summary_page .right .document {
     width: 100%; }
-
-.module {
-  margin-top: 15px;
-  padding-left: 20px;
-  border: solid thick #777;
-  background-color: white;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; }

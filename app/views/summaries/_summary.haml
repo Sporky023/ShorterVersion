@@ -1,14 +1,24 @@
 .summary.module
-  %h4
-    (this is a summary)
-  .body
-    = summary.body
-  .vote_links
-    = link_to "vote up", summary_summary_votes_path(summary, {:summary_vote => {:score => 1, :summary_id => summary.id}}), :method => :post
-    = link_to "vote down", summary_summary_votes_path(summary, {:summary_vote => {:score => -1, :summary_id => summary.id}}), :method => :post
-  .vote_counts
-    = summary.up_votes
-    up votes,
-    = summary.down_votes 
-    down votes
+  
+  .content
+    .header
+      %h3
+        = link_to 'summary', summary_path(summary)
+      %h4
+        written
+        = summary.created_at.to_s(:short)
+    .body
+      = summary.body
+  
+  .tools
+    %ul
+      %li.vote_up
+        = link_to "vote up", summary_summary_votes_path(summary, {:summary_vote => {:score => 1, :summary_id => summary.id}}), :method => :post
+        = summary.up_votes
+      %li.vote_down
+        = link_to "vote down", summary_summary_votes_path(summary, {:summary_vote => {:score => -1, :summary_id => summary.id}}), :method => :post, :class => "red1"
+        = summary.down_votes
+        
+  .clear
+    
     

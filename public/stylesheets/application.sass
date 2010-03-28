@@ -1,3 +1,18 @@
+
+!green1 = #0a0
+
+!text_help = #fff
+
+!red1 = #a00
+
+!text2 = #00b
+!green2 = #aFa
+
+!red_text = #a00
+!green_text = #0a0
+!green_text_link = #0c3
+
+
 body
 	background-color: #fff
 	color: #333
@@ -75,13 +90,13 @@ a
 	clear: none
 
 .help
-	background-color: #0f0
-	color: #00b
+	background-color = !green2
+	color = !text2
 	font-family: times
 	font-size: 2em
 	line-height: 1.5em
 
-	
+
 	
 #header
 	border-bottom: 1px black dotted
@@ -100,20 +115,92 @@ a
 	.tools
 		float: right
 
-.document
-	width: 700px
-	margin: 10px
 
 .body
 	height: 200px
 	overflow: auto
 	white-space: pre-wrap
+	border: solid 1px
+	border-color: #ccc
+
+
+.module
+	margin-top: 15px
+	padding-left: 20px
+	padding-top: 10px
+	padding-bottom: 10px
+	border: solid thick #777
+	background-color: white
+	border-radius: 10px 
+	-moz-border-radius: 10px 
+	-webkit-border-radius: 10px
+	.tools
+		float: left
+		clear: none
+		padding: 5px
+		width: 300px
+		li
+			font-face: arial
+			font-size: 2em
+			list-style-type: none
+			height: 2em
+			text-align: right
+			a
+				font-size: 0.5em
+				display: block
+				float: left
+				width: 100px
+				margin-left: 10px
+
+				border: 1px solid
+				border-color: #eee #999 #999 #eee
+				-moz-border-radius: 3px
+				text-decoration: none
+				background-color = !green1
+				padding-left: 2px
+				text-align: center
+				color = #fff
+			a.red1
+				background-color = !red1
+		li.vote_down
+			color = !red_text
+		li.vote_up
+			color = !green_text
+	.header
+		h3
+			display: block
+			height: 20px
+			font-size: 2em
+			color = !green_text
+			a
+				text-decoration: none
+				color = !green_text
+		h4
+			color = !green_text_link
+			font-size: 1em
+			a
+				&:visited
+					color = !green_text_link
+	.content
+		float: left
 
 .summary
-	width: 600px
-	.body
-		overflow: none
+	width: 60em
+	.tools
+		width: 15em	
+	.content
+		width: 40em
+		.body
+			overflow: none		
 
+.document
+	width: 70em
+	.tools
+		width: 12em
+	.content
+		width: 55em
+
+	
 #new_summary_page
 	.summary
 		width: 380px
@@ -127,11 +214,3 @@ a
 
 
 	
-.module
-	margin-top: 15px
-	padding-left: 20px
-	border: solid thick #777
-	background-color: white
-	border-radius: 10px 
-	-moz-border-radius: 10px 
-	-webkit-border-radius: 10px
