@@ -6052,3 +6052,109 @@ Rendered documents/_document (2.2ms)
 Rendered documents/_document (2.1ms)
 Rendered layouts/_header (0.6ms)
 Completed in 179ms (View: 148, DB: 3) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 19:45:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 1) [0m
+  [4;36;1mSummary Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.-) on line #13 of app/views/documents/show.haml:
+10:     = @document.body
+11:     
+12: #summaries
+13:   - @document.summaries.sort_by{|s| s.score}.each do |summary|
+14:     = render summary
+
+    app/models/summary.rb:14:in `score'
+    app/views/documents/show.haml:13:in `_run_haml_app47views47documents47show46haml'
+    app/views/documents/show.haml:13:in `_run_haml_app47views47documents47show46haml'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.21) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:21:in `show'
+    haml (2.2.21) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (154.0ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 19:45:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 1) [0m
+  [4;36;1mSummary Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendered summaries/_summary (4.3ms)
+Rendered summaries/_summary (3.2ms)
+Rendered summaries/_summary (3.2ms)
+Rendered summaries/_summary (96.4ms)
+Rendered layouts/_header (0.6ms)
+Completed in 173ms (View: 141, DB: 5) | 200 OK [http://localhost/documents/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummaryVotesController#create (for 127.0.0.1 at 2010-03-27 19:45:16) [POST]
+  Parameters: {"summary_id"=>"61", "authenticity_token"=>"e79N0Zs4gBSMXA7wszXwUVjVqeoqzsn8fEkqashUo7U=", "summary_vote"=>{"summary_id"=>"61", "score"=>"1"}}
+  [4;35;1mSummaryVote Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `summary_votes`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSummaryVote Create (0.3ms)[0m   [0mINSERT INTO `summary_votes` (`summary_id`, `created_at`, `updated_at`, `score`) VALUES(61, '2010-03-28 01:45:16', '2010-03-28 01:45:16', 1)[0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSummary Load (0.3ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 61) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summary_votes` WHERE (`summary_votes`.`score` = 1) AND (`summary_votes`.summary_id = 61) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summary_votes` WHERE (`summary_votes`.`score` = -1) AND (`summary_votes`.summary_id = 61) [0m
+  [4;36;1mSummary Update (0.4ms)[0m   [0;1mUPDATE `summaries` SET `updated_at` = '2010-03-28 01:45:16', `down_votes` = 0, `up_votes` = 1 WHERE `id` = 61[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 1) [0m
+Redirected to http://localhost:3000/documents/1
+Completed in 94ms (DB: 8) | 302 Found [http://localhost/summaries/61/summary_votes?summary_vote%5Bscore%5D=1&summary_vote%5Bsummary_id%5D=61]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 19:45:17) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (2.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 1) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendered summaries/_summary (4.7ms)
+Rendered summaries/_summary (5.6ms)
+Rendered summaries/_summary (3.4ms)
+Rendered summaries/_summary (3.2ms)
+Rendered layouts/_header (0.7ms)
+Completed in 85ms (View: 52, DB: 6) | 200 OK [http://localhost/documents/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-27 19:45:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 1) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 1) [0m
+  [4;35;1mSummary Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendered summaries/_summary (4.4ms)
+Rendered summaries/_summary (3.2ms)
+Rendered summaries/_summary (3.1ms)
+Rendered summaries/_summary (3.2ms)
+Rendered layouts/_header (0.6ms)
+Completed in 94ms (View: 62, DB: 5) | 200 OK [http://localhost/documents/1]

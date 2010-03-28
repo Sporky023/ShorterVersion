@@ -10,5 +10,5 @@
     = @document.body
     
 #summaries
-  - @document.summaries.each do |summary|
+  - @document.summaries.sort_by{|s| s.score}.reverse.each do |summary|
     = render summary
