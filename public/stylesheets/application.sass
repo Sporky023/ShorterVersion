@@ -38,10 +38,6 @@ a
 	
 	&:visited
 		color: #666
-	
-	&:hover
-		color: #fff
-		background-color: #000
 
 .fieldWithErrors
 	padding: 2px
@@ -97,11 +93,17 @@ a
 	line-height: 1.5em
 
 
+
 ul.horizontal
+	li.pending_feature
+		display: none
 	li
 		display: block
 		float: left
 		
+.pending_feature
+	display: none
+
 
 	
 #header
@@ -168,10 +170,10 @@ ul.horizontal
 				color = #fff
 			a.red1
 				background-color = !red1
-		li.vote_down
-			color = !red_text
-		li.vote_up
-			color = !green_text
+			&.vote_down
+				color = !red_text
+			&.vote_up
+				color = !green_text
 	.header
 		h3
 			display: block
@@ -188,7 +190,15 @@ ul.horizontal
 				&:visited
 					color = !green_text_link
 	.content
+		.header
+			h3
+				a
+					text-decoration: none
+					&:hover
+						text-decoration: underline
 		float: left
+
+
 
 .summary
 	width: 60em
@@ -202,9 +212,16 @@ ul.horizontal
 .document
 	width: 70em
 	.tools
-		width: 22em
+		width: 32em
+		li
+			a
+				padding-top: 2px
+				height: 20px
+				font-size: 0.4em
 	.content
-		width: 47em
+		width: 37em
+		.body
+			display: none
 
 	
 #new_summary_page
