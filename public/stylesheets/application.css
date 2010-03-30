@@ -68,6 +68,12 @@ a {
   font-size: 2em;
   line-height: 1.5em; }
 
+label {
+  color: blue; }
+
+option {
+  color: blue; }
+
 ul.horizontal li.pending_feature {
   display: none; }
 ul.horizontal li {
@@ -93,6 +99,10 @@ ul.horizontal li {
   #header .tools {
     float: right; }
 
+#footer {
+  margin-top: 20px;
+  border-top: 1px black dotted; }
+
 .body {
   height: 200px;
   overflow: auto;
@@ -105,7 +115,7 @@ ul.horizontal li {
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: solid thick #777;
+  border: solid 2px #777;
   background-color: white;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -162,7 +172,7 @@ ul.horizontal li {
         text-decoration: underline; }
 
 .summary {
-  width: 60em; }
+  width: 70em; }
   .summary .tools {
     width: 15em; }
   .summary .content {
@@ -182,13 +192,3 @@ ul.horizontal li {
     width: 37em; }
     .document .content .body {
       display: none; }
-
-#new_summary_page .summary {
-  width: 380px; }
-#new_summary_page .left {
-  width: 410px; }
-#new_summary_page .right {
-  float: left;
-  width: 510px; }
-  #new_summary_page .right .document {
-    width: 100%; }

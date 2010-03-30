@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100327235033) do
+ActiveRecord::Schema.define(:version => 20100330191954) do
 
   create_table "documents", :force => true do |t|
     t.string   "name"
@@ -26,6 +26,9 @@ ActiveRecord::Schema.define(:version => 20100327235033) do
     t.datetime "updated_at"
     t.integer  "up_votes"
     t.integer  "down_votes"
+    t.string   "type_of_subset", :default => "full document"
+    t.integer  "page_begin"
+    t.integer  "page_end"
   end
 
   create_table "summary_votes", :force => true do |t|

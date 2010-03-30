@@ -2,11 +2,20 @@
   
   .content
     .header
-      %h3
-        = link_to 'summary', summary_path(summary)
-      %h4
-        written
-        = summary.created_at.to_s(:short)
+      .left
+        %h3
+          = link_to 'summary', summary_path(summary)
+        %h4
+          written
+          = summary.created_at.to_s(:short)
+      .right
+        coverage:
+        = summary.type_of_subset.to_s+'.'
+        - if summary.type_of_subset == "specific pages"
+          = summary.page_begin
+          to
+          = summary.page_end
+      .clear
     .body
       = summary.body
   

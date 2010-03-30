@@ -1,6 +1,24 @@
-%p
-  = f.hidden_field :document_id
-%p
-  = f.text_area :body
+.fields
+  %p
+    = f.hidden_field :document_id
+  %p
+    = f.text_area :body, :size => "100x20"
+  %p
+    Does this summary cover the full document or just certain pages?
+    %br
+    = f.label :type_of_subset, "it covers"
+    = f.select :type_of_subset, Summary::VALID_VALUES_FOR[:type_of_subset]
+  %p 
+    Which pages?
+    %br
+    = f.label :page_begin, "from"
+    = f.text_field :page_begin, :size => "3"
+    = f.label :page_end, "to"
+    = f.text_field :page_end, :size => "3"
+
+
+
+  
+  
 
 

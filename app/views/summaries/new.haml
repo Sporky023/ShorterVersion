@@ -1,15 +1,16 @@
 #new_summary_page
   .help
     And here's the action!  Write a good summary of the document so that others can get its gist without having to read the whole thing.  Don't worry about being perfect - the voting system will give you feedback.
-  .left
-    #summary.summary.module
-      %h3 write your summary here
-      - form_for(@summary) do |f|
-        = render :partial => "form", :locals => {:f => f}
-        = submit_tag "submit"
-  
-  .right
-    - if @summary.document
-      = render :partial => @summary.document, :locals => {:suppress_tools => true}
+  #summary.summary.module
+    %h3 write your summary here
+    - form_for(@summary) do |f|
+      = render :partial => "form", :locals => {:f => f}
+      = submit_tag "submit"    
       
+  - if @summary.document
+    #document
+      %h2 You are summarizing:
+      = render :partial => @summary.document
+    
+
     
