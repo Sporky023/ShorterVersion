@@ -13,7 +13,7 @@ class Summary < ActiveRecord::Base
     self.up_votes = summary_votes.count(:conditions => {:score => 1})
     self.down_votes = summary_votes.count(:conditions => {:score => -1})
   end
-
+  
   def score
     self.up_votes.to_i - self.down_votes.to_i
   end

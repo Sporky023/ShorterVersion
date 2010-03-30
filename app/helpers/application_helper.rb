@@ -6,5 +6,9 @@ module ApplicationHelper
   end
 
 
+  def facebook_share_button
+    '<a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>'
+  end
+
 
 end
