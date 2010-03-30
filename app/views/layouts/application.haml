@@ -9,7 +9,12 @@
     = javascript_include_tag 'jquery-1.4.2', 'application'
   %body
     #whole_page
+    #header
       = render(:partial => "layouts/header")
+    #main-content
       %p{ :style => "color: green" }
         = flash[:notice]
       = yield
+    #footer
+      = render :partial => "layouts/footer"
+    
