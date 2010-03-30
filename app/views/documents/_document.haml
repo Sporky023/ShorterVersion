@@ -18,8 +18,13 @@
     %p
       original:
       = link_to document.original_url, document.original_url
-    
   .stackleft
+    %p
+      = document.summaries.count
+      summaries total
+    %p.indented
+      - document.summaries.group_by{|x| x.type_of_subset}.each do |type_of_subset, summaries|
+        = "#{type_of_subset}: #{summaries.size}"
     .tools
       %p
         %ul.horizontal
@@ -31,9 +36,7 @@
             = link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1"
           %li.pending_feature
             = link_to 'body text', nil, :class => "show_body"
-      .clear
-      
-    
+    .clear
   .clear
   
   

@@ -210,6 +210,8 @@ ul.horizontal li {
     float: left; }
     .document .stackleft p {
       margin: 0; }
+    .document .stackleft p.indented {
+      padding-left: 20px; }
   .document .tools {
     text-align: right;
     width: 32em; }
