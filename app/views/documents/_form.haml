@@ -1,9 +1,16 @@
-%p
-  = f.label :name, "Name or Title"
-  = f.text_field :name
-%p
-  = f.label :body
-  = f.text_area :body, :size => "80x15"
-%p
-  = f.label :original_url
-  = f.text_field :original_url
+%ul
+  %li
+    = f.label :name, "Name or Title"
+    = f.text_field :name
+  %li
+    = f.label :body, "Original Document Text", :class => "bigger"
+    = f.text_area :body, :size => "80x15"
+  %li
+    = f.label :original_url
+    = f.text_field :original_url, :size => 50
+  %li
+    = f.label :number_of_pages
+    = f.text_field :number_of_pages, :size => 5
+  
+
+

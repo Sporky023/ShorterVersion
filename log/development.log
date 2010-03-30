@@ -15102,3 +15102,758 @@ Rendered summaries/_summary (4.6ms)
 Rendered layouts/_header (0.6ms)
 Rendered layouts/_footer (0.4ms)
 Completed in 86ms (View: 51, DB: 7) | 200 OK [http://localhost/documents/21]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDocuments (20100327183243)
+Migrating to CreateSummaries (20100327183457)
+Migrating to CreateSummaryVotes (20100327233813)
+Migrating to AddScoreToSummaries (20100327235033)
+Migrating to AddPageNumbersToSummaries (20100330191954)
+Migrating to AddNumberOfPagesToDocuments (20100330194710)
+  [4;36;1mSQL (117.1ms)[0m   [0;1mALTER TABLE `documents` ADD `number_of_pages` int(11)[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100330194710')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (4.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mdescribe `documents`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `documents`[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (2.3ms)[0m   [0mdescribe `summaries`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW KEYS FROM `summaries`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `summary_votes`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `summary_votes`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `summary_votes`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:49:07) [GET]
+  [4;36;1mDocument Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (17.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 71ms (View: 41, DB: 3) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:49:45) [GET]
+  [4;35;1mDocument Columns (127.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (18.2ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 195ms (View: 41, DB: 128) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:50:15) [GET]
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (10.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 51ms (View: 24, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (2.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:50:26) [GET]
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 52ms (View: 24, DB: 4) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:50:38) [GET]
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 52ms (View: 23, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:50:54) [GET]
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 50ms (View: 23, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:51:04) [GET]
+  [4;36;1mDocument Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 53ms (View: 24, DB: 3) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:51:15) [GET]
+  [4;35;1mDocument Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (12.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 61ms (View: 29, DB: 3) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:51:37) [GET]
+  [4;36;1mDocument Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (13.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 63ms (View: 28, DB: 3) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:51:38) [GET]
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 52ms (View: 24, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:51:53) [GET]
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 58ms (View: 26, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (2.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:51:54) [GET]
+  [4;35;1mDocument Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 53ms (View: 24, DB: 5) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:52:10) [GET]
+  [4;36;1mDocument Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (12.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 27, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:52:31) [GET]
+  [4;35;1mDocument Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 56ms (View: 25, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:52:32) [GET]
+  [4;36;1mDocument Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 53ms (View: 24, DB: 3) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:52:41) [GET]
+  [4;35;1mDocument Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (10.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 52ms (View: 23, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:52:46) [GET]
+  [4;36;1mDocument Columns (13.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (10.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 63ms (View: 23, DB: 15) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:53:18) [GET]
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 52ms (View: 24, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:54:33) [GET]
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (22.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 80ms (View: 47, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:54:34) [GET]
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 53ms (View: 24, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (3.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:54:51) [GET]
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (17.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 69ms (View: 41, DB: 5) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:55:05) [GET]
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.1ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 52ms (View: 24, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:56:13) [GET]
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 51ms (View: 23, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:56:43) [GET]
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (12.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (1.8ms)
+Completed in 59ms (View: 27, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:57:08) [GET]
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (10.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 52ms (View: 24, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (5.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:57:34) [GET]
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (12.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 56ms (View: 26, DB: 7) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:57:36) [GET]
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.1ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 52ms (View: 23, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:57:48) [GET]
+  [4;35;1mDocument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.5ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 55ms (View: 25, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:58:17) [GET]
+  [4;36;1mDocument Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (18.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 69ms (View: 39, DB: 3) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (2.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 13:59:10) [GET]
+  [4;35;1mDocument Load (2.3ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (5.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 49ms (View: 19, DB: 7) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-30 13:59:12) [GET]
+  Parameters: {"document_id"=>"21"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.4ms)
+Rendered documents/_document (7.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 84ms (View: 34, DB: 6) | 200 OK [http://localhost/documents/21/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:59:18) [GET]
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.2ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 54ms (View: 25, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:59:39) [GET]
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (18.1ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 69ms (View: 42, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:59:52) [GET]
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+
+ActionView::TemplateError (Inconsistent indentation: 5 spaces were used for indentation, but the rest of the document was indented using 2 spaces.) on line #7 of app/views/documents/_form.haml:
+4:     = f.text_field :name
+5:   %li
+6:     = f.label :body, "Original Document Text", :class => "bigger"
+7:      (helps with spot-checking)
+8:     = f.text_area :body, :size => "80x15"
+9:   %li
+10:     = f.label :original_url
+
+    app/views/documents/_form.haml:7
+    haml (2.2.22) lib/haml/precompiler.rb:169:in `tabs'
+    haml (2.2.22) lib/haml/precompiler.rb:151:in `instance_eval'
+    haml (2.2.22) lib/haml/precompiler.rb:151:in `tabs'
+    haml (2.2.22) lib/haml/precompiler.rb:1007:in `block_opened?'
+    haml (2.2.22) lib/haml/precompiler.rb:394:in `push_script'
+    haml (2.2.22) lib/haml/precompiler.rb:241:in `process_line'
+    haml (2.2.22) lib/haml/precompiler.rb:195:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/new.haml:8:in `_run_haml_app47views47documents47new46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `form_for'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/documents/new.haml:7:in `_run_haml_app47views47documents47new46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:32:in `new'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (288.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 13:59:58) [GET]
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (18.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 70ms (View: 41, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 14:00:12) [GET]
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (18.2ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 68ms (View: 40, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 14:00:17) [GET]
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (18.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 68ms (View: 40, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 14:01:35) [GET]
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 52ms (View: 24, DB: 4) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:01:40) [GET]
+  [4;35;1mDocument Load (2.4ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (19.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 73ms (View: 44, DB: 4) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:02:03) [GET]
+  [4;35;1mDocument Load (2.7ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (19.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 76ms (View: 44, DB: 5) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:02:11) [GET]
+  [4;35;1mDocument Load (2.3ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (19.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 75ms (View: 44, DB: 4) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:03:00) [GET]
+  [4;35;1mDocument Load (2.8ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #4 of app/views/documents/_document.haml:
+1: .document.module
+2:   .content
+3:     .header
+4:         %h3
+5:           = link_to document.name, document_path(document)
+6:         %h4
+7:           = link_to document.original_url, document.original_url
+
+    app/views/documents/_document.haml:4
+    haml (2.2.22) lib/haml/precompiler.rb:198:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/index.haml:7:in `_run_haml_app47views47documents47index46haml'
+    app/views/documents/index.haml:6:in `each'
+    app/views/documents/index.haml:6:in `_run_haml_app47views47documents47index46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (271.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:03:18) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+
+ActionView::TemplateError (Illegal nesting: nesting within plain text is illegal.) on line #23 of app/views/documents/_document.haml:
+20:         %li.pending_feature
+21:           = link_to 'body text', nil, :class => "show_body"
+22:       heyo
+23:         - unless document.number_of_pages.nil?  
+24:           = document.number_of_pages.to_i
+25:           pages
+26:   .clear
+
+    app/views/documents/_document.haml:23
+    haml (2.2.22) lib/haml/precompiler.rb:362:in `push_plain'
+    haml (2.2.22) lib/haml/precompiler.rb:295:in `process_line'
+    haml (2.2.22) lib/haml/precompiler.rb:195:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/index.haml:7:in `_run_haml_app47views47documents47index46haml'
+    app/views/documents/index.haml:6:in `each'
+    app/views/documents/index.haml:6:in `_run_haml_app47views47documents47index46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (180.6ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:03:42) [GET]
+  [4;35;1mDocument Load (2.3ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (17.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 169ms (View: 139, DB: 4) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:04:06) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (18.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 74ms (View: 43, DB: 4) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:04:13) [GET]
+  [4;35;1mDocument Load (3.4ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (19.2ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 73ms (View: 42, DB: 5) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:04:23) [GET]
+  [4;35;1mDocument Load (2.4ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (19.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 73ms (View: 43, DB: 4) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:04:48) [GET]
+  [4;35;1mDocument Load (2.3ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (5.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 50ms (View: 19, DB: 4) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 14:05:08) [GET]
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (10.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 53ms (View: 24, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#create (for 127.0.0.1 at 2010-03-30 14:05:20) [POST]
+  Parameters: {"commit"=>"add this document", "authenticity_token"=>"VdJNNLsid/BDBCQ1pVDhJe5memCofzHIdixG0xomq5U=", "document"=>{"name"=>"etw", "body"=>"wersfdsf", "original_url"=>"http://yermom.com", "number_of_pages"=>"345"}}
+  [4;36;1mDocument Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mDocument Create (0.3ms)[0m   [0;1mINSERT INTO `documents` (`name`, `created_at`, `body`, `updated_at`, `original_url`, `number_of_pages`) VALUES('etw', '2010-03-30 20:05:20', 'wersfdsf', '2010-03-30 20:05:20', 'http://yermom.com', 345)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/documents/22
+Completed in 134ms (DB: 3) | 302 Found [http://localhost/documents]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:05:21) [GET]
+  Parameters: {"id"=>"22"}
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 22) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (23.6ms)
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 94ms (View: 60, DB: 4) | 200 OK [http://localhost/documents/22]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:05:30) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (5.4ms)
+Rendered documents/_document (3.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 55ms (View: 25, DB: 4) | 200 OK [http://localhost/documents]

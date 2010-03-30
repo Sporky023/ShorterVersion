@@ -10,15 +10,20 @@
       
   - unless defined?(suppress_tools) and suppress_tools
     .tools
-      %ul.horizontal
-        %li 
-          = link_to 'read summaries', document_path(document)
-        %li 
-          = link_to 'write a summary', new_document_summary_path(document)
-        %li
-          = link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1"
-        %li.pending_feature
-          = link_to 'body text', nil, :class => "show_body"
-
+      %p
+        %ul.horizontal
+          %li 
+            = link_to 'read summaries', document_path(document)
+          %li 
+            = link_to 'write a summary', new_document_summary_path(document)
+          %li
+            = link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1"
+          %li.pending_feature
+            = link_to 'body text', nil, :class => "show_body"
+      .clear
+      %p
+        - unless document.number_of_pages.nil?  
+          = document.number_of_pages.to_i
+          pages
   .clear
       

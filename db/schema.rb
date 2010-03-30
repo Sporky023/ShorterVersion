@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100330191954) do
+ActiveRecord::Schema.define(:version => 20100330194710) do
 
   create_table "documents", :force => true do |t|
     t.string   "name"
@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(:version => 20100330191954) do
     t.string   "original_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "number_of_pages"
   end
 
   create_table "summaries", :force => true do |t|
