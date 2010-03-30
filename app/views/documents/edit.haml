@@ -1,0 +1,4 @@
+#document.module
+  - form_for(@document) do |f|
+    = render :partial => "form", :locals => {:f => f}
+    = f.submit "save"
