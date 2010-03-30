@@ -7,6 +7,8 @@
         (no description)
       - else
         = document.description
+    = link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1"
+    = link_to 'edit', edit_document_path(document)
   .stackleft
     %p
       added on
@@ -20,23 +22,22 @@
       = link_to document.original_url, document.original_url
   .stackleft
     %p
-      = document.summaries.count
-      summaries total
-    %p.indented
-      - document.summaries.group_by{|x| x.type_of_subset}.each do |type_of_subset, summaries|
+      %span.title summaries
+      = link_to 'read', document_path(document)
+      = link_to 'write', new_document_summary_path(document) 
+    - document.summaries.group_by{|x| x.type_of_subset}.each do |type_of_subset, summaries|
+      %p.indented
         = "#{type_of_subset}: #{summaries.size}"
-    .tools
-      %p
-        %ul.horizontal
-          %li 
-            = link_to 'read summaries', document_path(document)
-          %li 
-            = link_to 'write a summary', new_document_summary_path(document)
-          %li
-            = link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1"
-          %li.pending_feature
-            = link_to 'body text', nil, :class => "show_body"
-    .clear
+    %p.indented
+      total:
+      = document.summaries.count
+    
+    %p.indented
+      
+    %p
+      %li.pending_feature
+        = link_to 'body text', nil, :class => "show_body"
+      .clear
   .clear
   
   

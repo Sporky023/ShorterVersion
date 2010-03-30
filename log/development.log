@@ -20162,3 +20162,1193 @@ Rendered summaries/_summary (4.7ms)
 Rendered layouts/_header (0.6ms)
 Rendered layouts/_footer (0.3ms)
 Completed in 87ms (View: 51, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:31:37) [GET]
+  Parameters: {"id"=>"62"}
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSummary Load (0.3ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (2.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (17.6ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 179ms (View: 52, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:32:07) [GET]
+  Parameters: {"id"=>"62"}
+  [4;36;1mSummary Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSummary Load (0.4ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (2.2ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (17.2ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 88ms (View: 51, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 17:36:55) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSummary Load (1.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (29.2ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (14.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 101ms (View: 63, DB: 12) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:38:05) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (38.7ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 118ms (View: 81, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:38:14) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (39.5ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 207ms (View: 170, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:38:35) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (18.2ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 89ms (View: 52, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:38:48) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (39.4ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 118ms (View: 81, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:39:18) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+ERROR: compiling _run_haml_app47views47documents47_document46haml_locals_document_object RAISED compile error
+/Users/luke/Sites/shorter_version/app/views/documents/_document.haml:40: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_haml_app47views47documents47_document46haml_locals_document_object(local_assigns)
+            old_output_buffer = output_buffer;document = local_assigns[:document];object = local_assigns[:object];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_html=>false, :ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"]});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+_hamlout.push_text("<div class='document module'>\n  <div class='stackleft'>\n    <span class='name'>\n      #{_hamlout.adjust_tabs(3); haml_temp =  link_to document.name, document_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    </span>\n    <div class='description'>\n", 0, false);
+ if document.description.to_s.empty?;
+
+_hamlout.push_text("      (no description)\n", 0, false); else;
+_hamlout.push_text("      #{haml_temp =  document.description
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false);end;
+
+
+_hamlout.push_text("    </div>\n  </div>\n  <div class='stackleft'>\n    <p>\n      added on\n      #{haml_temp =  document.created_at.to_s(:short)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    </p>\n", -1, false); unless document.number_of_pages.nil?;
+
+_hamlout.push_text("    <p>\n      #{_hamlout.adjust_tabs(1); haml_temp =  document.number_of_pages
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      pages\n", 0, false);
+_hamlout.push_text("    </p>\n", -1, false);end;
+
+_hamlout.push_text("    <p>\n      original:\n      #{_hamlout.adjust_tabs(1); haml_temp =  link_to document.original_url, document.original_url
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    </p>\n  </div>\n  <div class='stackleft'>\n", -1, false);
+
+_hamlout.push_text("    <p>\n      #{_hamlout.adjust_tabs(1); haml_temp =  document.summaries.count
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      summaries total\n", 0, false);
+
+_hamlout.push_text("    </p>\n    <p class='indented'>\n", 0, false); document.summaries.group_by{|x| x.type_of_subset}.each do |type_of_subset, summaries|;
+_hamlout.push_text("      #{haml_temp =  "#{type_of_subset}: #{summaries.size}"
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false);end;
+
+_hamlout.push_text("    </p>\n    <div class='tools'>\n      <p>\n        #{_hamlout.adjust_tabs(1); haml_temp =  link_to 'read summaries', document_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        #{haml_temp =  link_to 'write a summary', new_document_summary_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        ", 0, false);haml_temp =  link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1";
+
+_hamlout.push_text("        <li class='pending_feature'>\n          #{_hamlout.adjust_tabs(1); haml_temp =  link_to 'body text', nil, :class => "show_body"
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        </li>\n", -1, false);end;_hamlout.buffer << _hamlout.format_script_false_false_false_false_false_false_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));
+
+_hamlout.push_text("\n        <div class='clear'></div>\n      </p>\n      <p>\n        #{haml_temp =  link_to 'edit', edit_document_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      </p>\n    </div>\n    <div class='clear'></div>\n", -2, false);
+_hamlout.push_text("  </div>\n  <div class='clear'></div>\n</div>\n", -2, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luke/Sites/shorter_version/app/views/documents/_document.haml:40:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:201:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers.rb:96:in `non_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/Users/luke/Sites/shorter_version/app/views/summaries/show.haml:5:in `_run_haml_app47views47summaries47show46haml'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luke/Sites/shorter_version/app/controllers/summaries_controller.rb:23:in `show'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `sass_old_process'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin/rails.rb:20:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luke/Sites/shorter_version/app/views/documents/_document.haml:40: syntax error, unexpected kENSURE, expecting $end) on line #40 of app/views/documents/_document.haml:
+37:         = link_to 'edit', edit_document_path(document)
+38:     .clear
+39:   .clear
+40:   
+41:   
+42:  
+43:       
+
+    app/views/documents/_document.haml:40:in `compile!'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/summaries/show.haml:5:in `_run_haml_app47views47summaries47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:23:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (249.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:39:22) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (14.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (19.1ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (8.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (3.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+ERROR: compiling _run_haml_app47views47documents47_document46haml_locals_document_object RAISED compile error
+/Users/luke/Sites/shorter_version/app/views/documents/_document.haml:40: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_haml_app47views47documents47_document46haml_locals_document_object(local_assigns)
+            old_output_buffer = output_buffer;document = local_assigns[:document];object = local_assigns[:object];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_html=>false, :ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"]});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+_hamlout.push_text("<div class='document module'>\n  <div class='stackleft'>\n    <span class='name'>\n      #{_hamlout.adjust_tabs(3); haml_temp =  link_to document.name, document_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    </span>\n    <div class='description'>\n", 0, false);
+ if document.description.to_s.empty?;
+
+_hamlout.push_text("      (no description)\n", 0, false); else;
+_hamlout.push_text("      #{haml_temp =  document.description
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false);end;
+
+
+_hamlout.push_text("    </div>\n  </div>\n  <div class='stackleft'>\n    <p>\n      added on\n      #{haml_temp =  document.created_at.to_s(:short)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    </p>\n", -1, false); unless document.number_of_pages.nil?;
+
+_hamlout.push_text("    <p>\n      #{_hamlout.adjust_tabs(1); haml_temp =  document.number_of_pages
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      pages\n", 0, false);
+_hamlout.push_text("    </p>\n", -1, false);end;
+
+_hamlout.push_text("    <p>\n      original:\n      #{_hamlout.adjust_tabs(1); haml_temp =  link_to document.original_url, document.original_url
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    </p>\n  </div>\n  <div class='stackleft'>\n", -1, false);
+
+_hamlout.push_text("    <p>\n      #{_hamlout.adjust_tabs(1); haml_temp =  document.summaries.count
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      summaries total\n", 0, false);
+
+_hamlout.push_text("    </p>\n    <p class='indented'>\n", 0, false); document.summaries.group_by{|x| x.type_of_subset}.each do |type_of_subset, summaries|;
+_hamlout.push_text("      #{haml_temp =  "#{type_of_subset}: #{summaries.size}"
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false);end;
+
+_hamlout.push_text("    </p>\n    <div class='tools'>\n      <p>\n        #{_hamlout.adjust_tabs(1); haml_temp =  link_to 'read summaries', document_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        #{haml_temp =  link_to 'write a summary', new_document_summary_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        ", 0, false);haml_temp =  link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1";
+
+_hamlout.push_text("        <li class='pending_feature'>\n          #{_hamlout.adjust_tabs(1); haml_temp =  link_to 'body text', nil, :class => "show_body"
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        </li>\n", -1, false);end;_hamlout.buffer << _hamlout.format_script_false_false_false_false_false_false_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));
+
+_hamlout.push_text("\n        <div class='clear'></div>\n      </p>\n      <p>\n        #{haml_temp =  link_to 'edit', edit_document_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      </p>\n    </div>\n    <div class='clear'></div>\n", -2, false);
+_hamlout.push_text("  </div>\n  <div class='clear'></div>\n</div>\n", -2, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luke/Sites/shorter_version/app/views/documents/_document.haml:40:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:201:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers.rb:96:in `non_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/Users/luke/Sites/shorter_version/app/views/summaries/show.haml:5:in `_run_haml_app47views47summaries47show46haml'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luke/Sites/shorter_version/app/controllers/summaries_controller.rb:23:in `show'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `sass_old_process'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin/rails.rb:20:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luke/Sites/shorter_version/app/views/documents/_document.haml:40: syntax error, unexpected kENSURE, expecting $end) on line #40 of app/views/documents/_document.haml:
+37:         = link_to 'edit', edit_document_path(document)
+38:     .clear
+39:   .clear
+40:   
+41:   
+42:  
+43:       
+
+    app/views/documents/_document.haml:40:in `compile!'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/summaries/show.haml:5:in `_run_haml_app47views47summaries47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:23:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (262.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:39:29) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+ERROR: compiling _run_haml_app47views47documents47_document46haml_locals_document_object RAISED compile error
+/Users/luke/Sites/shorter_version/app/views/documents/_document.haml:40: syntax error, unexpected kENSURE, expecting $end
+Function body:           def _run_haml_app47views47documents47_document46haml_locals_document_object(local_assigns)
+            old_output_buffer = output_buffer;document = local_assigns[:document];object = local_assigns[:object];;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:escape_html=>false, :ugly=>false, :format=>:xhtml, :preserve=>["textarea", "pre", "code"], :encoding=>nil, :attr_wrapper=>"'", :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"]});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+_hamlout.push_text("<div class='document module'>\n  <div class='stackleft'>\n    <span class='name'>\n      #{_hamlout.adjust_tabs(3); haml_temp =  link_to document.name, document_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    </span>\n    <div class='description'>\n", 0, false);
+ if document.description.to_s.empty?;
+
+_hamlout.push_text("      (no description)\n", 0, false); else;
+_hamlout.push_text("      #{haml_temp =  document.description
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false);end;
+
+
+_hamlout.push_text("    </div>\n  </div>\n  <div class='stackleft'>\n    <p>\n      added on\n      #{haml_temp =  document.created_at.to_s(:short)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    </p>\n", -1, false); unless document.number_of_pages.nil?;
+
+_hamlout.push_text("    <p>\n      #{_hamlout.adjust_tabs(1); haml_temp =  document.number_of_pages
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      pages\n", 0, false);
+_hamlout.push_text("    </p>\n", -1, false);end;
+
+_hamlout.push_text("    <p>\n      original:\n      #{_hamlout.adjust_tabs(1); haml_temp =  link_to document.original_url, document.original_url
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n    </p>\n  </div>\n  <div class='stackleft'>\n", -1, false);
+
+_hamlout.push_text("    <p>\n      #{_hamlout.adjust_tabs(1); haml_temp =  document.summaries.count
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      summaries total\n", 0, false);
+
+_hamlout.push_text("    </p>\n    <p class='indented'>\n", 0, false); document.summaries.group_by{|x| x.type_of_subset}.each do |type_of_subset, summaries|;
+_hamlout.push_text("      #{haml_temp =  "#{type_of_subset}: #{summaries.size}"
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n", 0, false);end;
+
+_hamlout.push_text("    </p>\n    <div class='tools'>\n      <p>\n        #{_hamlout.adjust_tabs(1); haml_temp =  link_to 'read summaries', document_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        #{haml_temp =  link_to 'write a summary', new_document_summary_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        ", 0, false);haml_temp =  link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1";
+
+_hamlout.push_text("        <li class='pending_feature'>\n          #{_hamlout.adjust_tabs(1); haml_temp =  link_to 'body text', nil, :class => "show_body"
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n        </li>\n", -1, false);end;_hamlout.buffer << _hamlout.format_script_false_false_false_false_false_false_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));
+
+_hamlout.push_text("\n        <div class='clear'></div>\n      </p>\n      <p>\n        #{haml_temp =  link_to 'edit', edit_document_path(document)
+_hamlout.format_script_false_false_false_false_false_true_false((haml_very_temp = haml_temp; haml_temp = nil; haml_very_temp));}\n      </p>\n    </div>\n    <div class='clear'></div>\n", -2, false);
+_hamlout.push_text("  </div>\n  <div class='clear'></div>\n</div>\n", -2, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luke/Sites/shorter_version/app/views/documents/_document.haml:40:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/partials.rb:201:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:267:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers.rb:96:in `non_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:11:in `render'
+/Users/luke/Sites/shorter_version/app/views/summaries/show.haml:5:in `_run_haml_app47views47summaries47show46haml'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:306:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render_without_haml'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/lib/haml/helpers/action_view_mods.rb:13:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:951:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:135:in `custom'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:179:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:173:in `respond'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luke/Sites/shorter_version/app/controllers/summaries_controller.rb:23:in `show'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `sass_old_process'
+/usr/local/lib/ruby/gems/1.8/gems/haml-2.2.22/rails/../lib/sass/plugin/rails.rb:20:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:64:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.1/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.5/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luke/Sites/shorter_version/app/views/documents/_document.haml:40: syntax error, unexpected kENSURE, expecting $end) on line #40 of app/views/documents/_document.haml:
+37:         = link_to 'edit', edit_document_path(document)
+38:     .clear
+39:   .clear
+40:   
+41:   
+42:  
+43:       
+
+    app/views/documents/_document.haml:40:in `compile!'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/summaries/show.haml:5:in `_run_haml_app47views47summaries47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:23:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (160.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:39:43) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (36.8ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 116ms (View: 80, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:40:14) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (37.3ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 119ms (View: 82, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:40:37) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (37.6ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 118ms (View: 81, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:40:59) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #29 of app/views/documents/_document.haml:
+26:       - document.summaries.group_by{|x| x.type_of_subset}.each do |type_of_subset, summaries|
+27:         = "#{type_of_subset}: #{summaries.size}"
+28:   .stackleft.tools
+29:       %p
+30:         summaries:
+31:         = link_to 'read', document_path(document)
+32:         = link_to 'write', new_document_summary_path(document)
+
+    app/views/documents/_document.haml:29
+    haml (2.2.22) lib/haml/precompiler.rb:198:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/summaries/show.haml:5:in `_run_haml_app47views47summaries47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:23:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (264.7ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:41:01) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #29 of app/views/documents/_document.haml:
+26:       - document.summaries.group_by{|x| x.type_of_subset}.each do |type_of_subset, summaries|
+27:         = "#{type_of_subset}: #{summaries.size}"
+28:   .stackleft.tools
+29:       %p
+30:         summaries:
+31:         = link_to 'read', document_path(document)
+32:         = link_to 'write', new_document_summary_path(document)
+
+    app/views/documents/_document.haml:29
+    haml (2.2.22) lib/haml/precompiler.rb:198:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/summaries/show.haml:5:in `_run_haml_app47views47summaries47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:23:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (204.4ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:41:11) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (37.4ms)
+Rendered summaries/_summary (5.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 120ms (View: 83, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:41:17) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (17.7ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 88ms (View: 51, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:41:38) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (3.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (35.9ms)
+Rendered summaries/_summary (4.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 115ms (View: 79, DB: 9) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:42:03) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (36.7ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 117ms (View: 81, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:42:16) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (36.9ms)
+Rendered summaries/_summary (5.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 118ms (View: 81, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:42:59) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (37.4ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 117ms (View: 80, DB: 9) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:43:16) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.4ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (36.9ms)
+Rendered summaries/_summary (5.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 117ms (View: 80, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:43:21) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Load (1.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (125.9ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 205ms (View: 169, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:44:38) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.4ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (39.1ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 122ms (View: 82, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:44:49) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (38.5ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 117ms (View: 81, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:44:54) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (39.4ms)
+Rendered summaries/_summary (4.6ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 121ms (View: 84, DB: 10) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:45:07) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (37.6ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 206ms (View: 170, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:45:17) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.4ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (38.0ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 118ms (View: 81, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:45:54) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (37.1ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 116ms (View: 80, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:47:16) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (38.0ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 116ms (View: 80, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:48:02) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+
+ActionView::TemplateError (undefined local variable or method `docuemtn' for #<ActionView::Base:0x2541544>) on line #11 of app/views/documents/_document.haml:
+8:       - else
+9:         = document.description
+10:     = link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1"
+11:     = link_to 'edit', edit_document_path(docuemtn)
+12:   .stackleft
+13:     %p
+14:       added on
+
+    app/views/documents/_document.haml:11:in `_run_haml_app47views47documents47_document46haml_locals_document_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/summaries/show.haml:5:in `_run_haml_app47views47summaries47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:23:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (164.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:48:09) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (38.6ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 119ms (View: 82, DB: 8) | 200 OK [http://localhost/summaries/62]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 17:48:25) [GET]
+  Parameters: {"id"=>"62"}
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 62) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (38.3ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 119ms (View: 81, DB: 8) | 200 OK [http://localhost/summaries/62]
