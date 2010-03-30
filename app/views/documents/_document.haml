@@ -1,14 +1,25 @@
 .document.module
-  .content
-    .header
-      %h3
-        = link_to document.name, document_path(document)
-      %h4
-        = link_to document.original_url, document.original_url
-    .body
-        
-      
-  - unless defined?(suppress_tools) and suppress_tools
+  .stackleft
+    %span.name
+      = link_to document.name, document_path(document)
+    .description
+      - if document.description.to_s.empty?
+        (no description)
+      - else
+        = document.description
+  .stackleft
+    %p
+      added on
+      = document.created_at.to_s(:short)
+    - unless document.number_of_pages.nil?
+      %p
+        = document.number_of_pages
+        pages
+    %p
+      original:
+      = link_to document.original_url, document.original_url
+    
+  .stackleft
     .tools
       %p
         %ul.horizontal
@@ -21,9 +32,10 @@
           %li.pending_feature
             = link_to 'body text', nil, :class => "show_body"
       .clear
-      %p
-        - unless document.number_of_pages.nil?  
-          = document.number_of_pages.to_i
-          pages
+      
+    
   .clear
+  
+  
+ 
       

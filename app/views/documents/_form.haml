@@ -3,6 +3,9 @@
     = f.label :name, "Name or Title"
     = f.text_field :name
   %li
+    = f.label :description, "A Short Description"
+    = f.text_area :description, :size => "60x3"
+  %li
     = f.label :body, "Original Document Text", :class => "bigger"
     = f.text_area :body, :size => "80x15"
   %li

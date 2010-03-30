@@ -15857,3 +15857,1383 @@ Rendered documents/_document (3.9ms)
 Rendered layouts/_header (0.6ms)
 Rendered layouts/_footer (0.4ms)
 Completed in 55ms (View: 25, DB: 4) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 14:13:02) [GET]
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (11.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 51ms (View: 23, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:13:24) [GET]
+  [4;36;1mDocument Load (2.8ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (5.1ms)
+Rendered documents/_document (3.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 54ms (View: 23, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 14:22:17) [GET]
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+
+ActionView::TemplateError (undefined method `description' for #<Document:0x224bab0>) on line #7 of app/views/documents/_form.haml:
+4:     = f.text_field :name
+5:   %li
+6:     = f.label :description, "A Short Description"
+7:     = f.text_area :description, :size => "60x3"
+8:   %li
+9:     = f.label :body, "Original Document Text", :class => "bigger"
+10:     = f.text_area :body, :size => "80x15"
+
+    app/views/documents/_form.haml:7:in `_run_haml_app47views47documents47_form46haml_locals_f_form_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/new.haml:8:in `_run_haml_app47views47documents47new46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `form_for'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/documents/new.haml:7:in `_run_haml_app47views47documents47new46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:32:in `new'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (191.1ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 14:23:05) [GET]
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+
+ActionView::TemplateError (undefined method `description' for #<Document:0x2280cec>) on line #7 of app/views/documents/_form.haml:
+4:     = f.text_field :name
+5:   %li
+6:     = f.label :description, "A Short Description"
+7:     = f.text_area :description, :size => "60x3"
+8:   %li
+9:     = f.label :body, "Original Document Text", :class => "bigger"
+10:     = f.text_area :body, :size => "80x15"
+
+    app/views/documents/_form.haml:7:in `_run_haml_app47views47documents47_form46haml_locals_f_form_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/new.haml:8:in `_run_haml_app47views47documents47new46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `form_for'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/documents/new.haml:7:in `_run_haml_app47views47documents47new46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:32:in `new'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (290.5ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 14:23:13) [GET]
+  [4;36;1mDocument Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+
+ActionView::TemplateError (undefined method `description' for #<Document:0x238fef8>) on line #7 of app/views/documents/_form.haml:
+4:     = f.text_field :name
+5:   %li
+6:     = f.label :description, "A Short Description"
+7:     = f.text_area :description, :size => "60x3"
+8:   %li
+9:     = f.label :body, "Original Document Text", :class => "bigger"
+10:     = f.text_area :body, :size => "80x15"
+
+    app/views/documents/_form.haml:7:in `_run_haml_app47views47documents47_form46haml_locals_f_form_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/new.haml:8:in `_run_haml_app47views47documents47new46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `form_for'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/documents/new.haml:7:in `_run_haml_app47views47documents47new46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:32:in `new'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (202.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 14:23:15) [GET]
+  [4;35;1mDocument Columns (4.2ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+
+ActionView::TemplateError (undefined method `description' for #<Document:0x252cff4>) on line #7 of app/views/documents/_form.haml:
+4:     = f.text_field :name
+5:   %li
+6:     = f.label :description, "A Short Description"
+7:     = f.text_area :description, :size => "60x3"
+8:   %li
+9:     = f.label :body, "Original Document Text", :class => "bigger"
+10:     = f.text_area :body, :size => "80x15"
+
+    app/views/documents/_form.haml:7:in `_run_haml_app47views47documents47_form46haml_locals_f_form_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/new.haml:8:in `_run_haml_app47views47documents47new46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `call'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:203:in `form_for'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `call'
+    haml (2.2.22) lib/haml/helpers.rb:573:in `haml_bind_proc'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:209:in `form_for'
+    app/views/documents/new.haml:7:in `_run_haml_app47views47documents47new46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:32:in `new'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (211.0ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (34.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDocuments (20100327183243)
+Migrating to CreateSummaries (20100327183457)
+Migrating to CreateSummaryVotes (20100327233813)
+Migrating to AddScoreToSummaries (20100327235033)
+Migrating to AddPageNumbersToSummaries (20100330191954)
+Migrating to AddNumberOfPagesToDocuments (20100330194710)
+Migrating to AddDescriptionToDocuments (20100330202238)
+  [4;36;1mSQL (134.1ms)[0m   [0;1mALTER TABLE `documents` ADD `description` text[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100330202238')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `documents`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `documents`[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `summaries`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSHOW FIELDS FROM `summary_votes`[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mdescribe `summary_votes`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `summary_votes`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-30 14:23:20) [GET]
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (13.2ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 54ms (View: 26, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#create (for 127.0.0.1 at 2010-03-30 14:25:03) [POST]
+  Parameters: {"commit"=>"add this document", "authenticity_token"=>"VdJNNLsid/BDBCQ1pVDhJe5memCofzHIdixG0xomq5U=", "document"=>{"name"=>"HR3590", "body"=>"super-long original text", "original_url"=>"http://whitehouse.gov/signed_bills/hr3590", "description"=>"This is the health bill in its pre-amended version.  This was signed by President Obama on such-and-such a date ...", "number_of_pages"=>"906"}}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mDocument Create (0.3ms)[0m   [0mINSERT INTO `documents` (`name`, `created_at`, `body`, `updated_at`, `original_url`, `description`, `number_of_pages`) VALUES('HR3590', '2010-03-30 20:25:03', 'super-long original text', '2010-03-30 20:25:03', 'http://whitehouse.gov/signed_bills/hr3590', 'This is the health bill in its pre-amended version. This was signed by President Obama on such-and-such a date ...', 906)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/documents/23
+Completed in 43ms (DB: 3) | 302 Found [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:25:03) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.1ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 162ms (View: 34, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:26:22) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (26.7ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 93ms (View: 62, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:26:59) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (11.3ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 66ms (View: 35, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:27:31) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (26.9ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 92ms (View: 61, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:27:36) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 76ms (View: 45, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:28:21) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (11.3ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 165ms (View: 47, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:28:37) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:28:46) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (1.0ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (6.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 63ms (View: 31, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:29:00) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (12.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 79ms (View: 47, DB: 6) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:29:29) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (6.3ms)
+  [4;36;1mSummary Load (2.1ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 65ms (View: 32, DB: 5) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:29:31) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 150ms (View: 118, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:29:32) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.6ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.5ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:29:33) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 31, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:29:34) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.8ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 66ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:29:57) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.8ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.8ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 69ms (View: 32, DB: 5) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:29:58) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.1ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 31, DB: 6) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:29:59) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.7ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 151ms (View: 119, DB: 6) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:30:10) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.8ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 63ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:30:12) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.2ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 64ms (View: 32, DB: 5) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:30:22) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.6ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 65ms (View: 32, DB: 8) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:30:23) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.5ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:31:02) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.8ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 65ms (View: 31, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:31:04) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.7ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 150ms (View: 31, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:31:06) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 63ms (View: 31, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:31:23) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.8ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (13.6ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 83ms (View: 50, DB: 5) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:31:24) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.8ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 63ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:31:25) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 31, DB: 7) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:32:25) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (8.6ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 74ms (View: 34, DB: 5) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:32:26) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 63ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:32:54) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.3ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 63ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:32:55) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (6.6ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 65ms (View: 31, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:32:57) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.3ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:33:09) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:33:35) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 30, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:33:42) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (1.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.6ms)
+  [4;35;1mSummary Load (3.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 71ms (View: 33, DB: 7) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:33:43) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.8ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 31, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:34:20) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+
+ActionView::TemplateError (undefined method `pages' for #<Document:0x23373d4>) on line #8 of app/views/documents/_document.haml:
+5:     .description
+6:       = document.description
+7:   .stackleft
+8:     - unless document.pages.empty?
+9:       = document.pages
+10:       pages
+11:     
+
+    app/views/documents/_document.haml:8:in `_run_haml_app47views47documents47_document46haml_locals_document_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/show.haml:4:in `_run_haml_app47views47documents47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:21:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (269.4ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:34:21) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+
+ActionView::TemplateError (undefined method `pages' for #<Document:0x247fea8>) on line #8 of app/views/documents/_document.haml:
+5:     .description
+6:       = document.description
+7:   .stackleft
+8:     - unless document.pages.empty?
+9:       = document.pages
+10:       pages
+11:     
+
+    app/views/documents/_document.haml:8:in `_run_haml_app47views47documents47_document46haml_locals_document_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/show.haml:4:in `_run_haml_app47views47documents47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:21:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (167.7ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:34:36) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (1.1ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+
+ActionView::TemplateError (undefined method `empty?' for 906:Fixnum) on line #8 of app/views/documents/_document.haml:
+5:     .description
+6:       = document.description
+7:   .stackleft
+8:     - unless document.number_of_pages.empty?
+9:       = document.number_of_pages
+10:       pages
+11:     
+
+    app/views/documents/_document.haml:8:in `_run_haml_app47views47documents47_document46haml_locals_document_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/show.haml:4:in `_run_haml_app47views47documents47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:21:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (290.6ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:34:44) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (12.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 79ms (View: 47, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:35:21) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (14.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 82ms (View: 49, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:35:38) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (5.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 62ms (View: 31, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:36:01) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.6ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (26.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 94ms (View: 61, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:36:43) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (25.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 93ms (View: 59, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:36:54) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 66ms (View: 34, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:37:03) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (3.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 67ms (View: 34, DB: 6) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:37:27) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (11.0ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 87ms (View: 44, DB: 5) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:37:28) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 67ms (View: 35, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:38:47) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.6ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 76ms (View: 39, DB: 5) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:39:13) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+
+ActionView::TemplateError (undefined local variable or method `original_url' for #<ActionView::Base:0x23a8ae8>) on line #17 of app/views/documents/_document.haml:
+14:         pages
+15:     %p
+16:       original:
+17:       = link_to document.original_url, original_url
+18:     
+19:   .stackleft
+20:     .tools
+
+    app/views/documents/_document.haml:17:in `_run_haml_app47views47documents47_document46haml_locals_document_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/show.haml:4:in `_run_haml_app47views47documents47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:21:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (259.3ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:39:20) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (26.5ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 98ms (View: 65, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:40:08) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (10.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 73ms (View: 36, DB: 6) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:40:09) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 64ms (View: 33, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:40:22) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.8ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 65ms (View: 34, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:40:23) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.9ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 67ms (View: 34, DB: 5) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:40:32) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (11.3ms)
+  [4;36;1mSummary Load (2.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 68ms (View: 36, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:40:56) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (10.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 68ms (View: 34, DB: 7) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:41:00) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (10.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 76ms (View: 38, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:41:37) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (4.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (10.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 71ms (View: 36, DB: 7) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:41:38) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 66ms (View: 34, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:42:02) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (10.0ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 151ms (View: 120, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:42:05) [GET]
+  Parameters: {"id"=>"23"}
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 66ms (View: 34, DB: 4) | 200 OK [http://localhost/documents/23]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-30 14:42:08) [GET]
+  [4;35;1mDocument Load (2.3ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendered documents/_document (5.8ms)
+Rendered documents/_document (4.2ms)
+Rendered documents/_document (4.2ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 60ms (View: 30, DB: 5) | 200 OK [http://localhost/documents]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:42:11) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mDocument Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.4ms)
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendered summaries/_summary (5.5ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 91ms (View: 54, DB: 9) | 200 OK [http://localhost/documents/21]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:42:34) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.3ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendered summaries/_summary (4.9ms)
+Rendered summaries/_summary (4.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 88ms (View: 52, DB: 8) | 200 OK [http://localhost/documents/21]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:42:38) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mDocument Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.2ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (9.3ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendered summaries/_summary (4.9ms)
+Rendered summaries/_summary (4.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 173ms (View: 137, DB: 8) | 200 OK [http://localhost/documents/21]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:43:11) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (3.1ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering documents/show
+
+ActionView::TemplateError (undefined method `emtpy?' for nil:NilClass) on line #6 of app/views/documents/_document.haml:
+3:     %span.name
+4:       = link_to document.name, document_path(document)
+5:     .description
+6:       - if document.description.emtpy?
+7:         (no description)
+8:       - else
+9:         = document.description
+
+    app/views/documents/_document.haml:6:in `_run_haml_app47views47documents47_document46haml_locals_document_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/show.haml:4:in `_run_haml_app47views47documents47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:21:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (166.8ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:43:21) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering documents/show
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.empty?) on line #6 of app/views/documents/_document.haml:
+3:     %span.name
+4:       = link_to document.name, document_path(document)
+5:     .description
+6:       - if document.description.empty?
+7:         (no description)
+8:       - else
+9:         = document.description
+
+    app/views/documents/_document.haml:6:in `_run_haml_app47views47documents47_document46haml_locals_document_object'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/show.haml:4:in `_run_haml_app47views47documents47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:21:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (168.2ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-30 14:43:36) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mDocument Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 21) [0m
+Rendering template within layouts/application
+Rendering documents/show
+Rendered documents/_document (27.2ms)
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendered summaries/_summary (5.0ms)
+Rendered summaries/_summary (4.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 118ms (View: 80, DB: 9) | 200 OK [http://localhost/documents/21]

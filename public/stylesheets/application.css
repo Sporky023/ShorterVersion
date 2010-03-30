@@ -117,6 +117,7 @@ ul.horizontal li {
   border-top: 1px black dotted; }
 
 .body {
+  background-color: white;
   height: 200px;
   overflow: auto;
   white-space: pre-wrap;
@@ -129,7 +130,7 @@ ul.horizontal li {
   padding-top: 10px;
   padding-bottom: 10px;
   border: solid 2px #777;
-  background-color: white;
+  background-color: #eee;
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px; }
@@ -195,6 +196,20 @@ ul.horizontal li {
 
 .document {
   width: 70em; }
+  .document .name {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1.2em; }
+  .document .stackleft:first-child {
+    width: 300px; }
+  .document .stackleft:last-child {
+    width: 400px; }
+  .document .stackleft {
+    padding-right: 5px;
+    width: 200px;
+    float: left; }
+    .document .stackleft p {
+      margin: 0; }
   .document .tools {
     text-align: right;
     width: 32em; }
