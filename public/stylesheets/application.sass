@@ -164,8 +164,18 @@ ul.horizontal
 	border: solid 1px
 	border-color: #ccc
 
-
 .module
+	.character_count
+		color: #09f
+		font-weight: bold
+	.stackleft
+		padding-right: 5px
+		width: 200px
+		float: left
+		p
+			margin: 0
+		p.indented
+			padding-left: 20px
 	margin-top: 15px
 	padding-left: 20px
 	padding-top: 10px
@@ -210,7 +220,6 @@ ul.horizontal
 	.header
 		h3
 			display: block
-			height: 20px
 			font-size: 2em
 			color = !green_text
 			a
@@ -234,13 +243,17 @@ ul.horizontal
 
 
 .summary
+	.stackleft:first-child
+		width: 400px
+	h3
+		line-height: 5px
+	.header
+		height 50px
 	width: 70em
-	.tools
-		width: 15em	
-	.content
-		width: 40em
-		.body
-			overflow: none		
+	.body
+		width: 65em
+		overflow: none		
+		
 
 .document
 	.name
@@ -251,14 +264,6 @@ ul.horizontal
 		width: 300px
 	.stackleft:last-child
 		width: 400px
-	.stackleft
-		padding-right: 5px
-		width: 200px
-		float: left
-		p
-			margin: 0
-		p.indented
-			padding-left: 20px
 
 
 	width: 70em

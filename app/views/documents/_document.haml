@@ -9,6 +9,10 @@
         = document.description
     = link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1"
     = link_to 'edit', edit_document_path(document)
+    .clear
+    %span.character_count
+      = document.body.to_s.size
+      characters
   .stackleft
     %p
       added on

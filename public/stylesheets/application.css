@@ -142,6 +142,17 @@ ul.horizontal li {
   border-radius: 10px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px; }
+  .module .character_count {
+    color: #09f;
+    font-weight: bold; }
+  .module .stackleft {
+    padding-right: 5px;
+    width: 200px;
+    float: left; }
+    .module .stackleft p {
+      margin: 0; }
+    .module .stackleft p.indented {
+      padding-left: 20px; }
   .module .tools {
     float: left;
     clear: none;
@@ -175,7 +186,6 @@ ul.horizontal li {
         color: #00aa00; }
   .module .header h3 {
     display: block;
-    height: 20px;
     font-size: 2em;
     color: #00aa00; }
     .module .header h3 a {
@@ -195,12 +205,13 @@ ul.horizontal li {
 
 .summary {
   width: 70em; }
-  .summary .tools {
-    width: 15em; }
-  .summary .content {
-    width: 40em; }
-    .summary .content .body {
-      overflow: none; }
+  .summary .stackleft:first-child {
+    width: 400px; }
+  .summary h3 {
+    line-height: 5px; }
+  .summary .body {
+    width: 65em;
+    overflow: none; }
 
 .document {
   width: 70em; }
@@ -212,14 +223,6 @@ ul.horizontal li {
     width: 300px; }
   .document .stackleft:last-child {
     width: 400px; }
-  .document .stackleft {
-    padding-right: 5px;
-    width: 200px;
-    float: left; }
-    .document .stackleft p {
-      margin: 0; }
-    .document .stackleft p.indented {
-      padding-left: 20px; }
   .document .tools {
     text-align: right;
     width: 32em; }

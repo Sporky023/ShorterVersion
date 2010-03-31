@@ -21692,3 +21692,856 @@ Rendered summaries/_summary (4.8ms)
 Rendered layouts/_header (0.6ms)
 Rendered layouts/_footer (0.4ms)
 Completed in 101ms (View: 66, DB: 6) | 200 OK [http://localhost/summaries/64]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-03-30 18:05:35) [GET]
+  Parameters: {"id"=>"64"}
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.`id` = 64) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (13.1ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 86ms (View: 51, DB: 6) | 200 OK [http://localhost/summaries/64]
+  [4;36;1mSQL (27.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (18.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-03-31 13:30:33) [GET]
+  [4;36;1mDocument Load (57.1ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (81.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (377.7ms)
+  [4;35;1mSummary Load (0.4ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.0ms)
+  [4;35;1mSummary Load (0.4ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (8.9ms)
+Rendered layouts/_header (19.5ms)
+Rendered layouts/_footer (1.3ms)
+Completed in 983ms (View: 751, DB: 192) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:30:43) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (39.3ms)
+Rendered summaries/_summary (31.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 158ms (View: 125, DB: 5) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-31 13:30:53) [GET]
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (23.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 107ms (View: 79, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#create (for 127.0.0.1 at 2010-03-31 13:31:17) [POST]
+  Parameters: {"commit"=>"add this document", "authenticity_token"=>"ZHpq1NJgl/ma99+7Ww6WM/sAi9PDr29gRJPeR9STBuI=", "document"=>{"name"=>"blah blah", "body"=>"Moral judgments can be altered ... by magnets\r\n\r\n\r\nPhoto - Graphic: Christine Daniloff\r\nBy disrupting brain activity in a particular region, neuroscientists can sway people’s views of moral situations.\r\nAnne Trafton, MIT News Office\r\nMarch 30, 2010\r\nTo make moral judgments about other people, we often need to infer their intentions — an ability known as “theory of mind.” For example, if one hunter shoots another while on a hunting trip, we need to know what the shooter was thinking: Was he secretly jealous, or did he mistake his fellow hunter for an animal?\r\n\r\nMIT neuroscientists have now shown they can influence those judgments by interfering with activity in a specific brain region — a finding that helps reveal how the brain constructs morality.\r\n\r\nPrevious studies have shown that a brain region known as the right temporo-parietal junction (TPJ) is highly active when we think about other people’s intentions, thoughts and beliefs. In the new study, the researchers disrupted activity in the right TPJ by inducing a current in the brain using a magnetic field applied to the scalp. They found that the subjects’ ability to make moral judgments that require an understanding of other people’s intentions — for example, a failed murder attempt — was impaired. \r\n\r\nThe researchers, led by Rebecca Saxe, MIT assistant professor of brain and cognitive sciences, report their findings in the Proceedings of the National Academy of Sciences the week of March 29. Funding for the research came from The National Center for Research Resources, the MIND Institute, the Athinoula A. Martinos Center for Biomedical Imaging, the Simons Foundation and the David and Lucille Packard Foundation.\r\n\r\nThe study offers “striking evidence” that the right TPJ, located at the brain’s surface above and behind the right ear, is critical for making moral judgments, says Liane Young, lead author of the paper. It’s also startling, since under normal circumstances people are very confident and consistent in these kinds of moral judgments, says Young, a postdoctoral associate in MIT’s Department of Brain and Cognitive Sciences.\r\n\r\n“You think of morality as being a really high-level behavior,” she says. “To be able to apply (a magnetic field) to a specific brain region and change people’s moral judgments is really astonishing.”\r\n\r\nThinking of others\r\n\r\nSaxe first identified the right TPJ’s role in theory of mind a decade ago — a discovery that was the subject of her MIT PhD thesis in 2003. Since then, she has used functional magnetic resonance imaging (fMRI) to show that the right TPJ is active when people are asked to make judgments that require thinking about other people’s intentions.\r\n\r\nIn the new study, the researchers wanted to go beyond fMRI experiments to observe what would happen if they could actually disrupt activity in the right TPJ. Their success marks a major step forward for the field of moral neuroscience, says Walter Sinnott-Armstrong, professor of philosophy at Duke University.\r\n\r\n“Recent fMRI studies of moral judgment find fascinating correlations, but Young et al usher in a new era by moving beyond correlation to causation,” says Sinnott-Armstrong, who was not involved in this research.\r\n\r\nThe researchers used a noninvasive technique known as transcranial magnetic stimulation (TMS) to selectively interfere with brain activity in the right TPJ. A magnetic field applied to a small area of the skull creates weak electric currents that impede nearby brain cells’ ability to fire normally, but the effect is only temporary.\r\n\r\nIn one experiment, volunteers were exposed to TMS for 25 minutes before taking a test in which they read a series of scenarios and made moral judgments of characters’ actions on a scale of one (absolutely forbidden) to seven (absolutely permissible). \r\n\r\nIn a second experiment, TMS was applied in 500-milisecond bursts at the moment when the subject was asked to make a moral judgment. For example, subjects were asked to judge how permissible it is for a man to let his girlfriend walk across a bridge he knows to be unsafe, even if she ends up making it across safely. In such cases, a judgment based solely on the outcome would hold the perpetrator morally blameless, even though it appears he intended to do harm. \r\n\r\nIn both experiments, the researchers found that when the right TPJ was disrupted, subjects were more likely to judge failed attempts to harm as morally permissible. Therefore, the researchers believe that TMS interfered with subjects’ ability to interpret others’ intentions, forcing them to rely more on outcome information to make their judgments.\r\n\r\n“It doesn’t completely reverse people’s moral judgments, it just biases them,” says Saxe.\r\n\r\nWhen subjects received TMS to a brain region near the right TPJ, their judgments were nearly identical to those of people who received no TMS at all.\r\n\r\nWhile understanding other people’s intentions is critical to judging them, it is just one piece of the puzzle. We also take into account the person’s desires, previous record and any external constraints, guided by our own concepts of loyalty, fairness and integrity, says Saxe.\r\n\r\n“Our moral judgments are not the result of a single process, even though they feel like one uniform thing,” she says. “It’s actually a hodgepodge of competing and conflicting judgments, all of which get jumbled into what we call moral judgment.”\r\n\r\nSaxe’s lab is now studying the role of theory of mind in judging situations where the attempted harm was not a physical threat. The researchers are also doing a study on the role of the right TPJ in judgments of people who are morally lucky or unlucky. For example, a drunk driver who hits and kills a pedestrian is unlucky, compared to an equally drunk driver who makes it home safely, but the unlucky homicidal driver tends to be judged more morally blameworthy.\r\n", "original_url"=>"", "description"=>"description", "number_of_pages"=>""}}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (21.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 69ms (View: 32, DB: 3) | 200 OK [http://localhost/documents]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#create (for 127.0.0.1 at 2010-03-31 13:31:34) [POST]
+  Parameters: {"commit"=>"add this document", "authenticity_token"=>"ZHpq1NJgl/ma99+7Ww6WM/sAi9PDr29gRJPeR9STBuI=", "document"=>{"name"=>"blah blah", "body"=>"Moral judgments can be altered ... by magnets\r\n\r\n\r\nPhoto - Graphic: Christine Daniloff\r\nBy disrupting brain activity in a particular region, neuroscientists can sway people’s views of moral situations.\r\nAnne Trafton, MIT News Office\r\nMarch 30, 2010\r\nTo make moral judgments about other people, we often need to infer their intentions — an ability known as “theory of mind.” For example, if one hunter shoots another while on a hunting trip, we need to know what the shooter was thinking: Was he secretly jealous, or did he mistake his fellow hunter for an animal?\r\n\r\nMIT neuroscientists have now shown they can influence those judgments by interfering with activity in a specific brain region — a finding that helps reveal how the brain constructs morality.\r\n\r\nPrevious studies have shown that a brain region known as the right temporo-parietal junction (TPJ) is highly active when we think about other people’s intentions, thoughts and beliefs. In the new study, the researchers disrupted activity in the right TPJ by inducing a current in the brain using a magnetic field applied to the scalp. They found that the subjects’ ability to make moral judgments that require an understanding of other people’s intentions — for example, a failed murder attempt — was impaired. \r\n\r\nThe researchers, led by Rebecca Saxe, MIT assistant professor of brain and cognitive sciences, report their findings in the Proceedings of the National Academy of Sciences the week of March 29. Funding for the research came from The National Center for Research Resources, the MIND Institute, the Athinoula A. Martinos Center for Biomedical Imaging, the Simons Foundation and the David and Lucille Packard Foundation.\r\n\r\nThe study offers “striking evidence” that the right TPJ, located at the brain’s surface above and behind the right ear, is critical for making moral judgments, says Liane Young, lead author of the paper. It’s also startling, since under normal circumstances people are very confident and consistent in these kinds of moral judgments, says Young, a postdoctoral associate in MIT’s Department of Brain and Cognitive Sciences.\r\n\r\n“You think of morality as being a really high-level behavior,” she says. “To be able to apply (a magnetic field) to a specific brain region and change people’s moral judgments is really astonishing.”\r\n\r\nThinking of others\r\n\r\nSaxe first identified the right TPJ’s role in theory of mind a decade ago — a discovery that was the subject of her MIT PhD thesis in 2003. Since then, she has used functional magnetic resonance imaging (fMRI) to show that the right TPJ is active when people are asked to make judgments that require thinking about other people’s intentions.\r\n\r\nIn the new study, the researchers wanted to go beyond fMRI experiments to observe what would happen if they could actually disrupt activity in the right TPJ. Their success marks a major step forward for the field of moral neuroscience, says Walter Sinnott-Armstrong, professor of philosophy at Duke University.\r\n\r\n“Recent fMRI studies of moral judgment find fascinating correlations, but Young et al usher in a new era by moving beyond correlation to causation,” says Sinnott-Armstrong, who was not involved in this research.\r\n\r\nThe researchers used a noninvasive technique known as transcranial magnetic stimulation (TMS) to selectively interfere with brain activity in the right TPJ. A magnetic field applied to a small area of the skull creates weak electric currents that impede nearby brain cells’ ability to fire normally, but the effect is only temporary.\r\n\r\nIn one experiment, volunteers were exposed to TMS for 25 minutes before taking a test in which they read a series of scenarios and made moral judgments of characters’ actions on a scale of one (absolutely forbidden) to seven (absolutely permissible). \r\n\r\nIn a second experiment, TMS was applied in 500-milisecond bursts at the moment when the subject was asked to make a moral judgment. For example, subjects were asked to judge how permissible it is for a man to let his girlfriend walk across a bridge he knows to be unsafe, even if she ends up making it across safely. In such cases, a judgment based solely on the outcome would hold the perpetrator morally blameless, even though it appears he intended to do harm. \r\n\r\nIn both experiments, the researchers found that when the right TPJ was disrupted, subjects were more likely to judge failed attempts to harm as morally permissible. Therefore, the researchers believe that TMS interfered with subjects’ ability to interpret others’ intentions, forcing them to rely more on outcome information to make their judgments.\r\n\r\n“It doesn’t completely reverse people’s moral judgments, it just biases them,” says Saxe.\r\n\r\nWhen subjects received TMS to a brain region near the right TPJ, their judgments were nearly identical to those of people who received no TMS at all.\r\n\r\nWhile understanding other people’s intentions is critical to judging them, it is just one piece of the puzzle. We also take into account the person’s desires, previous record and any external constraints, guided by our own concepts of loyalty, fairness and integrity, says Saxe.\r\n\r\n“Our moral judgments are not the result of a single process, even though they feel like one uniform thing,” she says. “It’s actually a hodgepodge of competing and conflicting judgments, all of which get jumbled into what we call moral judgment.”\r\n\r\nSaxe’s lab is now studying the role of theory of mind in judging situations where the attempted harm was not a physical threat. The researchers are also doing a study on the role of the right TPJ in judgments of people who are morally lucky or unlucky. For example, a drunk driver who hits and kills a pedestrian is unlucky, compared to an equally drunk driver who makes it home safely, but the unlucky homicidal driver tends to be judged more morally blameworthy.\r\n", "original_url"=>"http://web.mit.edu/newsoffice/2010/moral-control-0330.html?tmpl=component&print=1", "description"=>"description", "number_of_pages"=>"2"}}
+  [4;36;1mDocument Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mDocument Create (1.8ms)[0m   [0;1mINSERT INTO `documents` (`name`, `created_at`, `body`, `updated_at`, `original_url`, `description`, `number_of_pages`) VALUES('blah blah', '2010-03-31 19:31:34', 'Moral judgments can be altered ... by magnets\r\n\r\n\r\nPhoto - Graphic: Christine Daniloff\r\nBy disrupting brain activity in a particular region, neuroscientists can sway people’s views of moral situations.\r\nAnne Trafton, MIT News Office\r\nMarch 30, 2010\r\nTo make moral judgments about other people, we often need to infer their intentions — an ability known as “theory of mind.” For example, if one hunter shoots another while on a hunting trip, we need to know what the shooter was thinking: Was he secretly jealous, or did he mistake his fellow hunter for an animal?\r\n\r\nMIT neuroscientists have now shown they can influence those judgments by interfering with activity in a specific brain region — a finding that helps reveal how the brain constructs morality.\r\n\r\nPrevious studies have shown that a brain region known as the right temporo-parietal junction (TPJ) is highly active when we think about other people’s intentions, thoughts and beliefs. In the new study, the researchers disrupted activity in the right TPJ by inducing a current in the brain using a magnetic field applied to the scalp. They found that the subjects’ ability to make moral judgments that require an understanding of other people’s intentions — for example, a failed murder attempt — was impaired. \r\n\r\nThe researchers, led by Rebecca Saxe, MIT assistant professor of brain and cognitive sciences, report their findings in the Proceedings of the National Academy of Sciences the week of March 29. Funding for the research came from The National Center for Research Resources, the MIND Institute, the Athinoula A. Martinos Center for Biomedical Imaging, the Simons Foundation and the David and Lucille Packard Foundation.\r\n\r\nThe study offers “striking evidence” that the right TPJ, located at the brain’s surface above and behind the right ear, is critical for making moral judgments, says Liane Young, lead author of the paper. It’s also startling, since under normal circumstances people are very confident and consistent in these kinds of moral judgments, says Young, a postdoctoral associate in MIT’s Department of Brain and Cognitive Sciences.\r\n\r\n“You think of morality as being a really high-level behavior,” she says. “To be able to apply (a magnetic field) to a specific brain region and change people’s moral judgments is really astonishing.”\r\n\r\nThinking of others\r\n\r\nSaxe first identified the right TPJ’s role in theory of mind a decade ago — a discovery that was the subject of her MIT PhD thesis in 2003. Since then, she has used functional magnetic resonance imaging (fMRI) to show that the right TPJ is active when people are asked to make judgments that require thinking about other people’s intentions.\r\n\r\nIn the new study, the researchers wanted to go beyond fMRI experiments to observe what would happen if they could actually disrupt activity in the right TPJ. Their success marks a major step forward for the field of moral neuroscience, says Walter Sinnott-Armstrong, professor of philosophy at Duke University.\r\n\r\n“Recent fMRI studies of moral judgment find fascinating correlations, but Young et al usher in a new era by moving beyond correlation to causation,” says Sinnott-Armstrong, who was not involved in this research.\r\n\r\nThe researchers used a noninvasive technique known as transcranial magnetic stimulation (TMS) to selectively interfere with brain activity in the right TPJ. A magnetic field applied to a small area of the skull creates weak electric currents that impede nearby brain cells’ ability to fire normally, but the effect is only temporary.\r\n\r\nIn one experiment, volunteers were exposed to TMS for 25 minutes before taking a test in which they read a series of scenarios and made moral judgments of characters’ actions on a scale of one (absolutely forbidden) to seven (absolutely permissible). \r\n\r\nIn a second experiment, TMS was applied in 500-milisecond bursts at the moment when the subject was asked to make a moral judgment. For example, subjects were asked to judge how permissible it is for a man to let his girlfriend walk across a bridge he knows to be unsafe, even if she ends up making it across safely. In such cases, a judgment based solely on the outcome would hold the perpetrator morally blameless, even though it appears he intended to do harm. \r\n\r\nIn both experiments, the researchers found that when the right TPJ was disrupted, subjects were more likely to judge failed attempts to harm as morally permissible. Therefore, the researchers believe that TMS interfered with subjects’ ability to interpret others’ intentions, forcing them to rely more on outcome information to make their judgments.\r\n\r\n“It doesn’t completely reverse people’s moral judgments, it just biases them,” says Saxe.\r\n\r\nWhen subjects received TMS to a brain region near the right TPJ, their judgments were nearly identical to those of people who received no TMS at all.\r\n\r\nWhile understanding other people’s intentions is critical to judging them, it is just one piece of the puzzle. We also take into account the person’s desires, previous record and any external constraints, guided by our own concepts of loyalty, fairness and integrity, says Saxe.\r\n\r\n“Our moral judgments are not the result of a single process, even though they feel like one uniform thing,” she says. “It’s actually a hodgepodge of competing and conflicting judgments, all of which get jumbled into what we call moral judgment.”\r\n\r\nSaxe’s lab is now studying the role of theory of mind in judging situations where the attempted harm was not a physical threat. The researchers are also doing a study on the role of the right TPJ in judgments of people who are morally lucky or unlucky. For example, a drunk driver who hits and kills a pedestrian is unlucky, compared to an equally drunk driver who makes it home safely, but the unlucky homicidal driver tends to be judged more morally blameworthy.\r\n', '2010-03-31 19:31:34', 'http://web.mit.edu/newsoffice/2010/moral-control-0330.html?tmpl=component&print=1', 'description', 2)[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/documents/24
+Completed in 45ms (DB: 5) | 302 Found [http://localhost/documents]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:31:34) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.4ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (31.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 71ms (View: 38, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-31 13:32:31) [GET]
+  Parameters: {"document_id"=>"24"}
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (32.8ms)
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (16.1ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 193ms (View: 109, DB: 5) | 200 OK [http://localhost/documents/24/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-31 13:32:39) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"ZHpq1NJgl/ma99+7Ww6WM/sAi9PDr29gRJPeR9STBuI=", "summary"=>{"document_id"=>"24", "page_end"=>"", "body"=>"this be summary mon", "page_begin"=>"", "type_of_subset"=>"full document"}}
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSummary Create (0.3ms)[0m   [0;1mINSERT INTO `summaries` (`document_id`, `created_at`, `body`, `page_end`, `updated_at`, `down_votes`, `up_votes`, `page_begin`, `type_of_subset`) VALUES(24, '2010-03-31 19:32:39', 'this be summary mon', NULL, '2010-03-31 19:32:39', NULL, NULL, NULL, 'full document')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Redirected to http://localhost:3000/documents/24
+Completed in 66ms (DB: 5) | 302 Found [http://localhost/summaries]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:32:39) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (37.9ms)
+Rendered summaries/_summary (19.1ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 107ms (View: 75, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:33:05) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (37.0ms)
+Rendered summaries/_summary (18.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 105ms (View: 73, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:33:59) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (38.5ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 170ms (View: 51, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:34:36) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (37.5ms)
+Rendered summaries/_summary (5.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 84ms (View: 51, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:34:38) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.7ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 81ms (View: 50, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:34:59) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.7ms)
+Rendered summaries/_summary (4.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 82ms (View: 49, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:35:08) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.7ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 81ms (View: 49, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:35:27) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (37.1ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 84ms (View: 51, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:35:32) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (37.1ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 82ms (View: 50, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:35:34) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.4ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 82ms (View: 49, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:35:43) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.4ms)
+Rendered summaries/_summary (5.2ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 82ms (View: 50, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:35:50) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (42.1ms)
+Rendered summaries/_summary (6.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 181ms (View: 57, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:35:51) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.9ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 82ms (View: 50, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:35:59) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.3ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 82ms (View: 50, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:36:06) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.6ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (40.6ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (1.4ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 90ms (View: 53, DB: 6) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:36:07) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.0ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 81ms (View: 49, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:36:16) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.5ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 82ms (View: 50, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:38:38) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (38.4ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 84ms (View: 51, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:38:47) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (38.0ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 83ms (View: 51, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:41:13) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.5ms)
+Rendered summaries/_summary (5.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 81ms (View: 49, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:41:19) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (39.0ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 170ms (View: 52, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:42:11) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (42.6ms)
+Rendered summaries/_summary (5.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 99ms (View: 56, DB: 6) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:43:36) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.8ms)
+Rendered summaries/_summary (21.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 107ms (View: 75, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (2.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:44:11) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.7ms)
+
+ActionView::TemplateError (undefined method `down_vote' for #<Summary:0x22aa1f0>) on line #22 of app/views/summaries/_summary.haml:
+19:           = summary.up_votes
+20:         %li.vote_down
+21:           = link_to "vote down", summary_summary_votes_path(summary, {:summary_vote => {:score => -1, :summary_id => summary.id}}), :method => :post, :class => "red1"
+22:           = summary.down_vote
+23:     .stackleft
+24:       %span.character_count
+25:         = summary.body.size.to_s
+
+    app/views/summaries/_summary.haml:22:in `_run_haml_app47views47summaries47_summary46haml_locals_object_summary'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/show.haml:8:in `_run_haml_app47views47documents47show46haml'
+    app/views/documents/show.haml:7:in `each'
+    app/views/documents/show.haml:7:in `_run_haml_app47views47documents47show46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:21:in `show'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (264.8ms)
+Rendered rescues/_request_and_response (3.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:44:24) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (37.5ms)
+Rendered summaries/_summary (21.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 109ms (View: 77, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:45:31) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (1.8ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (39.9ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 95ms (View: 56, DB: 7) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:45:32) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (132.4ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 179ms (View: 145, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:45:48) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (37.8ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 84ms (View: 51, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:45:52) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.6ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (39.5ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 91ms (View: 52, DB: 6) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:45:53) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (37.2ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 81ms (View: 50, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:46:31) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (36.3ms)
+Rendered summaries/_summary (19.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 192ms (View: 161, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:47:08) [GET]
+  Parameters: {"id"=>"24"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (0.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (37.8ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 84ms (View: 51, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:47:35) [GET]
+  Parameters: {"id"=>"24"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 24) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (58.2ms)
+Rendered summaries/_summary (4.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 113ms (View: 82, DB: 5) | 200 OK [http://localhost/documents/24]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-03-31 13:49:46) [GET]
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (14.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 54ms (View: 27, DB: 3) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#create (for 127.0.0.1 at 2010-03-31 13:50:13) [POST]
+  Parameters: {"commit"=>"add this document", "authenticity_token"=>"lO8/LjUNIfLiG4hrK2gu+a7iEw67GkzUlFDCaZVGi7E=", "document"=>{"name"=>"test document", "body"=>"this text should have about twenty-nine characters", "original_url"=>"none", "description"=>"test description", "number_of_pages"=>"14"}}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mDocument Create (0.3ms)[0m   [0;1mINSERT INTO `documents` (`name`, `created_at`, `body`, `updated_at`, `original_url`, `description`, `number_of_pages`) VALUES('test document', '2010-03-31 19:50:13', 'this text should have about twenty-nine characters', '2010-03-31 19:50:13', 'none', 'test description', 14)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/documents/25
+Completed in 43ms (DB: 5) | 302 Found [http://localhost/documents]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:50:13) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (32.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 71ms (View: 39, DB: 4) | 200 OK [http://localhost/documents/25]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-03-31 13:50:29) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.6ms)
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (14.2ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 91ms (View: 40, DB: 5) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-03-31 13:50:41) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"lO8/LjUNIfLiG4hrK2gu+a7iEw67GkzUlFDCaZVGi7E=", "summary"=>{"document_id"=>"25", "page_end"=>"8", "body"=>"this is a summary, yo", "page_begin"=>"3", "type_of_subset"=>"specific pages"}}
+  [4;36;1mSummary Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSummary Create (1.1ms)[0m   [0;1mINSERT INTO `summaries` (`document_id`, `created_at`, `body`, `page_end`, `updated_at`, `down_votes`, `up_votes`, `page_begin`, `type_of_subset`) VALUES(25, '2010-03-31 19:50:41', 'this is a summary, yo', 8, '2010-03-31 19:50:41', NULL, NULL, 3, 'specific pages')[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Redirected to http://localhost:3000/documents/25
+Completed in 74ms (DB: 6) | 302 Found [http://localhost/summaries]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-03-31 13:50:41) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (0.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (36.4ms)
+Rendered summaries/_summary (4.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 82ms (View: 50, DB: 4) | 200 OK [http://localhost/documents/25]
