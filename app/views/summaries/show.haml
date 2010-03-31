@@ -1,6 +1,8 @@
 - content_for :title do
   Summary of
   = @summary.document.name
+  - if @summary.type_of_subset == "specific pages"
+    = "(pp. #{@summary.page_begin} - #{@summary.page_end})"
 #document
   = render :partial => @summary.document
 #summary

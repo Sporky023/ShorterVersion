@@ -3,7 +3,7 @@
   %head
     %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }
     %title
-      = yield(:title)
+      = yield(:title) || "ShorterVersion.com"
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'jquery-1.4.2', 'application'
   %body
