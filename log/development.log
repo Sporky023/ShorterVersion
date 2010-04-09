@@ -22759,3 +22759,770 @@ Rendered summaries/_summary (4.9ms)
 Rendered layouts/_header (0.6ms)
 Rendered layouts/_footer (0.4ms)
 Completed in 84ms (View: 50, DB: 6) | 200 OK [http://localhost/documents/25]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-09 15:31:12) [GET]
+  [4;36;1mDocument Load (83.2ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (81.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (448.0ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (11.2ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.7ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.7ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (11.1ms)
+Rendered layouts/_header (17.0ms)
+Rendered layouts/_footer (1.3ms)
+Completed in 1242ms (View: 958, DB: 178) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:31:21) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (21.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (18.3ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 205ms (View: 122, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:34:10) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+
+ActionView::TemplateError (Inconsistent indentation: 6 spaces were used for indentation, but the rest of the document was indented using 4 spaces.) on line #4 of app/views/summaries/new.haml:
+1: #new_summary_page
+2:   
+3:     .help
+4:       And here's the action!  Write a good summary of the document so that others can get its gist without having to read the whole thing.  Don't worry about being perfect - the voting system will give you feedback.
+5:     #summary_form.summary.module
+6:       %h3 write your summary here
+7:       - form_for(@summary) do |f|
+
+    app/views/summaries/new.haml:4
+    haml (2.2.22) lib/haml/precompiler.rb:169:in `tabs'
+    haml (2.2.22) lib/haml/precompiler.rb:151:in `instance_eval'
+    haml (2.2.22) lib/haml/precompiler.rb:151:in `tabs'
+    haml (2.2.22) lib/haml/precompiler.rb:1007:in `block_opened?'
+    haml (2.2.22) lib/haml/precompiler.rb:758:in `render_tag'
+    haml (2.2.22) lib/haml/precompiler.rb:824:in `render_div'
+    haml (2.2.22) lib/haml/precompiler.rb:227:in `process_line'
+    haml (2.2.22) lib/haml/precompiler.rb:195:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:34:in `new'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (261.3ms)
+Rendered rescues/_request_and_response (3.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-09 15:34:45) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (37.0ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.8ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.8ms)
+  [4;36;1mSummary Load (2.1ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (12.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 132ms (View: 87, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:34:49) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (1.8ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.6ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 117ms (View: 58, DB: 8) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:36:24) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (15.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 93ms (View: 41, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:36:26) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.5ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (13.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 92ms (View: 42, DB: 7) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:36:52) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 96ms (View: 43, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:37:43) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (21.5ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (17.0ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 115ms (View: 61, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:37:46) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (21.5ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (18.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.7ms)
+Completed in 116ms (View: 62, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:39:48) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (13.3ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (15.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 111ms (View: 58, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:40:12) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (13.1ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (17.8ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 116ms (View: 60, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:40:24) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.7ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (15.7ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 112ms (View: 60, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:41:12) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.7ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.3ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 110ms (View: 59, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:42:01) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.9ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 94ms (View: 41, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:42:51) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (15.1ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.2ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 189ms (View: 45, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:43:06) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (13.3ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.2ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 94ms (View: 42, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:43:27) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.9ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.6ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (15.9ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 94ms (View: 42, DB: 7) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:43:39) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.4ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 93ms (View: 41, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:43:50) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (13.2ms)
+  [4;36;1mSummary Load (2.4ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (17.2ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 98ms (View: 42, DB: 8) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:44:07) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.7ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 95ms (View: 42, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:44:22) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.9ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.4ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 94ms (View: 42, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:44:42) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (15.5ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 94ms (View: 42, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:45:02) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.6ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.6ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 94ms (View: 41, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:45:09) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.6ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.6ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 186ms (View: 132, DB: 7) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:45:24) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (13.3ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (15.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 96ms (View: 42, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:46:29) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (13.6ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.4ms)
+
+ActionView::TemplateError (Inconsistent indentation: 6 spaces were used for indentation, but the rest of the document was indented using 4 spaces.) on line #3 of app/views/layouts/_header.haml:
+1: .stackleft.logo
+2:     %h1
+3:       ShorterVersion.com
+4:     %h2
+5:       documents summarized by the people, for the people
+6: .stackleft.tools
+
+    app/views/layouts/_header.haml:3
+    haml (2.2.22) lib/haml/precompiler.rb:169:in `tabs'
+    haml (2.2.22) lib/haml/precompiler.rb:151:in `instance_eval'
+    haml (2.2.22) lib/haml/precompiler.rb:151:in `tabs'
+    haml (2.2.22) lib/haml/precompiler.rb:1007:in `block_opened?'
+    haml (2.2.22) lib/haml/precompiler.rb:758:in `render_tag'
+    haml (2.2.22) lib/haml/precompiler.rb:231:in `process_line'
+    haml (2.2.22) lib/haml/precompiler.rb:195:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/layouts/application.haml:16:in `_run_haml_app47views47layouts47application46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:34:in `new'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (291.4ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:46:31) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (13.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.6ms)
+
+ActionView::TemplateError (Inconsistent indentation: 6 spaces were used for indentation, but the rest of the document was indented using 4 spaces.) on line #3 of app/views/layouts/_header.haml:
+1: .stackleft.logo
+2:     %h1
+3:       ShorterVersion.com
+4:     %h2
+5:       documents summarized by the people, for the people
+6: .stackleft.tools
+
+    app/views/layouts/_header.haml:3
+    haml (2.2.22) lib/haml/precompiler.rb:169:in `tabs'
+    haml (2.2.22) lib/haml/precompiler.rb:151:in `instance_eval'
+    haml (2.2.22) lib/haml/precompiler.rb:151:in `tabs'
+    haml (2.2.22) lib/haml/precompiler.rb:1007:in `block_opened?'
+    haml (2.2.22) lib/haml/precompiler.rb:758:in `render_tag'
+    haml (2.2.22) lib/haml/precompiler.rb:231:in `process_line'
+    haml (2.2.22) lib/haml/precompiler.rb:195:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/layouts/application.haml:16:in `_run_haml_app47views47layouts47application46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:34:in `new'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (190.7ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:46:43) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (15.9ms)
+Rendered layouts/_header (7.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 239ms (View: 188, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:48:12) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.2ms)
+Rendered layouts/_header (10.5ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 115ms (View: 63, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:48:37) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (15.7ms)
+Rendered layouts/_header (9.7ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 115ms (View: 62, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:49:40) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (1.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.6ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.8ms)
+Rendered layouts/_header (9.0ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 112ms (View: 59, DB: 7) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:50:32) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.7ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.6ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 96ms (View: 41, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:51:02) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 97ms (View: 44, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:51:07) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (2.1ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (13.2ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (15.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 95ms (View: 43, DB: 8) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:51:11) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.5ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (13.3ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (16.2ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 94ms (View: 42, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-09 15:51:50) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.6ms)
+  [4;35;1mSummary Load (2.3ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (14.3ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.3ms)
+Completed in 115ms (View: 61, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
