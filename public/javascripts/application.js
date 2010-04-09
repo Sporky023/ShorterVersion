@@ -9,5 +9,6 @@ $(document).ready(function(){
 
 skinny_window = function(){
 	$('.help').hide()
-	window.resizeTo(340, 600)
+	$('.logo').hide()
+	window.resizeTo(340, 800)
 }

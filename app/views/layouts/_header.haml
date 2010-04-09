@@ -1,9 +1,4 @@
-.stackleft.logo
-  %h1
-    ShorterVersion.com
-  %h2
-    documents summarized by the people, for the people
-.stackleft.tools
+.stackleft
   %ul
     %li
       = link_to "Add a Document", new_document_path
@@ -11,4 +6,11 @@
       = link_to "Browse Documents", documents_path
     %li
       = link_to_function 'help?', "$('.help').toggle()"
+.logo.stackleft
+  %h1
+    ShorterVersion.com
+  %h2
+    documents summarized by the people, for the people
+
+
 .clear

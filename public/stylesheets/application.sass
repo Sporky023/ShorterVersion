@@ -118,6 +118,12 @@ label
 option
 	color: blue
 
+a.hey
+	color: #9bf
+	font-weight: bold
+	font-family: georgia
+	font-size: 1.5em
+
 
 ul.horizontal
 	li.pending_feature
@@ -136,10 +142,10 @@ ul.horizontal
 	padding-bottom: 1px
 	border-bottom: 1px dotted
 #header
+	white-space: no-wrap
 	border-bottom: 1px black dotted
 	.logo
-		float: left
-		
+		width: 600px
 		font-family: arial	
 		h1
 			font-size: 4em
@@ -150,8 +156,7 @@ ul.horizontal
 			font-size: 1.3em
 			color: #777
 	.tools
-		float: right
-
+		width: 200px
 #main-content
 	padding-top: 8px
 
@@ -168,18 +173,19 @@ ul.horizontal
 	border: solid 1px
 	border-color: #ccc
 
+.stackleft
+	padding-right: 5px
+	width: 200px
+	float: left
+	p
+		margin: 0
+	p.indented
+		padding-left: 20px
+
 .module
 	.character_count
 		color: #09f
 		font-weight: bold
-	.stackleft
-		padding-right: 5px
-		width: 200px
-		float: left
-		p
-			margin: 0
-		p.indented
-			padding-left: 20px
 	margin-top: 15px
 	padding-left: 20px
 	padding-top: 10px
@@ -251,9 +257,6 @@ ul.horizontal
 		width: 400px
 	h3
 		line-height: 5px
-	.header
-		height 50px
-	width: 70em
 	.body
 		width: 65em
 		overflow: none		

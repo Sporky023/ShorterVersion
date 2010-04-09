@@ -91,6 +91,12 @@ label {
 option {
   color: blue; }
 
+a.hey {
+  color: #9bf;
+  font-weight: bold;
+  font-family: georgia;
+  font-size: 1.5em; }
+
 ul.horizontal li.pending_feature {
   display: none; }
 ul.horizontal li {
@@ -106,9 +112,10 @@ ul.horizontal li {
   border-bottom: 1px dotted; }
 
 #header {
+  white-space: no-wrap;
   border-bottom: 1px black dotted; }
   #header .logo {
-    float: left;
+    width: 600px;
     font-family: arial; }
     #header .logo h1 {
       font-size: 4em;
@@ -119,7 +126,7 @@ ul.horizontal li {
       font-size: 1.3em;
       color: #777; }
   #header .tools {
-    float: right; }
+    width: 200px; }
 
 #main-content {
   padding-top: 8px; }
@@ -136,6 +143,15 @@ ul.horizontal li {
   border: solid 1px;
   border-color: #ccc; }
 
+.stackleft {
+  padding-right: 5px;
+  width: 200px;
+  float: left; }
+  .stackleft p {
+    margin: 0; }
+  .stackleft p.indented {
+    padding-left: 20px; }
+
 .module {
   margin-top: 15px;
   padding-left: 20px;
@@ -149,14 +165,6 @@ ul.horizontal li {
   .module .character_count {
     color: #09f;
     font-weight: bold; }
-  .module .stackleft {
-    padding-right: 5px;
-    width: 200px;
-    float: left; }
-    .module .stackleft p {
-      margin: 0; }
-    .module .stackleft p.indented {
-      padding-left: 20px; }
   .module .tools {
     float: left;
     clear: none;
@@ -207,15 +215,13 @@ ul.horizontal li {
       .module .content .header h3 a:hover {
         text-decoration: underline; }
 
-.summary {
-  width: 70em; }
-  .summary .stackleft:first-child {
-    width: 400px; }
-  .summary h3 {
-    line-height: 5px; }
-  .summary .body {
-    width: 65em;
-    overflow: none; }
+.summary .stackleft:first-child {
+  width: 400px; }
+.summary h3 {
+  line-height: 5px; }
+.summary .body {
+  width: 65em;
+  overflow: none; }
 
 .document {
   width: 70em; }
