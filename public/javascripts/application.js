@@ -8,7 +8,13 @@ $(document).ready(function(){
 })
 
 skinny_window = function(){
+	$('.module').css('background-color', '#444')
+	$('.module').css('color', '#eee')
+	$('.module label').css('color', '#999')
+	$('.document').hide()
+	$('#document').hide()
+	$.scrollTo('max')
 	$('.help').hide()
 	$('.logo').hide()
-	window.resizeTo(340, 800)
+	window.resizeTo(360, 800)
 }

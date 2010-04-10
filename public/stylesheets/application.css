@@ -92,7 +92,7 @@ option {
   color: blue; }
 
 a.hey {
-  color: #9bf;
+  color: #0099ff;
   font-weight: bold;
   font-family: georgia;
   font-size: 1.5em; }
@@ -163,7 +163,7 @@ ul.horizontal li {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px; }
   .module .character_count {
-    color: #09f;
+    color: !hey_color;
     font-weight: bold; }
   .module .tools {
     float: left;

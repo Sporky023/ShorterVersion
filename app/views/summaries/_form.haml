@@ -7,7 +7,7 @@
     Does this summary cover the full document or just certain pages?
     %br
     = f.label :type_of_subset, "it covers"
-    = f.select :type_of_subset, Summary::VALID_VALUES_FOR[:type_of_subset]
+    = f.select :type_of_subset, options_for_summary_type_of_subset
   %p 
     Which pages?
     %br
