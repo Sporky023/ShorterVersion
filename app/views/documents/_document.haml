@@ -1,4 +1,6 @@
 .document.module
+  - if defined?(sharable) and sharable
+    = facebook_share_button
   .stackleft
     %span.name
       = link_to document.name, document_path(document)

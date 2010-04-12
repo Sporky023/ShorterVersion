@@ -4,7 +4,7 @@
 .help
   Here is the original document along with all the summaries people have written.  After you read a summary, you can make it more visible by clicking "vote up" or less visible by clicking "vote down".
 #document
-  = render :partial => @document
+  = render :partial => @document, :locals => {:sharable => true}
     
 #summaries
   - @document.summaries.sort_by{|s| s.score}.reverse.each do |summary|

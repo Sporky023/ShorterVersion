@@ -129,6 +129,7 @@ ul.horizontal li {
     width: 200px; }
 
 #main-content {
+  width: 70em;
   padding-top: 8px; }
 
 #footer {
@@ -223,24 +224,22 @@ ul.horizontal li {
   width: 65em;
   overflow: none; }
 
-.document {
-  width: 70em; }
-  .document .name {
-    font-family: arial;
-    font-weight: bold;
-    font-size: 1.2em; }
-  .document .stackleft:first-child {
-    width: 300px; }
-  .document .stackleft:last-child {
-    width: 400px; }
-  .document .tools {
-    text-align: right;
-    width: 32em; }
-    .document .tools li a {
-      padding-top: 2px;
-      height: 20px;
-      font-size: 0.4em; }
-  .document .content {
-    width: 37em; }
-    .document .content .body {
-      display: none; }
+.document .name {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 1.2em; }
+.document .stackleft:first-child {
+  width: 300px; }
+.document .stackleft:last-child {
+  width: 400px; }
+.document .tools {
+  text-align: right;
+  width: 32em; }
+  .document .tools li a {
+    padding-top: 2px;
+    height: 20px;
+    font-size: 0.4em; }
+.document .content {
+  width: 37em; }
+  .document .content .body {
+    display: none; }

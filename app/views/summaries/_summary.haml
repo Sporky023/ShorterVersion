@@ -1,11 +1,9 @@
 .summary.module
   .header
     .stackleft
-      %h3
-        = link_to 'summary', summary_path(summary)
-      %h4
-        written
-        = summary.created_at.to_s(:short)
+      = link_to 'summary', summary_path(summary)
+      written
+      = summary.created_at.to_s(:short)
       %span.character_count
         = summary.body.size.to_s
         characters
@@ -16,13 +14,10 @@
         = summary.page_begin
         to
         = summary.page_end
-      %ul
-        %li.vote_up
-          = link_to "vote up", summary_summary_votes_path(summary, {:summary_vote => {:score => 1, :summary_id => summary.id}}), :method => :post
-          = summary.up_votes
-        %li.vote_down
-          = link_to "vote down", summary_summary_votes_path(summary, {:summary_vote => {:score => -1, :summary_id => summary.id}}), :method => :post, :class => "red1"
-          = summary.down_votes
+        = link_to "vote up", summary_summary_votes_path(summary, {:summary_vote => {:score => 1, :summary_id => summary.id}}), :method => :post
+        = summary.up_votes
+        = link_to "vote down", summary_summary_votes_path(summary, {:summary_vote => {:score => -1, :summary_id => summary.id}}), :method => :post, :class => "red1"
+        = summary.down_votes
     .clear
   .body
     = summary.body
