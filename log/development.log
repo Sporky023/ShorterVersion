@@ -26936,3 +26936,15 @@ Rendered summaries/_summary (18.3ms)
 Rendered layouts/_header (0.8ms)
 Rendered layouts/_footer (0.4ms)
 Completed in 96ms (View: 63, DB: 6) | 200 OK [http://localhost/documents/25]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-04-12 13:03:30) [GET]
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (18.2ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 82ms (View: 55, DB: 2) | 200 OK [http://localhost/documents/new]
