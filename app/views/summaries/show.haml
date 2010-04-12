@@ -4,4 +4,4 @@
 #document
   = render :partial => @summary.document
 #summary
-  = render :partial => @summary
+  = render :partial => @summary, :locals => {:sharable => true}
