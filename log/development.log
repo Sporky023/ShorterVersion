@@ -26948,3 +26948,978 @@ Rendered documents/_form (18.2ms)
 Rendered layouts/_header (0.8ms)
 Rendered layouts/_footer (0.4ms)
 Completed in 82ms (View: 55, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-12 13:27:38) [GET]
+  [4;36;1mDocument Load (2.8ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (319.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (11.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (92.8ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.9ms)
+Rendered layouts/_header (8.7ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 875ms (View: 745, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-12 13:27:42) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (21.8ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (14.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 161ms (View: 89, DB: 6) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#new (for 127.0.0.1 at 2010-04-12 13:27:56) [GET]
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+Rendering template within layouts/application
+Rendering documents/new
+Rendered documents/_form (18.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 87ms (View: 58, DB: 2) | 200 OK [http://localhost/documents/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-12 13:27:59) [GET]
+  [4;35;1mDocument Load (2.8ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.8ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.8ms)
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 224ms (View: 182, DB: 16) | 200 OK [http://localhost/documents]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-04-12 13:28:00) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mDocument Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (60.3ms)
+Rendered summaries/_summary (19.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 152ms (View: 117, DB: 7) | 200 OK [http://localhost/documents/25]
+  [4;35;1mSQL (0.9ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-12 13:28:12) [GET]
+  Parameters: {"document_id"=>"25"}
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (12.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (12.5ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 93ms (View: 43, DB: 7) | 200 OK [http://localhost/documents/25/summaries/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-04-12 13:28:53) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"1RQs0YUKFldUzQ5OeQjZ481sLgY3lZbjoLzdW1KvDpk=", "summary"=>{"document_id"=>"25", "page_end"=>"", "body"=>"</div><script>alert('howdy from you xss attack')</script><div>", "page_begin"=>"", "type_of_subset"=>"full document"}}
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSummary Create (0.3ms)[0m   [0;1mINSERT INTO `summaries` (`document_id`, `created_at`, `body`, `page_end`, `updated_at`, `down_votes`, `up_votes`, `page_begin`, `type_of_subset`) VALUES(25, '2010-04-12 20:28:53', '</div><script>alert(\'howdy from you xss attack\')</script><div>', NULL, '2010-04-12 20:28:53', NULL, NULL, NULL, 'full document')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Redirected to http://localhost:3000/documents/25
+Completed in 67ms (DB: 6) | 302 Found [http://localhost/summaries]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-04-12 13:28:53) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (36.4ms)
+Rendered summaries/_summary (2.1ms)
+Rendered summaries/_summary (4.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 90ms (View: 56, DB: 6) | 200 OK [http://localhost/documents/25]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-04-12 13:28:58) [GET]
+  Parameters: {"id"=>"25"}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (36.1ms)
+Rendered summaries/_summary (2.0ms)
+Rendered summaries/_summary (4.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 90ms (View: 56, DB: 6) | 200 OK [http://localhost/documents/25]
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-04-12 13:29:05) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.9ms)
+Rendered summaries/_summary (1.9ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 89ms (View: 54, DB: 7) | 200 OK [http://localhost/documents/25]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-04-12 13:29:35) [GET]
+  Parameters: {"id"=>"25"}
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.3ms)
+Rendered summaries/_summary (16.1ms)
+Rendered summaries/_summary (4.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 112ms (View: 78, DB: 6) | 200 OK [http://localhost/documents/25]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-04-12 13:29:37) [GET]
+  Parameters: {"id"=>"25"}
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.0ms)
+Rendered summaries/_summary (2.1ms)
+Rendered summaries/_summary (4.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 87ms (View: 54, DB: 6) | 200 OK [http://localhost/documents/25]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-04-12 13:29:49) [GET]
+  Parameters: {"id"=>"25"}
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (37.5ms)
+Rendered summaries/_summary (18.6ms)
+Rendered summaries/_summary (5.2ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 121ms (View: 85, DB: 6) | 200 OK [http://localhost/documents/25]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-21 15:38:05) [GET]
+  [4;36;1mDocument Load (75.4ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (140.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (53.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (646.8ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (11.3ms)
+  [4;35;1mSummary Load (2.4ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.7ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (100.2ms)
+  [4;35;1mSummary Load (2.4ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (12.9ms)
+Rendered layouts/_header (26.8ms)
+Rendered layouts/_footer (3.9ms)
+Completed in 1502ms (View: 1134, DB: 284) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-04-21 15:38:15) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (28.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.6ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (2.5ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSummary Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (73.8ms)
+Rendered summaries/_summary (60.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 307ms (View: 240, DB: 37) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#new (for 127.0.0.1 at 2010-04-21 15:38:25) [GET]
+  Parameters: {"document_id"=>"23"}
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mDocument Load (0.6ms)[0m   [0mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+  [4;36;1mSummary Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+Rendering template within layouts/application
+Rendering summaries/new
+Rendered summaries/_form (47.4ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (21.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 243ms (View: 155, DB: 7) | 200 OK [http://localhost/documents/23/summaries/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SummariesController#create (for 127.0.0.1 at 2010-04-21 15:38:45) [POST]
+  Parameters: {"commit"=>"submit", "authenticity_token"=>"PCRCofIBRKpSSCxiWrdu8sWFvLtGzdRfqIbPOK4XfSs=", "summary"=>{"document_id"=>"23", "page_end"=>"", "body"=>"iTunes Pass provides purchasers with a select variety of content (which may comprise songs, albums, music videos, and editorial content) made available by a particular artist, group, or group of artists during a pre-determined, set time period (the \"Pass Period\"). The full price of the iTunes Pass is charged at the time of purchase. The purchase price of the iTunes Pass will not exceed the fair market value of the individual items offered as part of the iTunes Pass. No refunds, returns or cancellations. Currently available content (if any) will download upon purchase of the iTunes Pass. Future iTunes Pass content becomes available for download as it is made available on iTunes. To download, connect to iTunes and select Check for Available Downloads in the Store menu in iTunes 8 and 9 (or Check for Purchases in the Store menu in iTunes 7) on your computer. Any new content available as a part of a purchased iTunes Pass will then download. Purchaser must connect to iTunes on their computer and download any remaining iTunes Pass content within 90 days after the end of the Pass Period (or such other time period as may be specified on the purchase page), after which such remaining content may no longer be available for download as part of the iTunes Pass purchase. iTunes Passes cannot be purchased or managed from your iPad, iPod touch or iPhone.\r\n\r\niTUNES LP AND iTUNES EXTRAS\r\n\r\niTunes LP and iTunes Extras Products are usable only on computers with iTunes 9 or higher and Apple TV with software version 3.0 or higher.\r\n\r\nIf you purchase a Product (e.g., a music album or movie) that includes an iTunes LP or iTunes Extras using an iPad, iPhone or iPod touch, the iTunes LP or iTunes Extras will not download to your iPad, iPhone or iPod touch and instead will be added to your download queue, and you may add it to the iTunes library on your Apple-authorized computer by selecting Check for Available Downloads in the Store menu in iTunes 9. In order to enjoy all the features of the iTunes LP or iTunes Extras, you also will need to sync the purchased content that was downloaded to your iPad, iPhone or iPod touch to the same Apple-authorized computer to which the iTunes LP or iTunes Extras was downloaded. If your computer does not yet have iTunes 9, you will need to install iTunes 9 in order to download and use the iTunes LP or iTunes Extras purchased on your iPad, iPhone or iPod touch. Please see Upgrades below.\r\n\r\niPOD GAMES\r\n\r\niPod Games currently available on the iTunes Store are compatible only with iPod classic, 3rd generation and 4th generation iPod nanos, and 5th generation (video) iPods. The Games will not function on any other device, including your personal computer. Updates to your existing compatible iPod's firmware may render your purchased version of a Game incompatible with that iPod. Games purchased from the iTunes Store may not be compatible with future generations of the iPod, and Apple makes no guarantee of such forward compatibility.\r\n\r\nSOFTWARE\r\n\r\nSoftware Products purchased from the iTunes Store are subject to purchaser's prior acceptance of the terms of any end-user agreements or other terms and conditions required for use of such Products.\r\n\r\nUPGRADES\r\n\r\nThe latest version of the iTunes software is recommended to access the iTunes Store. From time to time, an upgrade to the latest version of the iTunes software may be required in order to make transactions from the iTunes Store, to download Products previously purchased from the iTunes Store (for example, Products in your download queue or future Season Pass/Multi-Pass episodes) or to take advantage of new features of the iTunes Store. The latest version of the iTunes software is available for download at no charge, and the minimum system requirements for running it are provided, at http://www.apple.com/itunes/download/. Use of iTunes software is subject to acceptance of its software license agreement presented at the time of installation. For any additional questions regarding required upgrades, please contact iTunes Store Customer Service (see below).\r\n\r\nApple reserves the right to enhance Products purchased or rented (as applicable) from the iTunes Store, including Products purchased but not yet downloaded. Among other things, such enhancements may result in larger file sizes (requiring, for example, longer download times and additional disk space for storage).\r\n\r\nMOVIE RENTALS\r\n\r\nMovies are viewable only on your Mac or Windows computer (using iTunes version 7.6 or later), iPad, iPhone, iPod touch, iPod nano (3rd or 4th generation), iPod classic, or on TVs using your Apple TV. Movies in high definition resolution (HD) are viewable only on your Mac or Windows computer, iPad, or TVs using your Apple TV. Movies are viewable only on one device at a time.\r\n\r\nYou may move movie rentals between your Mac or Windows computer and other compatible devices, but not directly between two computers or between two such other compatible devices. Movies rented using your Apple TV or iPad may not be moved. You must be connected to the iTunes Store when moving movie rentals. Once a movie rental is moved, it is no longer viewable on the sending device or computer.\r\n\r\nYou have thirty (30) days after downloading a movie to begin viewing. Once you begin viewing, you have twenty-four (24) hours to view the movie (the “Viewing Period”). You may view the movie an unlimited number of times during the Viewing Period. Movies are not viewable after the thirty (30) day period. Stopping, pausing or restarting a movie does not extend the available time for viewing.\r\n\r\nIf you move a movie to an iPad, iPod or iPhone and then use iTunes to restore the iPad, iPod or iPhone before you finish watching it, the movie will be deleted and will not be recoverable. This also applies to choosing Settings > Reset > Erase all content and settings on iPad, iPod touch and iPhone.\r\n\r\nBroadband Internet connection required.\r\n\r\nFor more information about Movie Rentals, please read the iTunes Store Movie Rental FAQ http://www.info.apple.com/kbnum/n307257\r\n\r\nHDMI\r\n\r\nAn HDCP connection is required in order to view movies (purchased or rented) and TV shows transmitted over HDMI.\r\n\r\nHIGH DEFINITION PRODUCTS\r\n\r\nProducts in high definition resolution (HD) are viewable only on computers, iPad, or TVs using your Apple TV; however, HD Products purchased also include a standard definition version delivered to your computer that may be transferred to your iPod or iPhone.\r\n\r\nPRICES\r\n\r\nThe iTunes Store endeavors to offer you competitive prices on current selections. Your total price will include the price of the Product plus any applicable sales tax (in effect on the day of download). Apple reserves the right to change prices for Products offered at the iTunes Store at any time, and does not provide price protection or refunds in the event of a price drop or promotional offering.\r\n\r\nCONTENT AVAILABILITY\r\n\r\nThe iTunes Store makes every effort to provide a broad content offering. For this reason, Apple reserves the right to change content options without notice. On occasion, a Product may become unavailable following a transaction but prior to download. Your sole remedy in such cases is a refund of the price paid for the unavailable Product. Please contact iTunes Store Customer Service for assistance in such cases (see below).\r\n\r\nFOR ASSISTANCE WITH ORDERS - iTUNES STORE CUSTOMER SERVICE\r\n\r\nFor assistance with billing questions or other order inquiries, please refer to our online support page by clicking here: http://www.apple.com/support/itunes/store/. If you cannot find the answers you are seeking in our robust knowledge base, you can contact us by visiting the following URL http://www.apple.com/support/itunes/store/, clicking on the appropriate Customer Service topic, then using the contact button or email form at the bottom of the page. Responses to emails will be provided as soon as possible.\r\n\r\nCONTENT USAGE RULES\r\n\r\nYour use of any Products purchased or rented (as applicable) from the iTunes Store is conditioned upon your prior acceptance of the Terms of Service, including, without limitation, the Usage Rules set forth therein.\r\n\r\nOTHER TERMS AND CONDITIONS\r\n\r\nApple is not responsible for typographic errors.", "page_begin"=>"", "type_of_subset"=>"full document"}}
+  [4;35;1mSummary Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSummary Create (119.5ms)[0m   [0mINSERT INTO `summaries` (`document_id`, `created_at`, `body`, `page_end`, `updated_at`, `down_votes`, `up_votes`, `page_begin`, `type_of_subset`) VALUES(23, '2010-04-21 22:38:45', 'iTunes Pass provides purchasers with a select variety of content (which may comprise songs, albums, music videos, and editorial content) made available by a particular artist, group, or group of artists during a pre-determined, set time period (the \"Pass Period\"). The full price of the iTunes Pass is charged at the time of purchase. The purchase price of the iTunes Pass will not exceed the fair market value of the individual items offered as part of the iTunes Pass. No refunds, returns or cancellations. Currently available content (if any) will download upon purchase of the iTunes Pass. Future iTunes Pass content becomes available for download as it is made available on iTunes. To download, connect to iTunes and select Check for Available Downloads in the Store menu in iTunes 8 and 9 (or Check for Purchases in the Store menu in iTunes 7) on your computer. Any new content available as a part of a purchased iTunes Pass will then download. Purchaser must connect to iTunes on their computer and download any remaining iTunes Pass content within 90 days after the end of the Pass Period (or such other time period as may be specified on the purchase page), after which such remaining content may no longer be available for download as part of the iTunes Pass purchase. iTunes Passes cannot be purchased or managed from your iPad, iPod touch or iPhone.\r\n\r\niTUNES LP AND iTUNES EXTRAS\r\n\r\niTunes LP and iTunes Extras Products are usable only on computers with iTunes 9 or higher and Apple TV with software version 3.0 or higher.\r\n\r\nIf you purchase a Product (e.g., a music album or movie) that includes an iTunes LP or iTunes Extras using an iPad, iPhone or iPod touch, the iTunes LP or iTunes Extras will not download to your iPad, iPhone or iPod touch and instead will be added to your download queue, and you may add it to the iTunes library on your Apple-authorized computer by selecting Check for Available Downloads in the Store menu in iTunes 9. In order to enjoy all the features of the iTunes LP or iTunes Extras, you also will need to sync the purchased content that was downloaded to your iPad, iPhone or iPod touch to the same Apple-authorized computer to which the iTunes LP or iTunes Extras was downloaded. If your computer does not yet have iTunes 9, you will need to install iTunes 9 in order to download and use the iTunes LP or iTunes Extras purchased on your iPad, iPhone or iPod touch. Please see Upgrades below.\r\n\r\niPOD GAMES\r\n\r\niPod Games currently available on the iTunes Store are compatible only with iPod classic, 3rd generation and 4th generation iPod nanos, and 5th generation (video) iPods. The Games will not function on any other device, including your personal computer. Updates to your existing compatible iPod\'s firmware may render your purchased version of a Game incompatible with that iPod. Games purchased from the iTunes Store may not be compatible with future generations of the iPod, and Apple makes no guarantee of such forward compatibility.\r\n\r\nSOFTWARE\r\n\r\nSoftware Products purchased from the iTunes Store are subject to purchaser\'s prior acceptance of the terms of any end-user agreements or other terms and conditions required for use of such Products.\r\n\r\nUPGRADES\r\n\r\nThe latest version of the iTunes software is recommended to access the iTunes Store. From time to time, an upgrade to the latest version of the iTunes software may be required in order to make transactions from the iTunes Store, to download Products previously purchased from the iTunes Store (for example, Products in your download queue or future Season Pass/Multi-Pass episodes) or to take advantage of new features of the iTunes Store. The latest version of the iTunes software is available for download at no charge, and the minimum system requirements for running it are provided, at http://www.apple.com/itunes/download/. Use of iTunes software is subject to acceptance of its software license agreement presented at the time of installation. For any additional questions regarding required upgrades, please contact iTunes Store Customer Service (see below).\r\n\r\nApple reserves the right to enhance Products purchased or rented (as applicable) from the iTunes Store, including Products purchased but not yet downloaded. Among other things, such enhancements may result in larger file sizes (requiring, for example, longer download times and additional disk space for storage).\r\n\r\nMOVIE RENTALS\r\n\r\nMovies are viewable only on your Mac or Windows computer (using iTunes version 7.6 or later), iPad, iPhone, iPod touch, iPod nano (3rd or 4th generation), iPod classic, or on TVs using your Apple TV. Movies in high definition resolution (HD) are viewable only on your Mac or Windows computer, iPad, or TVs using your Apple TV. Movies are viewable only on one device at a time.\r\n\r\nYou may move movie rentals between your Mac or Windows computer and other compatible devices, but not directly between two computers or between two such other compatible devices. Movies rented using your Apple TV or iPad may not be moved. You must be connected to the iTunes Store when moving movie rentals. Once a movie rental is moved, it is no longer viewable on the sending device or computer.\r\n\r\nYou have thirty (30) days after downloading a movie to begin viewing. Once you begin viewing, you have twenty-four (24) hours to view the movie (the “Viewing Period”). You may view the movie an unlimited number of times during the Viewing Period. Movies are not viewable after the thirty (30) day period. Stopping, pausing or restarting a movie does not extend the available time for viewing.\r\n\r\nIf you move a movie to an iPad, iPod or iPhone and then use iTunes to restore the iPad, iPod or iPhone before you finish watching it, the movie will be deleted and will not be recoverable. This also applies to choosing Settings > Reset > Erase all content and settings on iPad, iPod touch and iPhone.\r\n\r\nBroadband Internet connection required.\r\n\r\nFor more information about Movie Rentals, please read the iTunes Store Movie Rental FAQ http://www.info.apple.com/kbnum/n307257\r\n\r\nHDMI\r\n\r\nAn HDCP connection is required in order to view movies (purchased or rented) and TV shows transmitted over HDMI.\r\n\r\nHIGH DEFINITION PRODUCTS\r\n\r\nProducts in high definition resolution (HD) are viewable only on computers, iPad, or TVs using your Apple TV; however, HD Products purchased also include a standard definition version delivered to your computer that may be transferred to your iPod or iPhone.\r\n\r\nPRICES\r\n\r\nThe iTunes Store endeavors to offer you competitive prices on current selections. Your total price will include the price of the Product plus any applicable sales tax (in effect on the day of download). Apple reserves the right to change prices for Products offered at the iTunes Store at any time, and does not provide price protection or refunds in the event of a price drop or promotional offering.\r\n\r\nCONTENT AVAILABILITY\r\n\r\nThe iTunes Store makes every effort to provide a broad content offering. For this reason, Apple reserves the right to change content options without notice. On occasion, a Product may become unavailable following a transaction but prior to download. Your sole remedy in such cases is a refund of the price paid for the unavailable Product. Please contact iTunes Store Customer Service for assistance in such cases (see below).\r\n\r\nFOR ASSISTANCE WITH ORDERS - iTUNES STORE CUSTOMER SERVICE\r\n\r\nFor assistance with billing questions or other order inquiries, please refer to our online support page by clicking here: http://www.apple.com/support/itunes/store/. If you cannot find the answers you are seeking in our robust knowledge base, you can contact us by visiting the following URL http://www.apple.com/support/itunes/store/, clicking on the appropriate Customer Service topic, then using the contact button or email form at the bottom of the page. Responses to emails will be provided as soon as possible.\r\n\r\nCONTENT USAGE RULES\r\n\r\nYour use of any Products purchased or rented (as applicable) from the iTunes Store is conditioned upon your prior acceptance of the Terms of Service, including, without limitation, the Usage Rules set forth therein.\r\n\r\nOTHER TERMS AND CONDITIONS\r\n\r\nApple is not responsible for typographic errors.', NULL, '2010-04-21 22:38:45', NULL, NULL, NULL, 'full document')[0m
+  [4;36;1mSQL (37.9ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mDocument Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.7ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Redirected to http://localhost:3000/documents/23
+Completed in 333ms (DB: 164) | 302 Found [http://localhost/summaries]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-04-21 15:38:46) [GET]
+  Parameters: {"id"=>"23"}
+  [4;35;1mDocument Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (1.1ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 23) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSummary Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (46.6ms)
+Rendered summaries/_summary (10.2ms)
+Rendered summaries/_summary (12.4ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 125ms (View: 83, DB: 9) | 200 OK [http://localhost/documents/23]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:44:26) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (303.9ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.5ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (90.0ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (30.5ms)
+Rendered layouts/_footer (3.3ms)
+Completed in 876ms (View: 769, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:45:10) [GET]
+  [4;35;1mDocument Load (3.1ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (57.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.3ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 189ms (View: 145, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:45:27) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (57.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.3ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 188ms (View: 146, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:45:33) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (56.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.5ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 274ms (View: 147, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:47:33) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.7ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.8ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.0ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 158ms (View: 115, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:49:35) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (57.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 219ms (View: 147, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:49:52) [GET]
+  [4;36;1mDocument Load (3.0ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #39 of app/views/documents/_document.haml:
+36:     = link_to 'body text', nil, :class => "show_body"
+37:   .clear
+38: .stackleft
+39:     %p
+40:       added on
+41:       = document.created_at.to_s(:short)
+42:     - unless document.number_of_pages.nil?
+
+    app/views/documents/_document.haml:39
+    haml (2.2.22) lib/haml/precompiler.rb:198:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/index.haml:7:in `_run_haml_app47views47documents47index46haml'
+    app/views/documents/index.haml:6:in `each'
+    app/views/documents/index.haml:6:in `_run_haml_app47views47documents47index46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (177.8ms)
+Rendered rescues/_request_and_response (3.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:50:12) [GET]
+  [4;36;1mDocument Load (2.8ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (9.3ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #39 of app/views/documents/_document.haml:
+36:         = link_to 'body text', nil, :class => "show_body"
+37:       .clear
+38:   .stackleft
+39:       %p
+40:       added on
+41:       = document.created_at.to_s(:short)
+42:     - unless document.number_of_pages.nil?
+
+    app/views/documents/_document.haml:39
+    haml (2.2.22) lib/haml/precompiler.rb:198:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/index.haml:7:in `_run_haml_app47views47documents47index46haml'
+    app/views/documents/index.haml:6:in `each'
+    app/views/documents/index.haml:6:in `_run_haml_app47views47documents47index46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (176.7ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:51:13) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #39 of app/views/documents/_document.haml:
+36:         = link_to 'body text', nil, :class => "show_body"
+37:       .clear
+38:   .stackleft
+39:       %p
+40:       added on
+41:       = document.created_at.to_s(:short)
+42:     - unless document.number_of_pages.nil?
+
+    app/views/documents/_document.haml:39
+    haml (2.2.22) lib/haml/precompiler.rb:198:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/index.haml:7:in `_run_haml_app47views47documents47index46haml'
+    app/views/documents/index.haml:6:in `each'
+    app/views/documents/index.haml:6:in `_run_haml_app47views47documents47index46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (277.5ms)
+Rendered rescues/_request_and_response (0.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:51:41) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+
+ActionView::TemplateError (The line was indented 2 levels deeper than the previous line.) on line #39 of app/views/documents/_document.haml:
+36:         = link_to 'body text', nil, :class => "show_body"
+37:       .clear
+38:   .stackleft
+39:       %p
+40:       added on
+41:       = document.created_at.to_s(:short)
+42:     - unless document.number_of_pages.nil?
+
+    app/views/documents/_document.haml:39
+    haml (2.2.22) lib/haml/precompiler.rb:198:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/index.haml:7:in `_run_haml_app47views47documents47index46haml'
+    app/views/documents/index.haml:6:in `each'
+    app/views/documents/index.haml:6:in `_run_haml_app47views47documents47index46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (175.3ms)
+Rendered rescues/_request_and_response (0.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:52:01) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (56.8ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.3ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.6ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.9ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 287ms (View: 148, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 00:52:16) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (57.4ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.3ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 190ms (View: 146, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 01:02:15) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (242.7ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.6ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (95.3ms)
+Rendered layouts/_header (9.4ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 837ms (View: 737, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 01:02:26) [GET]
+  [4;35;1mDocument Load (2.7ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (57.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 189ms (View: 146, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 01:02:47) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (54.7ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.4ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 186ms (View: 143, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 01:03:21) [GET]
+  [4;35;1mDocument Load (2.7ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (56.3ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.5ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 277ms (View: 234, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 01:03:54) [GET]
+  [4;36;1mDocument Load (3.0ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (55.4ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 187ms (View: 144, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 01:04:36) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (57.0ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 188ms (View: 144, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 01:05:15) [GET]
+  [4;36;1mDocument Load (3.9ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (58.2ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.7ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 192ms (View: 147, DB: 18) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 01:05:39) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.5ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.4ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 155ms (View: 112, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 01:06:39) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (32.9ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.3ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.2ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.0ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 156ms (View: 113, DB: 17) | 200 OK [http://localhost/]

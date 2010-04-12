@@ -2,33 +2,24 @@
   - if defined?(sharable) and sharable
     = facebook_share_button
   .stackleft
-    %span.name
-      = link_to document.name, document_path(document)
+    %label original:
+    = link_to document.name, document.original_url
+    
     .description
       - if document.description.to_s.empty?
         (no description)
       - else
         = document.description
+    
     = link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1"
     = link_to 'edit', edit_document_path(document)
-    .clear
-    %span.character_count
-      = document.body.to_s.size
-      characters
+    
+      
+ 
   .stackleft
     %p
-      added on
-      = document.created_at.to_s(:short)
-    - unless document.number_of_pages.nil?
-      %p
-        = document.number_of_pages
-        pages
-    %p
-      original:
-      = link_to document.original_url, document.original_url
-  .stackleft
-    %p
-      %span.title summaries
+      %label summaries:
+      
       = link_to 'read', document_path(document)
       = link_to 'write', new_document_summary_path(document) 
     - document.summaries.group_by{|x| x.type_of_subset}.each do |type_of_subset, summaries|
@@ -37,13 +28,33 @@
     %p.indented
       total:
       = document.summaries.count
-    
+
     %p.indented
-      
+
     %p
       %li.pending_feature
         = link_to 'body text', nil, :class => "show_body"
       .clear
+  .stackleft
+    
+    %span.name
+    
+    .clear
+      
+      %p.created_at
+        added on
+        = document.created_at.to_s(:short)
+    
+      
+      
+      = document.body.to_s.size
+      characters
+    - unless document.number_of_pages.nil?
+    
+      %p
+        = document.number_of_pages
+        pages
+      
   .clear
   
   
