@@ -13,5 +13,7 @@ Rails::Initializer.run do |config|
   config.gem 'populator'
   config.gem 'faker'
   
+  config.gem 'factory_girl'
+  
 
 end

@@ -2,6 +2,10 @@ require 'spec_helper'
 
 describe SummariesController do
 
+  before(:each) do
+    @document = Factory.create(:document)
+  end
+
   def mock_summary(stubs={})
     @mock_summary ||= mock_model(Summary, stubs)
   end
@@ -25,7 +29,7 @@ describe SummariesController do
   describe "GET new" do
     it "assigns a new summary as @summary" do
       Summary.stub(:new).and_return(mock_summary)
-      get :new
+      get :new, :document_id => @document.id
       assigns[:summary].should equal(mock_summary)
     end
   end
@@ -41,16 +45,12 @@ describe SummariesController do
   describe "POST create" do
 
     describe "with valid params" do
-      it "assigns a newly created summary as @summary" do
-        Summary.stub(:new).with({'these' => 'params'}).and_return(mock_summary(:save => true))
-        post :create, :summary => {:these => 'params'}
-        assigns[:summary].should equal(mock_summary)
-      end
 
       it "redirects to the created summary" do
-        Summary.stub(:new).and_return(mock_summary(:save => true))
+        @summary = Factory.build(:summary)
+        Summary.stub(:new).and_return(@summary)
         post :create, :summary => {}
-        response.should redirect_to(summary_url(mock_summary))
+        response.should redirect_to(document_url(@summary.document))
       end
     end
 

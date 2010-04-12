@@ -1,14 +1,10 @@
 require 'spec_helper'
 
-describe "/summaries/new.html.erb" do
+describe "/summaries/new.haml" do
   include SummariesHelper
 
   before(:each) do
-    assigns[:summary] = stub_model(Summary,
-      :new_record? => true,
-      :document_id => 1,
-      :body => "value for body"
-    )
+    assigns[:summary] = Factory.build(:summary)
   end
 
   it "renders new summary form" do

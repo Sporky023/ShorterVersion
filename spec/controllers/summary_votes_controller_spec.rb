@@ -41,16 +41,12 @@ describe SummaryVotesController do
   describe "POST create" do
 
     describe "with valid params" do
-      it "assigns a newly created summary_vote as @summary_vote" do
-        SummaryVote.stub(:new).with({'these' => 'params'}).and_return(mock_summary_vote(:save => true))
-        post :create, :summary_vote => {:these => 'params'}
-        assigns[:summary_vote].should equal(mock_summary_vote)
-      end
 
       it "redirects to the created summary_vote" do
-        SummaryVote.stub(:new).and_return(mock_summary_vote(:save => true))
+        @summary_vote = Factory.build(:summary_vote)
+        SummaryVote.stub(:new).and_return(@summary_vote)
         post :create, :summary_vote => {}
-        response.should redirect_to(summary_vote_url(mock_summary_vote))
+        response.should redirect_to(document_url(@summary_vote.summary.document))
       end
     end
 

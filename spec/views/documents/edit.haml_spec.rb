@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "/documents/edit.html.erb" do
+describe "/documents/edit.haml" do
   include DocumentsHelper
 
   before(:each) do

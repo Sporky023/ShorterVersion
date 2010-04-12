@@ -2,10 +2,7 @@ require 'spec_helper'
 
 describe DocumentsController do
   describe "routing" do
-    it "recognizes and generates #index" do
-      { :get => "/documents" }.should route_to(:controller => "documents", :action => "index")
-    end
-
+    
     it "recognizes and generates #new" do
       { :get => "/documents/new" }.should route_to(:controller => "documents", :action => "new")
     end
