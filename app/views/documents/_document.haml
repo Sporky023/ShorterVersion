@@ -1,18 +1,16 @@
 .document.module
-  - if defined?(sharable) and sharable
-    = facebook_share_button
   .stackleft
     %label original:
     = link_to document.name, document.original_url
     
-    .description
+    %p.indented#description
       - if document.description.to_s.empty?
         (no description)
       - else
         = document.description
-    
-    = link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1"
-    = link_to 'edit', edit_document_path(document)
+    %p.indented
+      = link_to 'delete', document_path(document), :method => :delete, :confirm => "Are you sure?  This document and all its summaries will be deleted.", :class => "red1"
+      = link_to 'edit', edit_document_path(document)
     
       
  

@@ -27923,3 +27923,2219 @@ Rendered documents/_document (10.0ms)
 Rendered layouts/_header (0.9ms)
 Rendered layouts/_footer (0.4ms)
 Completed in 156ms (View: 113, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:14:10) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (55.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (9.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 205ms (View: 163, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:15:51) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (12.7ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (9.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 176ms (View: 134, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:16:09) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (94.7ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 240ms (View: 197, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:16:10) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.8ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (2.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 157ms (View: 114, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:16:22) [GET]
+  [4;35;1mDocument Load (2.7ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (48.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (36.3ms)
+  [4;36;1mSummary Load (2.4ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.6ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.9ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.1ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 211ms (View: 120, DB: 65) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:16:23) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.6ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.8ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 240ms (View: 198, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:17:40) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.1ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (2.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.1ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 158ms (View: 115, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:17:41) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.6ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 156ms (View: 114, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:17:42) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.6ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 156ms (View: 114, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:17:43) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (3.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (12.7ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.0ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 160ms (View: 116, DB: 18) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:17:57) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.6ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.4ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 156ms (View: 114, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:17:58) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.5ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.7ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 156ms (View: 113, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:18:22) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.0ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 156ms (View: 113, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:18:27) [GET]
+  [4;36;1mDocument Load (3.3ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (36.2ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.4ms)
+  [4;35;1mSummary Load (3.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (16.8ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (2.3ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.4ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 169ms (View: 121, DB: 22) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:18:28) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.4ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.0ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 156ms (View: 114, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:18:51) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.3ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.0ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 158ms (View: 116, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:18:54) [GET]
+  [4;35;1mDocument Load (2.7ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (1.5ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (36.0ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.3ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 162ms (View: 117, DB: 19) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:19:06) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 156ms (View: 114, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:19:21) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.2ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 240ms (View: 116, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:19:24) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.4ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.8ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (11.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 170ms (View: 125, DB: 18) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:19:25) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.0ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.5ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 155ms (View: 112, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:19:27) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (120.1ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.0ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 242ms (View: 200, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:19:35) [GET]
+  [4;35;1mDocument Load (2.8ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.7ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (3.4ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 157ms (View: 113, DB: 18) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:19:38) [GET]
+  [4;36;1mDocument Load (3.0ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (2.1ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.6ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (3.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (13.0ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 165ms (View: 119, DB: 19) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:19:39) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.3ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (97.3ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 242ms (View: 200, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:19:55) [GET]
+  [4;36;1mDocument Load (3.0ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.1ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.8ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.7ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 162ms (View: 117, DB: 19) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:19:56) [GET]
+  [4;35;1mDocument Load (5.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.2ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 200ms (View: 149, DB: 20) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:21:10) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.6ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (95.9ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 241ms (View: 199, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:21:11) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.7ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.6ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 156ms (View: 114, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:21:31) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.5ms)
+  [4;35;1mSummary Load (2.4ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (12.3ms)
+  [4;35;1mSummary Load (3.2ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (14.9ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.4ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 175ms (View: 127, DB: 20) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:21:32) [GET]
+  [4;35;1mDocument Load (2.9ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.4ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (12.3ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.5ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 243ms (View: 198, DB: 18) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:22:12) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.0ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.3ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 160ms (View: 117, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:22:15) [GET]
+  [4;35;1mDocument Load (2.8ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.6ms)
+  [4;36;1mSummary Load (2.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (16.1ms)
+  [4;36;1mSummary Load (2.1ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.6ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (2.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (11.4ms)
+Rendered layouts/_header (1.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 171ms (View: 122, DB: 21) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:22:17) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.2ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.0ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (2.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.4ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.0ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 157ms (View: 114, DB: 18) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:22:34) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.4ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 155ms (View: 113, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:22:46) [GET]
+  [4;36;1mDocument Load (3.8ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (2.2ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (36.8ms)
+  [4;35;1mSummary Load (3.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (12.8ms)
+  [4;35;1mSummary Load (5.3ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (14.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.6ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.4ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 170ms (View: 118, DB: 25) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:23:02) [GET]
+  [4;35;1mDocument Load (3.1ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (36.3ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (3.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (13.1ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.0ms)
+Rendered layouts/_header (1.2ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 168ms (View: 121, DB: 20) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:23:04) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (38.1ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.5ms)
+  [4;35;1mSummary Load (2.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.9ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.2ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 164ms (View: 120, DB: 18) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:23:05) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (32.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (9.8ms)
+  [4;36;1mSummary Load (2.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.4ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 156ms (View: 113, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:23:51) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.6ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.9ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.5ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 177ms (View: 135, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:24:03) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 158ms (View: 116, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:24:04) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (2.2ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.1ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.6ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 157ms (View: 115, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:24:08) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.4ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.3ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 158ms (View: 114, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:24:09) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.1ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.7ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.4ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.0ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 157ms (View: 114, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:24:36) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.3ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 163ms (View: 119, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:24:53) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.2ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.3ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 153ms (View: 111, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:24:57) [GET]
+  [4;35;1mDocument Load (2.7ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (39.8ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (11.4ms)
+  [4;36;1mSummary Load (2.2ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.8ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.4ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 254ms (View: 125, DB: 18) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:24:58) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.5ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.8ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 158ms (View: 115, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:25:20) [GET]
+  [4;35;1mDocument Load (2.8ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.8ms)
+  [4;36;1mSummary Load (7.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (16.0ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.3ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 173ms (View: 123, DB: 23) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:25:32) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (119.6ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.6ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 246ms (View: 201, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:25:46) [GET]
+  [4;35;1mDocument Load (2.8ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.3ms)
+  [4;36;1mSummary Load (3.1ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (14.6ms)
+  [4;36;1mSummary Load (2.1ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (12.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.7ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.2ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 180ms (View: 130, DB: 18) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:25:48) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.6ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (2.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.9ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 156ms (View: 113, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:26:57) [GET]
+  [4;35;1mDocument Load (3.3ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+
+ActionView::TemplateError (Invalid tag: "%.indented #description".) on line #6 of app/views/documents/_document.haml:
+3:     %label original:
+4:     = link_to document.name, document.original_url
+5:     
+6:     %.indented #description
+7:       - if document.description.to_s.empty?
+8:         (no description)
+9:       - else
+
+    app/views/documents/_document.haml:6
+    haml (2.2.22) lib/haml/precompiler.rb:566:in `parse_tag'
+    haml (2.2.22) lib/haml/precompiler.rb:694:in `render_tag'
+    haml (2.2.22) lib/haml/precompiler.rb:231:in `process_line'
+    haml (2.2.22) lib/haml/precompiler.rb:195:in `precompile'
+    haml (2.2.22) lib/haml/engine.rb:114:in `initialize'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `new'
+    haml (2.2.22) rails/./lib/haml/template/plugin.rb:27:in `compile'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    haml (2.2.22) lib/haml/helpers.rb:96:in `non_haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:11:in `render'
+    app/views/documents/index.haml:7:in `_run_haml_app47views47documents47index46haml'
+    app/views/documents/index.haml:6:in `each'
+    app/views/documents/index.haml:6:in `_run_haml_app47views47documents47index46haml'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.22) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    haml (2.2.22) rails/./lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (181.8ms)
+Rendered rescues/_request_and_response (3.7ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:27:16) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (56.1ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 189ms (View: 147, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:27:17) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.7ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.5ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 157ms (View: 115, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:27:32) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (56.1ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (1.1ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 187ms (View: 145, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:29:09) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.2ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.6ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.1ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 157ms (View: 114, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:29:30) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.5ms)
+  [4;36;1mSummary Load (2.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.6ms)
+  [4;36;1mSummary Load (6.1ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (14.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 165ms (View: 116, DB: 22) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:29:31) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.0ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.6ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.0ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 156ms (View: 114, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:30:00) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.6ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 154ms (View: 112, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:30:31) [GET]
+  [4;36;1mDocument Load (2.7ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (36.1ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.9ms)
+  [4;35;1mSummary Load (2.2ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.7ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 168ms (View: 122, DB: 19) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:30:32) [GET]
+  [4;35;1mDocument Load (2.8ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.2ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;36;1mSummary Load (2.4ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.3ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 161ms (View: 115, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:32:28) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (2.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.2ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 157ms (View: 114, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:32:29) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.1ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.4ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 241ms (View: 115, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:32:47) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.5ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 153ms (View: 112, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:33:12) [GET]
+  [4;35;1mDocument Load (4.1ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.4ms)
+  [4;36;1mSummary Load (2.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (5.9ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (17.5ms)
+  [4;36;1mSummary Load (2.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (11.7ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.2ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 174ms (View: 120, DB: 27) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:33:13) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (121.3ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.4ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 244ms (View: 202, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:33:35) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.6ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (2.1ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.3ms)
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.1ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 154ms (View: 113, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:33:55) [GET]
+  [4;36;1mDocument Load (3.3ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (1.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.8ms)
+  [4;35;1mSummary Load (2.6ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.9ms)
+  [4;35;1mSummary Load (7.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (15.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.6ms)
+Completed in 167ms (View: 115, DB: 25) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:33:56) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (121.0ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.3ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.9ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 244ms (View: 201, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:34:14) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (34.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.5ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 155ms (View: 113, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:35:04) [GET]
+  [4;35;1mDocument Load (2.8ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (35.1ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.5ms)
+  [4;36;1mSummary Load (3.5ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (12.6ms)
+  [4;36;1mSummary Load (2.3ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.0ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 165ms (View: 119, DB: 20) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:35:05) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.4ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.5ms)
+  [4;35;1mSummary Load (2.2ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (97.1ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.6ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 243ms (View: 200, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:35:06) [GET]
+  [4;35;1mDocument Load (2.6ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.8ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.6ms)
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.2ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.7ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 158ms (View: 116, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:35:23) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.3ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (10.0ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.3ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (10.0ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 156ms (View: 112, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:35:24) [GET]
+  [4;35;1mDocument Load (2.5ms)[0m   [0mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mDocument Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `documents`[0m
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.4ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (11.1ms)
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.0ms)
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (9.5ms)
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.9ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 241ms (View: 198, DB: 17) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:35:25) [GET]
+  [4;36;1mDocument Load (2.6ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.8ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.4ms)
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (10.9ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 159ms (View: 115, DB: 17) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#show (for 127.0.0.1 at 2010-04-22 02:36:20) [GET]
+  Parameters: {"id"=>"25"}
+  [4;35;1mDocument Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM `documents` WHERE (`documents`.`id` = 25) [0m
+Rendering template within layouts/application
+Rendering documents/show
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;36;1mSummary Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (62.8ms)
+Rendered summaries/_summary (24.6ms)
+Rendered summaries/_summary (11.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.4ms)
+Completed in 177ms (View: 144, DB: 6) | 200 OK [http://localhost/documents/25]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-04-22 02:36:44) [GET]
+  [4;36;1mDocument Load (2.5ms)[0m   [0;1mSELECT * FROM `documents` [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `summaries`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+Rendered documents/_document (33.2ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+Rendered documents/_document (9.7ms)
+  [4;35;1mSummary Load (2.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+Rendered documents/_document (10.1ms)
+  [4;35;1mSummary Load (3.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+Rendered documents/_document (11.5ms)
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+Rendered documents/_document (9.6ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 157ms (View: 114, DB: 17) | 200 OK [http://localhost/documents]
