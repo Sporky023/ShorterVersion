@@ -114,12 +114,20 @@ ul.horizontal li {
   padding-bottom: 1px;
   border-bottom: 1px dotted; }
 
+#page {
+  align: middle;
+  margin: auto;
+  width: 900px; }
+
 #header {
+  -moz-box-shadow: 2px 2px 5px #ccc; padding: 5px 5px 5px 15px;
+  width: 800px;
   white-space: no-wrap;
   border: 1px black dotted;
-  background-color: #eef; }
+  background-color: #eef;
+  border-width: 2px; }
   #header .logo {
-    width: 600px;
+    width: 500px;
     font-family: arial; }
     #header .logo h1 {
       font-size: 3em;
@@ -137,6 +145,9 @@ ul.horizontal li {
     height: 85px;
     display: table-cell;
     color: red; }
+  #header #share {
+    width: 80px;
+    valign: bottom; }
 
 #main-content {
   width: 70em;

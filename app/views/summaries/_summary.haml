@@ -14,18 +14,16 @@
         = summary.page_begin
         to
         = summary.page_end
+      %p
         = link_to "vote up", summary_summary_votes_path(summary, {:summary_vote => {:score => 1, :summary_id => summary.id}}), :method => :post
         = summary.up_votes
         = link_to "vote down", summary_summary_votes_path(summary, {:summary_vote => {:score => -1, :summary_id => summary.id}}), :method => :post, :class => "red1"
         = summary.down_votes
-      .stackleft
-        - if defined?(sharable) and sharable
-          = facebook_share_button
     .clear
   .body
     = h summary.body
   .tools
         
   .clear
-    
+  
     

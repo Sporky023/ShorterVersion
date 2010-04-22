@@ -34,17 +34,10 @@
         = link_to 'body text', nil, :class => "show_body"
       .clear
   .stackleft
-    
-    %span.name
-    
-    .clear
-      
-      %p.created_at
-        added on
-        = document.created_at.to_s(:short)
-    
-      
-      
+    %p.created_at
+      added on
+      = document.created_at.to_s(:short)
+    %p
       = document.body.to_s.size
       characters
     - unless document.number_of_pages.nil?
