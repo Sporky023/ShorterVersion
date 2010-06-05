@@ -1,8 +1,20 @@
 %h1
-  Documents we are tracking:
+  Latest Summaries
 .help
   Here you can see all the documents in our database and read them.  Click on a document's title to see the summaries people have written.
-#documents
-  - @documents.sort_by(&:created_at).reverse.each do |document|
-    = render document
-    
+#leftcolumn
+  #documents
+    - @documents.each do |document|
+      .document
+        .header
+          %h2
+            = link_to document.name, document.original_url
+          original:
+          = link_to document.original_url                
+        - unless document.summaries.count == 0
+          ShorterVersion summary:
+          .body
+            = document.summaries.first.body
+      
+#rightcolumn
+  = render :partial => "about/about_shorter_version"

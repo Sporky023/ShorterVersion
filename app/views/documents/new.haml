@@ -5,5 +5,6 @@
     For now a "document" means a specific set of text.  For instance, you could paste the entirety of Shakespeare's "Hamlet" in this box and that would be the "original document", from which people could write summaries.
   #document.document.module
     - form_for(@document) do |f|
+      = error_messages_for :document
       = render :partial => "form", :locals => {:f => f}
       = f.submit "add this document"
