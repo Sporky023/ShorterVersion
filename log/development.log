@@ -34624,3 +34624,31 @@ Rendered layouts/_header (1.1ms)
 Rendered layouts/_footer (0.5ms)
 Rendered layouts/_google_analytics (0.4ms)
 Completed in 228ms (View: 156, DB: 40) | 200 OK [http://localhost/documents]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-05 16:11:47) [GET]
+  [4;36;1mDocument Load (24.7ms)[0m   [0;1mSELECT * FROM `documents` ORDER BY created_at DESC[0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mDocument Columns (21.9ms)[0m   [0mSHOW FIELDS FROM `documents`[0m
+  [4;36;1mSummary Columns (8.2ms)[0m   [0;1mSHOW FIELDS FROM `summaries`[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 27) [0m
+  [4;36;1mSQL (4.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 26) [0m
+  [4;35;1mSummary Load (1.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 26) LIMIT 1[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 25) [0m
+  [4;35;1mSummary Load (1.0ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 25) LIMIT 1[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 24) [0m
+  [4;35;1mSummary Load (5.3ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 24) LIMIT 1[0m
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 23) [0m
+  [4;35;1mSummary Load (1.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 23) LIMIT 1[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 22) [0m
+  [4;35;1mSummary Load (1.1ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 22) LIMIT 1[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `summaries` WHERE (`summaries`.document_id = 21) [0m
+  [4;35;1mSummary Load (3.9ms)[0m   [0mSELECT * FROM `summaries` WHERE (`summaries`.document_id = 21) LIMIT 1[0m
+Rendered about/_about_shorter_version (1.3ms)
+Rendered layouts/_header (0.7ms)
+Rendered layouts/_footer (0.5ms)
+Rendered layouts/_google_analytics (0.3ms)
+Completed in 327ms (View: 160, DB: 84) | 200 OK [http://localhost/]
