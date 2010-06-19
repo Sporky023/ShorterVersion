@@ -2,3 +2,6 @@ haml
 populator
 faker
 factory_girl
+
+warden
+devise
