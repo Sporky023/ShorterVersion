@@ -15,6 +15,7 @@ Rails::Initializer.run do |config|
   
   config.gem 'factory_girl'
   
+  config.gem 'warden'
   config.gem 'devise'
   
 

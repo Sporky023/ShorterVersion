@@ -9,35 +9,58 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100330202238) do
+ActiveRecord::Schema.define(:version => 20100619230518) do
 
   create_table "documents", :force => true do |t|
-    t.string   "name"
-    t.text     "body"
-    t.string   "original_url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "number_of_pages"
-    t.text     "description"
+    t.string    "name"
+    t.text      "body"
+    t.string    "original_url"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.integer   "number_of_pages"
+    t.text      "description"
   end
 
   create_table "summaries", :force => true do |t|
-    t.integer  "document_id"
-    t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "up_votes"
-    t.integer  "down_votes"
-    t.string   "type_of_subset", :default => "full document"
-    t.integer  "page_begin"
-    t.integer  "page_end"
+    t.integer   "document_id"
+    t.text      "body"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.integer   "up_votes"
+    t.integer   "down_votes"
+    t.string    "type_of_subset", :default => "full document"
+    t.integer   "page_begin"
+    t.integer   "page_end"
   end
 
   create_table "summary_votes", :force => true do |t|
-    t.integer  "summary_id"
-    t.integer  "score"
+    t.integer   "summary_id"
+    t.integer   "score"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email",                               :default => "", :null => false
+    t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
+    t.string   "password_salt",                       :default => "", :null => false
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "reset_password_token"
+    t.string   "remember_token"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",                       :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "users", ["confirmation_token"], :name => "index_users_on_confirmation_token", :unique => true
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end
