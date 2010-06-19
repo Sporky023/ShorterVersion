@@ -6,8 +6,8 @@
   .help
     And here's the action!  Write a good summary of the document so that others can get its gist without having to read the whole thing.  Don't worry about being perfect - the voting system will give you feedback.
   #summary_form.summary.module
-    = link_to_function 'skinny window', 'skinny_window()', :class => 'hey'
-    %h3 write your summary here
+    = link_to_function 'make window skinny', 'skinny_window()', :class => 'hey'
+    %h3 Write your shorter version here.
     - form_for(@summary) do |f|
       = render :partial => "form", :locals => {:f => f}
       = submit_tag "submit"    

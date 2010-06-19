@@ -16,5 +16,15 @@ module ApplicationHelper
     [['the whole document', 'full document'], ['only a part of the document', 'specific pages']]
   end
 
+  def textformat(string)
+    #return string
+    output = ""
+
+    output << "<p>" << string << "</p>"
+    return output
+    output = output.gsub("\n\n", "</p><p>")
+    output = output.gsub("\t", "")
+  end
+
 
 end

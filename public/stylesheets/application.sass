@@ -14,313 +14,350 @@
 
 !hey_color = #09f
 
+!blue_link = #00f
+
+!green_bg = #ddffda
+
 .created_at
-	font-weight: bold
+  font-weight: bold
 
 body
-	background-color: #fff
-	color: #333
-	font-family: verdana, arial, helvetica, sans-serif
-	font-size: 13px
-	line-height: 15px
+  background-color: #fff
+  color: #333
+  font-family: verdana, arial, helvetica, sans-serif
+  font-size: 13px
+  line-height: 15px
+  width: 100%
 
 
 p, ol, ul, td
-	font-family: verdana, arial, helvetica, sans-serif
-	font-size: 13px
-	line-height: 18px
+  font-family: verdana, arial, helvetica, sans-serif
+  font-size: 13px
+  line-height: 18px
 
 
 pre
-	background-color: #eee
-	padding: 10px
-	font-size: 11px
+  background-color: #eee
+  padding: 10px
+  font-size: 11px
 
 
 form
-	li
-		list-style-type: none
-		padding-top: 5px
-		label
-			display: block
-			width: 100px
-			float: left
-			text-align: right
-			margin-right: 1em
+  li
+    list-style-type: none
+    padding-top: 5px
+    label
+      display: block
+      width: 100px
+      float: left
+      text-align: right
+      margin-right: 1em
 
 a
-	color: #000
-	
-	&:visited
-		color: #666
+  color: #000
+  
+  &:visited
+    color: #666
 
 .fieldWithErrors
-	padding: 2px
-	background-color: red
-	display: table
+  padding: 2px
+  background-color: red
+  display: table
 
 
 #errorExplanation
-	width: 400px
-	border: 2px solid red
-	padding: 7px
-	padding-bottom: 12px
-	margin-bottom: 20px
-	background-color: #f0f0f0
-	
-	h2
-		text-align: left
-		font-weight: bold
-		padding: 5px 5px 5px 15px
-		font-size: 12px
-		margin: -7px
-		background-color: #c00
-		color: #fff
-	
-	p
-		color: #333
-		margin-bottom: 0
-		padding: 5px
-	
-	ul li
-		font-size: 12px
-		list-style: square
+  width: 400px
+  border: 2px solid red
+  padding: 7px
+  padding-bottom: 12px
+  margin-bottom: 20px
+  background-color: #f0f0f0
+  
+  h2
+    text-align: left
+    font-weight: bold
+    padding: 5px 5px 5px 15px
+    font-size: 12px
+    margin: -7px
+    background-color: #c00
+    color: #fff
+  
+  p
+    color: #333
+    margin-bottom: 0
+    padding: 5px
+  
+  ul li
+    font-size: 12px
+    list-style: square
 
 
 #whole_page
-	width: 950px
+  width: 950px
 
 .clear
-	clear: left
+  clear: left
 
 #summary_form
-	width: 300px
+  width: 300px
+  background-color: $green_bg
+  posotion: relative
+  top: -20px
 
 .left
-	float: left
+  float: left
 
 .right
-	float: right
-	clear: none
+  float: right
+  clear: none
 
 .help
-	display: none
-	background-color = !green2
-	color = !text2
-	font-family: times
-	font-size: 2em
-	line-height: 1.5em
+  display: none
+  background-color: $green2
+  color: $text2
+  font-family: times
+  font-size: 2em
+  line-height: 1.5em
 
 
 label
-	color: blue
-	&.bigger
-		wdith: 100px
-		font-size: 1.2em
+  color: blue
+  &.bigger
+    wdith: 100px
+    font-size: 1.2em
 
 option
-	color: blue
+  color: blue
 
 a.hey
-	color = !hey_color
-	font-weight: bold
-	font-family: georgia
-	font-size: 1.5em
+  color: $hey_color
+  font-weight: bold
+  font-family: georgia
+  font-size: 1.5em
 
 
 ul.horizontal
-	li.pending_feature
-		display: none
-	li
-		display: block
-		float: left
-		
+  li.pending_feature
+    display: none
+  li
+    display: block
+    float: left
+    
 .pending_feature
-	display: none
+  display: none
 
 
-	
+  
 #superheadermessagecenter
-	background-color: #eee
-	padding-bottom: 1px
-	border-bottom: 1px dotted
+  background-color: #eee
+  padding-bottom: 1px
+  border-bottom: 1px dotted
 #page
-	align: middle
-	margin: auto
-	width: 900px
+  align: middle
+  margin: auto
+  width: 900px
 #header
-	-moz-box-shadow: 2px 2px 5px #ccc; padding: 5px 5px 5px 15px
-	width: 800px
-	white-space: no-wrap
-	border: 1px black dotted
-	background-color: #eef
-	border-width: 2px
-	.logo
-		width: 500px
-		font-family: arial	
-		h1
-			font-size: 3em
-			margin-bottom: 0
-			color: #33b
-		h2
-			margin-top: 10px
-			padding-left: 50px
-			font-size: 1.3em
-			color: #f77
-	.tools
-		width: 200px
-	.stackleft
-		vertical-align: bottom
-		height: 85px
-		display: table-cell
-		color: red
-	#share
-		width: 80px
-		valign: bottom
+  -moz-box-shadow: 2px 2px 5px
+  -webkit-box-shadow: 2px 2px 5px
+  box-shadow: 2px 2px 5px
+  width: 800px
+  white-space: no-wrap
+  border: 1px dotted #0a0
+  background-color: #bfc
+  border-width: 2px
+  .logo
+    width: 500px
+    font-family: arial  
+    h1
+      font-size: 3em
+      margin-bottom: 0
+      color: #0b0
+    h2
+      margin-top: 10px
+      padding-left: 50px
+      font-size: 1.3em
+      color: #000
+  .tools
+    width: 200px
+  .stackleft
+    vertical-align: bottom
+    height: 85px
+    display: table-cell
+    color: red
+  #share
+    width: 80px
+    valign: bottom
+
 #main-content
-	width: 800px
-	padding-top: 8px
+  width: 961px
+  padding-top: 8px
 
 #footer
-	margin-top: 20px
-	border-top: 1px black dotted
+  margin-top: 20px
+  border-top: 1px black dotted
 
 #leftcolumn
-	float: left
-	width: 500px
+  float: left
+  width: 500px
 
 #rightcolumn
-	padding-left: 20px
-	background-color: #eee
-	float: right	
-	width: 250px
-
+  border: solid $blue_link 3px
+  padding: 20px 72px
+  background-color: #eee
+  float: right  
+  width: 250px
+  color: $blue_link
+  -webkit-border-radius: 5px
+  border-radius: 5px
+  -moz-border-radius: 5px
+  
 .document
-	margin-top: 5px	
-	h2
-		a			
-			color = !green_text	
-			font-family: georgia, times, serif
-			text-decoration: none
-	border: none
-	-moz-border-radius: 5px
-	-moz-box-shadow: -3px -3px 4px #bbb
-	padding: 5px
-	.body
-		background-color: white
-		white-space: pre-wrap
-		border-color: #ccc
-		font-family: georgia, times, serif
-	
+  margin-top: 25px 
+  h2
+    margin: 0
+    padding-bottom: 5px
+    a     
+      color: $green_text  
+      font-family: georgia, times, serif
+      text-decoration: none
+    .links
+      a
+        font-size: 14px
+        text-decoration: underline
+        color: $blue_link
+        
+  
+  padding: 5px
+    
 
 .stackleft
-	padding-right: 5px
-	width: 200px
-	float: left
-	p
-		margin: 0
-	p.indented
-		padding-left: 20px
+  padding-right: 5px
+  width: 200px
+  float: left
+  p
+    margin: 0
+  p.indented
+    padding-left: 20px
 
 .module
-	.character_count
-		color: !hey_color
-		font-weight: bold
-	margin-top: 15px
-	padding-left: 20px
-	padding-top: 10px
-	padding-bottom: 10px
-	border: solid 2px #777
-	background-color: #eee
-	border-radius: 10px 
-	border-color: blue
-	-moz-border-radius: 10px 
-	-webkit-border-radius: 10px
-	.tools
-		float: left
-		clear: none
-		padding: 5px
-		width: 300px
-		li
-			font-face: arial
-			font-size: 2em
-			list-style-type: none
-			height: 2em
-			text-align: right
-			a
-				font-size: 0.5em
-				display: block
-				float: left
-				width: 100px
-				margin-left: 10px
+  .character_count
+    color: $hey_color
+    font-weight: bold
+  margin-top: 15px
+  padding-left: 20px
+  padding-top: 10px
+  padding-bottom: 10px
+  border: solid 2px #777
+  background-color: #eee
+  border-radius: 10px 
+  border-color: blue
+  -moz-border-radius: 10px 
+  -webkit-border-radius: 10px
+  .tools
+    float: left
+    clear: none
+    padding: 5px
+    width: 300px
+    li
+      font-face: arial
+      font-size: 2em
+      list-style-type: none
+      height: 2em
+      text-align: right
+      a
+        font-size: 0.5em
+        display: block
+        float: left
+        width: 100px
+        margin-left: 10px
 
-				border: 1px solid
-				border-color: #eee #999 #999 #eee
-				-moz-border-radius: 3px
-				text-decoration: none
-				background-color = !green1
-				padding-left: 2px
-				text-align: center
-				color = #fff
-			a.red1
-				background-color = !red1
-			&.vote_down
-				color = !red_text
-			&.vote_up
-				color = !green_text
-	.header
-		h3
-			display: block
-			font-size: 2em
-			color = !green_text
-			a
-				text-decoration: none
-				color = !green_text
-		h4
-			color = !green_text_link
-			font-size: 1em
-			a
-				&:visited
-					color = !green_text_link
-	.content
-		.header
-			h3
-				a
-					text-decoration: none
-					&:hover
-						text-decoration: underline
-		float: left
+        border: 1px solid
+        border-color: #eee #999 #999 #eee
+        -moz-border-radius: 3px
+        text-decoration: none
+        background-color: $green1
+        padding-left: 2px
+        text-align: center
+        color: #fff
+      a.red1
+        background-color: $red1
+      &.vote_down
+        color: $red_text
+      &.vote_up
+        color: $green_text
+  .header
+    h3
+      display: block
+      font-size: 2em
+      color: $green_text
+      a
+        text-decoration: none
+        color: $green_text
+    h4
+      color: $green_text_link
+      font-size: 1em
+      a
+        &:visited
+          color: $green_text_link
+  .content
+    .header
+      h3
+        a
+          text-decoration: none
+          &:hover
+            text-decoration: underline
+    float: left
 
 
 
 .summary
-	.stackleft:first-child
-		width: 400px
-	h3
-		line-height: 5px
-	.body
-		width: 65em
-		overflow: none		
-		
+  border-top: 10px
+  .stackleft:first-child
+    width: 400px
+  h3
+    line-height: 5px
+  .body
+    font-family: Georgia, Verdana, serif
+    font-size: 1.1em
+    line-height: 20px
+    padding: 10px
+    padding-left: 55px
+    padding-right: 55px
+    padding-bottom: 0px
+    width: 845px
+    overflow: none
+    border-top: 2px green solid
+    border-bottom: 6px black solid
+    background-color: $green_bg
+    white-space: pre-wrap
+    -moz-corner-radius-topleft: 5px
+    .character_count
+      font-weight: bold
+      font-family: arial, sans-serif
+      margin: 0
+      padding: 0
+      float: left
+      color: $green_text
+      line-height: 0px
 
 .document
-	.name
-		font-family: arial
-		font-weight: bold
-		font-size: 1.2em
-	.stackleft:first-child
-		width: 300px
-	.stackleft:last-child
-		width: 300px
-	.tools
-		text-align: right
-		width: 200em
-		li
-			a
-				padding-top: 2px
-				height: 20px
-				font-size: 0.4em
-	.content
-		width: 37em
-		.body
-			display: none
+  .name
+    font-family: arial
+    font-weight: bold
+    font-size: 1.2em
+  .stackleft:first-child
+    width: 300px
+  .stackleft:last-child
+    width: 300px
+  .tools
+    text-align: right
+    width: 200em
+    li
+      a
+        padding-top: 2px
+        height: 20px
+        font-size: 0.4em
+  .content
+    width: 37em
+    .body
+      display: none
