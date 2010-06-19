@@ -5,22 +5,8 @@
 #leftcolumn
   #documents
     - @documents.each do |document|
-      .document
-        .header
-          %h2
-            = link_to document.name, document.original_url
-            
-            .links
-              = link_to "original", document.original_url 
-              = link_to "write your own summary", new_document_summary_path(document)               
-        - unless document.summaries.count == 0
-          .summary
-            ShorterVersion summary:
-            .body
-              = preserve document.summaries.first.body
-              %br
-              .character_count
-                = "#{document.summaries.first.body.split(/\s+/).size} words"
-      
+      - unless document.summaries.count == 0
+        = render :partial => "summaries/fancy_with_document", :locals => {:summary => document.summaries.first, :link => true, :share => false}
+        
 #rightcolumn
   = render :partial => "about/about_shorter_version"

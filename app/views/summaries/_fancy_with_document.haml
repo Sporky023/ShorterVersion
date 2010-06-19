@@ -1,0 +1,25 @@
+- document = summary.document
+.document
+  .header
+    %h2
+      = link_to document.name, document.original_url
+      
+      .links
+        = link_to "original", document.original_url 
+        = link_to "write your own summary", new_document_summary_path(document)
+        = facebook_share_button if share
+  .summary
+    ShorterVersion summary:
+    - if link
+      %a{:href => summary_path(summary)}
+        .body
+          = preserve summary.body
+          %br
+          .character_count
+            = "#{summary.body.split(/\s+/).size} words"
+    - else
+      .body
+        = preserve summary.body
+        %br
+        .character_count
+          = "#{summary.body.split(/\s+/).size} words"

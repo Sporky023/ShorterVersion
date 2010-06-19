@@ -1,7 +1,4 @@
 - content_for :title do
   = @summary.document.name
   (ShorterVersion)
-#document
-  = render :partial => @summary.document
-#summary
-  = render :partial => @summary, :locals => {:sharable => true}
+= render :partial => "fancy_with_document", :locals => {:summary => @summary, :link => false, :share => true}

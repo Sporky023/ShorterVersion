@@ -12,8 +12,11 @@
   %h2
     documents summarized by the people, for the people
 #share.stackleft
-  = facebook_share_button
-  = link_to "sign up", new_user_registration_path
+  %ul
+    %li
+      = link_to "sign up", new_user_registration_path
+    %li
+      = link_to "sign in", new_user_session_path
   
 
 .clear

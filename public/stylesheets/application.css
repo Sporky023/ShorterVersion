@@ -154,6 +154,10 @@ ul.horizontal li {
   #header #share {
     width: 80px;
     valign: bottom; }
+  #header ul {
+    padding: 0; }
+    #header ul li {
+      list-style: none; }
 
 #main-content {
   width: 961px;

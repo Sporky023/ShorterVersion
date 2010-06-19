@@ -45188,3 +45188,1338 @@ Rendered layouts/_footer (1.0ms)
 Rendered layouts/_google_analytics (0.9ms)
 Completed in 107ms (View: 99, DB: 0) | 200 OK [http://localhost/users/sign_up]
 DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+
+
+Processing RegistrationsController#create (for 127.0.0.1 at 2010-06-19 19:18:50) [POST]
+  Parameters: {"commit"=>"Sign up", "authenticity_token"=>"SuAR0Pi4xeT8JOgm5ElUMpE/1yOAX9+blcFb2s8CxSg=", "user"=>{"password_confirmation"=>"budapest", "password"=>"budapest", "email"=>"wlgriffiths@gmail.com"}}
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'wlgriffiths@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.7ms)[0m   [0mINSERT INTO "users" ("encrypted_password", "created_at", "confirmation_sent_at", "last_sign_in_ip", "updated_at", "last_sign_in_at", "sign_in_count", "password_salt", "reset_password_token", "remember_token", "current_sign_in_ip", "confirmation_token", "remember_created_at", "current_sign_in_at", "email", "confirmed_at") VALUES('e9f82e02ac280748550b0bdbfdfdf26ebde6e70c', '2010-06-19 23:18:50', NULL, NULL, '2010-06-19 23:18:50', NULL, 0, 'gW6wuOSLfcCWbn8Aia2A', NULL, NULL, NULL, NULL, NULL, NULL, 'wlgriffiths@gmail.com', NULL)[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2010-06-19 23:18:50', "sign_in_count" = 1, "current_sign_in_at" = '2010-06-19 23:18:50', "current_sign_in_ip" = '127.0.0.1', "last_sign_in_at" = '2010-06-19 23:18:50', "last_sign_in_ip" = '127.0.0.1' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/
+Completed in 78ms (DB: 2) | 302 Found [http://localhost/users]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:18:50) [GET]
+  [4;35;1mDocument Load (5.5ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+Rendered about/_about_shorter_version (0.7ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 67ms (View: 30, DB: 9) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:23:15) [GET]
+  [4;35;1mDocument Load (6.5ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (2.7ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 117ms (View: 89, DB: 10) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:23:30) [GET]
+  [4;35;1mDocument Load (5.6ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (3.0ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 49ms (View: 24, DB: 9) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:27:18) [GET]
+  [4;35;1mDocument Load (5.7ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+ERROR: compiling _run_haml_app47views47documents47index46haml RAISED compile error
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:10: syntax error, unexpected ')', expecting '}'
+));}\n", 0, false);
+ ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: unknown regexp options - dv
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected $undefined
+...t.push_text("  </div>\n</div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...ext("  </div>\n</div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected $undefined
+.../div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: syntax error, unexpected '}', expecting ')'
+));}\n</div>\n", -1, false);_erbou...
+    ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: unterminated string meets end of file
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _run_haml_app47views47documents47index46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :preserve=>["textarea", "pre", "code"], :format=>:xhtml, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :escape_html=>false, :encoding=>nil, :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>\n  Latest Summaries\n</h1>\n<div class='help'>\n  Here you can see all the documents in our database and read them.  Click on a document's title to see the summaries people have written.\n</div>\n<div id='leftcolumn'>\n  <div id='documents'>\n", 2, false);
+
+
+
+
+
+ @documents.each do |document|;
+ unless document.summaries.count == 0;
+_hamlout.push_text("    #{_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "summaries/fancy_with_document", :locals => {:summary => document.summaries.first.body
+));}\n", 0, false);
+end;end;_hamlout.push_text("  </div>\n</div>\n<div id='rightcolumn'>\n  #{
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "about/about_shorter_version"
+));}\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luke/Sites/shorterversion/app/views/documents/index.haml:13:in `compile!'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/haml-3.0.12/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/haml-3.0.12/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/luke/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luke/Sites/shorterversion/app/controllers/documents_controller.rb:10:in `index'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/luke/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/haml-3.0.12/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rails-2.3.8/lib/commands/server.rb:111
+/Users/luke/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Users/luke/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:10: syntax error, unexpected ')', expecting '}'
+));}\n", 0, false);
+ ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: unknown regexp options - dv
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected $undefined
+...t.push_text("  </div>\n</div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...ext("  </div>\n</div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected $undefined
+.../div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: syntax error, unexpected '}', expecting ')'
+));}\n</div>\n", -1, false);_erbou...
+    ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: unterminated string meets end of file
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR) on line #10 of app/views/documents/index.haml:
+7:     - @documents.each do |document|
+8:       - unless document.summaries.count == 0
+9:         = render :partial => "summaries/fancy_with_document", :locals => {:summary => document.summaries.first.body
+10:         
+11: #rightcolumn
+12:   = render :partial => "about/about_shorter_version"
+
+    app/views/documents/index.haml:13:in `compile!'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (128.6ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:27:19) [GET]
+  [4;35;1mDocument Load (5.6ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+ERROR: compiling _run_haml_app47views47documents47index46haml RAISED compile error
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:10: syntax error, unexpected ')', expecting '}'
+));}\n", 0, false);
+ ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: unknown regexp options - dv
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected $undefined
+...t.push_text("  </div>\n</div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...ext("  </div>\n</div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected $undefined
+.../div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: syntax error, unexpected '}', expecting ')'
+));}\n</div>\n", -1, false);_erbou...
+    ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: unterminated string meets end of file
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _run_haml_app47views47documents47index46haml(local_assigns)
+            old_output_buffer = output_buffer;;begin;extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :preserve=>["textarea", "pre", "code"], :format=>:xhtml, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :escape_html=>false, :encoding=>nil, :ugly=>false});_erbout = _hamlout.buffer;__in_erb_template = true;;_hamlout.push_text("<h1>\n  Latest Summaries\n</h1>\n<div class='help'>\n  Here you can see all the documents in our database and read them.  Click on a document's title to see the summaries people have written.\n</div>\n<div id='leftcolumn'>\n  <div id='documents'>\n", 2, false);
+
+
+
+
+
+ @documents.each do |document|;
+ unless document.summaries.count == 0;
+_hamlout.push_text("    #{_hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "summaries/fancy_with_document", :locals => {:summary => document.summaries.first.body
+));}\n", 0, false);
+end;end;_hamlout.push_text("  </div>\n</div>\n<div id='rightcolumn'>\n  #{
+_hamlout.adjust_tabs(-1); _hamlout.format_script_false_false_false_false_false_true_false(( render :partial => "about/about_shorter_version"
+));}\n</div>\n", -1, false);_erbout;ensure;@haml_buffer = @haml_buffer.upper;end;
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/luke/Sites/shorterversion/app/views/documents/index.haml:13:in `compile!'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render_without_haml'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/haml-3.0.12/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render_without_haml'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/haml-3.0.12/rails/../lib/haml/helpers/action_view_mods.rb:13:in `render'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/luke/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `send'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:135:in `custom'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:179:in `respond'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `each'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:173:in `respond'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/luke/Sites/shorterversion/app/controllers/documents_controller.rb:10:in `index'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `send'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:1331:in `perform_action_without_filters'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/luke/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/warden-0.10.7/lib/warden/manager.rb:35:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/warden-0.10.7/lib/warden/manager.rb:34:in `catch'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/warden-0.10.7/lib/warden/manager.rb:34:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/haml-3.0.12/rails/../lib/sass/plugin/rack.rb:41:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Users/luke/.rvm/gems/ruby-1.8.7-p174/gems/rails-2.3.8/lib/commands/server.rb:111
+/Users/luke/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Users/luke/.rvm/rubies/ruby-1.8.7-p174/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:10: syntax error, unexpected ')', expecting '}'
+));}\n", 0, false);
+ ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: unknown regexp options - dv
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected $undefined
+...t.push_text("  </div>\n</div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+...ext("  </div>\n</div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:11: syntax error, unexpected $undefined
+.../div>\n<div id='rightcolumn'>\n  #{
+                              ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: syntax error, unexpected '}', expecting ')'
+));}\n</div>\n", -1, false);_erbou...
+    ^
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: unterminated string meets end of file
+/Users/luke/Sites/shorterversion/app/views/documents/index.haml:13: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR) on line #10 of app/views/documents/index.haml:
+7:     - @documents.each do |document|
+8:       - unless document.summaries.count == 0
+9:         = render :partial => "summaries/fancy_with_document", :locals => {:summary => document.summaries.first.body
+10:         
+11: #rightcolumn
+12:   = render :partial => "about/about_shorter_version"
+
+    app/views/documents/index.haml:13:in `compile!'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/documents_controller.rb:10:in `index'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (63.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:27:34) [GET]
+  [4;35;1mDocument Load (6.3ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (3.9ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (0.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.1ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 66ms (View: 37, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:30:57) [GET]
+  [4;36;1mDocument Load (5.5ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (4.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.2ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 61ms (View: 33, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:31:00) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mSummary Load (0.2ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+  [4;35;1mSummary Load (1.0ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+Rendered documents/_document (16.9ms)
+Rendered summaries/_summary (4.8ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 54ms (View: 44, DB: 2) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:31:27) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mSummary Load (0.2ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined local variable or method `summary' for #<ActionView::Base:0x23e8aa8>) on line #4 of app/views/summaries/show.haml:
+1: - content_for :title do
+2:   = @summary.document.name
+3:   (ShorterVersion)
+4: = render :partial => "fancy_with_document", :locals => {:summary => summary}
+
+    app/views/summaries/show.haml:4:in `_run_haml_app47views47summaries47show46haml'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:23:in `show'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (128.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:31:28) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+ActionView::TemplateError (undefined local variable or method `summary' for #<ActionView::Base:0x2438134>) on line #4 of app/views/summaries/show.haml:
+1: - content_for :title do
+2:   = @summary.document.name
+3:   (ShorterVersion)
+4: = render :partial => "fancy_with_document", :locals => {:summary => summary}
+
+    app/views/summaries/show.haml:4:in `_run_haml_app47views47summaries47show46haml'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.12) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    app/controllers/summaries_controller.rb:23:in `show'
+    warden (0.10.7) lib/warden/manager.rb:35:in `call'
+    warden (0.10.7) lib/warden/manager.rb:34:in `catch'
+    warden (0.10.7) lib/warden/manager.rb:34:in `call'
+    haml (3.0.12) rails/./lib/sass/plugin/rack.rb:41:in `call'
+
+Rendered rescues/_trace (59.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:31:31) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mSummary Load (0.2ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.4ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 30ms (View: 21, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:32:34) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mSummary Load (0.3ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (5.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 34ms (View: 25, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:32:46) [GET]
+  Parameters: {"id"=>"72"}
+  [4;35;1mSummary Load (0.3ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries"."id" = 72) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/summaries/72]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:32:50) [GET]
+  Parameters: {"id"=>"71"}
+  [4;35;1mSummary Load (0.2ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries"."id" = 71) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+Rendered layouts/_header (0.5ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 90ms (View: 83, DB: 0) | 200 OK [http://localhost/summaries/71]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:43:09) [GET]
+  Parameters: {"id"=>"65"}
+  [4;35;1mSummary Load (0.2ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries"."id" = 65) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/summaries/65]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:44:01) [GET]
+  [4;35;1mDocument Load (5.7ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (5.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.2ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (2.7ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 73ms (View: 44, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:44:03) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.6ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 91ms (View: 17, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:44:22) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (5.7ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 32ms (View: 23, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:46:58) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (5.8ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 34ms (View: 25, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:47:00) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:47:10) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.2ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (5.3ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 32ms (View: 23, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:47:16) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (5.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 31ms (View: 23, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:47:55) [GET]
+  Parameters: {"id"=>"71"}
+  [4;36;1mSummary Load (0.2ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 71) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 23ms (View: 15, DB: 0) | 200 OK [http://localhost/summaries/71]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:48:20) [GET]
+  [4;36;1mDocument Load (5.7ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (67.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.4ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (2.9ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 130ms (View: 101, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:48:44) [GET]
+  [4;35;1mDocument Load (5.5ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (2.0ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.1ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.4ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 57ms (View: 29, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:48:52) [GET]
+  [4;36;1mDocument Load (6.0ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (66.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 123ms (View: 94, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:48:53) [GET]
+  [4;35;1mDocument Load (5.8ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 58ms (View: 29, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:49:19) [GET]
+  [4;36;1mDocument Load (5.6ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (65.7ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 122ms (View: 93, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:49:21) [GET]
+  [4;35;1mDocument Load (7.4ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.9ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 63ms (View: 28, DB: 14) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:49:50) [GET]
+  [4;36;1mDocument Load (5.6ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (2.1ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 123ms (View: 94, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:50:12) [GET]
+  [4;35;1mDocument Load (5.7ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 58ms (View: 28, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:50:41) [GET]
+  [4;36;1mDocument Load (6.1ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.4ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 56ms (View: 28, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:50:56) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mSummary Load (0.3ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 25ms (View: 16, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 19:52:13) [GET]
+  [4;35;1mDocument Load (5.8ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (5.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 67ms (View: 38, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:52:15) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.2ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (66.2ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 93ms (View: 85, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:53:23) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.3ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 24ms (View: 16, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:53:24) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.2ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.1ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 24ms (View: 16, DB: 0) | 200 OK [http://localhost/summaries/73]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 19:54:54) [GET]
+  Parameters: {"id"=>"73"}
+  [4;36;1mSummary Load (0.2ms)[0m   [0;1mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.0ms)
+Rendered layouts/_header (0.3ms)
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/summaries/73]
