@@ -19,10 +19,13 @@
           %br
           .character_count
             = "#{summary.body.split(/\s+/).size} words"
-            
+            - unless summary.user.nil?
+              = "by #{summary.user.nickname}"
     - else
       .body
         = preserve summary.body
         %br
         .character_count
           = "#{summary.body.split(/\s+/).size} words"
+          - unless summary.user.nil?
+            = "by #{summary.user.nickname}"

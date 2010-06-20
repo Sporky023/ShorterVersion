@@ -216,9 +216,6 @@ ul.horizontal li {
   border-color: blue;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px; }
-  .module .character_count {
-    color: #0099ff;
-    font-weight: bold; }
   .module .tools {
     float: left;
     clear: none;
@@ -301,7 +298,10 @@ ul.horizontal li {
       padding: 0;
       float: left;
       color: #00aa00;
-      line-height: 0px; }
+      line-height: 15px;
+      position: relative;
+      top: -25px;
+      height: auto; }
     .summary .body a {
       text-decoration: none; }
       .summary .body a:visited {

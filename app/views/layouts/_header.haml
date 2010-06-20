@@ -16,7 +16,8 @@
     %ul
       %li
         logged in as
-        = current_user.nickname
+        %b
+          = current_user.nickname
       %li
         = link_to "log out", destroy_user_session_path
   - else

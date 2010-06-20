@@ -46,7 +46,7 @@ class SummariesController < ApplicationController
   # POST /summaries.xml
   def create
     @summary = Summary.new(params[:summary])
-
+    @summary.user = current_user if user_signed_in?
     respond_to do |format|
       if @summary.save
         flash[:notice] = 'Summary was successfully created.'
