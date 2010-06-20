@@ -26,3 +26,6 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+# devise: http://github.com/plataformatec/devise/tree/v1.0
+config.action_mailer.default_url_options = { :host => 'shorterversion.com' }
