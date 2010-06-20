@@ -1,4 +1,4 @@
-<h2>Sign up</h2>
+<h2>Be cool and write your own Shorter Versions ;)</h2>
 
 <% form_for resource_name, resource, :url => registration_path(resource_name) do |f| -%>
   <%= f.error_messages %>
@@ -11,6 +11,10 @@
   <p><%= f.label :password_confirmation %></p>
   <p><%= f.password_field :password_confirmation %></p>
 
+  <p><%= f.label :nickname %></p>
+  <p><%= f.text_field :nickname %></p>
+  <p>This is the name that will appear on your summaries</p>
+  
   <p><%= f.submit "Sign up" %></p>
 <% end -%>
 

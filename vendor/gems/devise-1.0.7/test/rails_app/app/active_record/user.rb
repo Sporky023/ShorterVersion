@@ -4,4 +4,8 @@ class User < ActiveRecord::Base
          :trackable, :validatable
 
   attr_accessible :username, :email, :password, :password_confirmation
+  
+  validates_uniqueness_of :nickname
+  validates_presence_of :nickname
+  
 end

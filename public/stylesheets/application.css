@@ -149,8 +149,7 @@ ul.horizontal li {
   #header .stackleft {
     vertical-align: bottom;
     height: 85px;
-    display: table-cell;
-    color: red; }
+    display: table-cell; }
   #header #share {
     width: 80px;
     valign: bottom; }

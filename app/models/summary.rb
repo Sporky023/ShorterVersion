@@ -1,6 +1,7 @@
 class Summary < ActiveRecord::Base
 
   belongs_to :document
+  belongs_to :user
   has_many :summary_votes
   
   validates_presence_of :body, :document_id
