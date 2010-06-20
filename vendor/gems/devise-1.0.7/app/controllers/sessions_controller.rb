@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+  
+  layout "application"
+  
   prepend_before_filter :require_no_authentication, :only => [ :new, :create ]
   include Devise::Controllers::InternalHelpers
 
@@ -38,5 +41,9 @@ class SessionsController < ApplicationController
 
     def clean_up_passwords(object)
       object.clean_up_passwords if object.respond_to?(:clean_up_passwords)
+    end
+    
+    def application
+      nil
     end
 end
