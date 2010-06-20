@@ -47696,3 +47696,14 @@ Rendered layouts/_header (0.3ms)
 Rendered layouts/_footer (0.1ms)
 Rendered layouts/_google_analytics (0.1ms)
 Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/summaries/73]
+DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :database_authenticatable instead. (called from /Users/luke/Sites/shorterversion/app/models/user.rb:4)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2010-06-19 20:37:32) [GET]
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered shared/_devise_links (1.9ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 93ms (View: 88, DB: 0) | 200 OK [http://localhost/users/sign_in]
