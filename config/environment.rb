@@ -18,5 +18,7 @@ Rails::Initializer.run do |config|
   config.gem 'warden'
   config.gem 'devise'
   
+  config.gem 'will_paginate'
+  
 
 end

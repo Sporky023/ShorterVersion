@@ -3,6 +3,7 @@
 .help
   Here you can see all the documents in our database and read them.  Click on a document's title to see the summaries people have written.
 #leftcolumn
+  = will_paginate @documents
   #documents
     - @documents.each do |document|
       - unless document.summaries.count == 0
