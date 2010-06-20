@@ -276,7 +276,10 @@ ul.horizontal li {
     width: 400px; }
   .summary h3 {
     line-height: 5px; }
+  .summary a {
+    text-decoration: none; }
   .summary .body {
+    text-decoration: none;
     font-family: Georgia, Verdana, serif;
     font-size: 1.1em;
     line-height: 20px;
@@ -290,7 +293,8 @@ ul.horizontal li {
     border-bottom: 6px black solid;
     background-color: #ddffda;
     white-space: pre-wrap;
-    -moz-corner-radius-topleft: 5px; }
+    -moz-corner-radius-topleft: 5px;
+    text-decoration: inherit; }
     .summary .body .character_count {
       font-weight: bold;
       font-family: arial, sans-serif;
@@ -299,6 +303,10 @@ ul.horizontal li {
       float: left;
       color: #00aa00;
       line-height: 0px; }
+    .summary .body a {
+      text-decoration: none; }
+      .summary .body a:visited {
+        text-decoration: none; }
 
 .document .name {
   font-family: arial;

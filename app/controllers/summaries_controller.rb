@@ -50,7 +50,7 @@ class SummariesController < ApplicationController
     respond_to do |format|
       if @summary.save
         flash[:notice] = 'Summary was successfully created.'
-        format.html { redirect_to(@summary.document) }
+        format.html { redirect_to(@summary) }
         format.xml  { render :xml => @summary, :status => :created, :location => @summary }
       else
         format.html { render :action => "new" }

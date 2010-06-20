@@ -1,22 +1,22 @@
 
-!green1 = #0a0
+$green1: #0a0
 
-!text_help = #fff
+$text_help: #fff
 
-!red1 = #a00
+$red1: #a00
 
-!text2 = #00b
-!green2 = #aFa
+$text2: #00b
+$green2: #aFa
 
-!red_text = #a00
-!green_text = #0a0
-!green_text_link = #0c3
+$red_text: #a00
+$green_text: #0a0
+$green_text_link: #0c3
 
-!hey_color = #09f
+$hey_color: #09f
 
-!blue_link = #00f
+$blue_link: #00f
 
-!green_bg = #ddffda
+$green_bg: #ddffda
 
 .created_at
   font-weight: bold
@@ -321,8 +321,11 @@ ul.horizontal
   .stackleft:first-child
     width: 400px
   h3
-    line-height: 5px
+    line-height: 5px  
+  a
+    text-decoration: none
   .body
+    text-decoration: none
     font-family: Georgia, Verdana, serif
     font-size: 1.1em
     line-height: 20px
@@ -345,6 +348,11 @@ ul.horizontal
       float: left
       color: $green_text
       line-height: 0px
+    a
+      text-decoration: none
+      &:visited
+        text-decoration: none
+    text-decoration: inherit
 
 .document
   .name

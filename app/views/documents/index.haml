@@ -6,7 +6,7 @@
   #documents
     - @documents.each do |document|
       - unless document.summaries.count == 0
-        = render :partial => "summaries/fancy_with_document", :locals => {:summary => document.summaries.first, :link => true, :share => false}
+        = render :partial => "summaries/fancy_with_document", :locals => {:summary => document.summaries.last, :link => true, :share => false}
         
 #rightcolumn
   = render :partial => "about/about_shorter_version"

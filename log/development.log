@@ -46523,3 +46523,1176 @@ DEPRECATION WARNING: :authenticatable as module is deprecated. Please give :data
 Rendered layouts/_footer (0.2ms)
 Rendered layouts/_google_analytics (0.1ms)
 Completed in 23ms (View: 16, DB: 1) | 200 OK [http://localhost/summaries/73]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:04:56) [GET]
+  [4;36;1mDocument Load (5.8ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.4ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 130ms (View: 32, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:04:57) [GET]
+  [4;35;1mDocument Load (5.7ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.4ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 53ms (View: 24, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:05:06) [GET]
+  [4;36;1mDocument Load (6.1ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (67.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.4ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 120ms (View: 90, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:05:08) [GET]
+  [4;35;1mDocument Load (5.9ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.2ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 55ms (View: 25, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:05:11) [GET]
+  [4;36;1mDocument Load (5.6ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.1ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 53ms (View: 24, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:06:16) [GET]
+  [4;35;1mDocument Load (6.1ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 55ms (View: 25, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:06:45) [GET]
+  [4;36;1mDocument Load (5.7ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 54ms (View: 25, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:06:47) [GET]
+  [4;35;1mDocument Load (5.6ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 118ms (View: 26, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:06:58) [GET]
+  [4;36;1mDocument Load (5.9ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.2ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 54ms (View: 25, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:07:00) [GET]
+  [4;35;1mDocument Load (6.5ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (67.7ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.6ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 121ms (View: 91, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:07:01) [GET]
+  [4;36;1mDocument Load (5.9ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.6ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.4ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (2.1ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 56ms (View: 26, DB: 14) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:07:27) [GET]
+  [4;35;1mDocument Load (6.1ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.1ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 54ms (View: 24, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:07:31) [GET]
+  [4;36;1mDocument Load (6.2ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.0ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 56ms (View: 25, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:01) [GET]
+  [4;35;1mDocument Load (5.7ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 53ms (View: 24, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:02) [GET]
+  [4;36;1mDocument Load (5.7ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (65.9ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 120ms (View: 90, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:22) [GET]
+  [4;35;1mDocument Load (5.7ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 54ms (View: 24, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:24) [GET]
+  [4;36;1mDocument Load (5.8ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.1ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (67.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (68.5ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 120ms (View: 24, DB: 78) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:32) [GET]
+  [4;35;1mDocument Load (6.5ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (2.0ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.2ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (2.0ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (2.0ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 59ms (View: 27, DB: 14) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:33) [GET]
+  [4;36;1mDocument Load (6.0ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.8ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.0ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.5ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 54ms (View: 25, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:41) [GET]
+  [4;35;1mDocument Load (5.8ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 57ms (View: 26, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:49) [GET]
+  [4;36;1mDocument Load (5.7ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 53ms (View: 24, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:50) [GET]
+  [4;35;1mDocument Load (5.8ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.4ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 120ms (View: 90, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:51) [GET]
+  [4;36;1mDocument Load (6.0ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 55ms (View: 25, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:08:52) [GET]
+  [4;35;1mDocument Load (5.9ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.7ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.1ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.2ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 119ms (View: 90, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:09:06) [GET]
+  [4;36;1mDocument Load (5.9ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.9ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (3.0ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (2.2ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.4ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 65ms (View: 29, DB: 14) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:09:21) [GET]
+  [4;35;1mDocument Load (5.9ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.6ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.4ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (2.0ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (2.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.3ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.4ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.7ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 62ms (View: 29, DB: 14) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:09:22) [GET]
+  [4;36;1mDocument Load (5.7ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.7ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.6ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.4ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 120ms (View: 25, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:09:30) [GET]
+  [4;35;1mDocument Load (5.6ms)[0m   [0mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;36;1mSummary Load (1.8ms)[0m   [0;1mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.7ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.2ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;35;1mDocument Load (1.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.3ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 54ms (View: 25, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing DocumentsController#index (for 127.0.0.1 at 2010-06-19 20:10:55) [GET]
+  [4;36;1mDocument Load (6.0ms)[0m   [0;1mSELECT * FROM "documents" ORDER BY created_at DESC[0m
+  [4;35;1mSummary Load (1.6ms)[0m   [0mSELECT "summaries".* FROM "summaries" WHERE ("summaries".document_id IN (30,29,28,27,26,25,24,23,22,21)) [0m
+Rendering template within layouts/application
+Rendering documents/index
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 30) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (1.8ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 29) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 29) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 28) [0m
+  [4;35;1mDocument Load (0.2ms)[0m   [0mSELECT * FROM "documents" WHERE ("documents"."id" = 28) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 27) [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 26) [0m
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 26) [0m
+Rendered summaries/_fancy_with_document (2.0ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 25) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 25) [0m
+Rendered summaries/_fancy_with_document (1.9ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 24) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 24) [0m
+Rendered summaries/_fancy_with_document (1.4ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 23) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 23) [0m
+Rendered summaries/_fancy_with_document (1.5ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 22) [0m
+  [4;36;1mDocument Load (0.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 22) [0m
+Rendered summaries/_fancy_with_document (1.3ms)
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "summaries" WHERE ("summaries".document_id = 21) [0m
+  [4;36;1mDocument Load (1.2ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 21) [0m
+Rendered summaries/_fancy_with_document (2.4ms)
+Rendered about/_about_shorter_version (0.1ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 120ms (View: 90, DB: 13) | 200 OK [http://localhost/]
+
+
+Processing SummariesController#show (for 127.0.0.1 at 2010-06-19 20:11:02) [GET]
+  Parameters: {"id"=>"73"}
+  [4;35;1mSummary Load (0.2ms)[0m   [0mSELECT * FROM "summaries" WHERE ("summaries"."id" = 73) [0m
+Rendering template within layouts/application
+Rendering summaries/show
+  [4;36;1mDocument Load (0.3ms)[0m   [0;1mSELECT * FROM "documents" WHERE ("documents"."id" = 30) [0m
+Rendered summaries/_fancy_with_document (2.0ms)
+Rendered layouts/_header (0.3ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_google_analytics (0.1ms)
+Completed in 21ms (View: 13, DB: 1) | 200 OK [http://localhost/summaries/73]
